@@ -1,0 +1,19 @@
+// Import bulma variables
+@import "~bulma/sass/utilities/_all";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+// Override bulma variables here !
+$blue: #64B5F6;
+$yellow: #FFD54F;
+$green: #81C784;
+$purple: #9575CD;
+$orange: #FF8A65;
+$red: #E57373;
+$pink: #ffb3b3;
+
+$primary: $green;
+$link: $blue;
+
+$family-primary: 'Roboto Condensed', sans-serif;
