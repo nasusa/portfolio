@@ -1,22 +1,32 @@
 <template>
   <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+    <div class="columns has-text-centered">
+      <div class="column columnFirst">
+        <h1>I am Susanna</h1>
+      </div>
+      <div class="columns columnSlogan is-mobile has-text-centered">
+        <div class="column is-one-third">
+          <hr>
+          <hr>
+        </div>
+        <div class="column is-one-third is-uppercase">
+          <p>Designer</p>
+          <p>Ict-technician<p>
+          <p>Dreamer</p>
+        </div>
+        <div class="column is-one-third">
+          <hr>
+          <hr>
+        </div>
+      </div>
+      <div class="column columnSecond">
+        <h1>Welcome To My Portfolio</h1>
+      </div>
+      <div class="column">
+        <h1>second</h1>
+      </div>
+      <div class="column">
+        <h1>third</h1>
       </div>
     </div>
   </section>
@@ -33,32 +43,17 @@ export default {
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.columnFirst {
+  padding-top: 80px;
 }
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.columnSecond {
+  padding-bottom: 80px;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.columnThird {
+  background-color:bisque;
 }
-
-.links {
-  padding-top: 15px;
+.columnSlogan {
+  padding: 50px 0 50px 0;
+  margin: 0;
 }
 </style>
