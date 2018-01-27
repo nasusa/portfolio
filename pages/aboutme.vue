@@ -5,19 +5,170 @@
       <section class="section">  
         <div class="container">
           <ul>
-            <li><span class="headerFont">I am Susanna</span></li>
-            <li><span class="headerSloganFont"> DESIGNER <i class="fa fa-angle-double-right" aria-hidden="true"></i> ICT TECHNICIAN <i class="fa fa-angle-double-right" aria-hidden="true"></i> DREAMER </span></li>
-            <li><span class="headerFont">Welcome to my Portfolio</span></li>
+            <li><span class="headerFont">Susanna Lepola</span></li>
           </ul>
         </div>
       </section>
     </div>
     <!--HEADER PÄÄTTYY-->
-   
-    <section class="section">
-        <div class="container columnsHero">
+
+    <section class="section">  
+      <div class="container">
+        <div class="card-image">
+          <figure class="">
+            <img class="profile" src="~/static/profile.jpg/" alt="Placeholder image">
+          </figure>
         </div>
+      </div>
     </section>
+   
+    <!--EXPERIENCE ALKAA-->
+    <section class="section">
+      <div class="container columnsHero">
+        <div class="timeline is-clearfix">
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-briefcase fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">Vesilahden Aittakahvila</h2>
+              <p>Ensimmäinen kesätyöpaikkani löytyy yläaste ajoilta Vesilahden Aittakahvilasta. Työtehtäviin kuului tuotevalikoimasta huolehtiminen, asiakaspalvelu, tilausten tekeminen sekä kahvitusten järjestäminen.</p>
+              <p> Aittakahvila kesätyön ajaksi oli mahdollista ottaa koulun kautta vaihto-oppilas Latviasta töihin mukaan, joten töihin opastus tapahtui englannin kielellä.</p>
+              <span class="timeline__block__body__date">Kesäkuu 2011 ja 2012, 2vko</span>
+            </div>
+          </div>	
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-briefcase fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">TET-harjoittelut ja kahvitukset</h2>
+              <p>Yläaste aikana TET-paikkani oli Minimani Ideapark jossa harjoittelin tavaroiden esillepanoa, lastien purkua ja inventaariota.</p>
+              <p>Toinen TET-paikka löytyi myös Ideaparkista; Beefking Steakhouse, jossa työtehtäviin kuului salin hoitaminen, pöytien täyttäminen, tarjoilu ja salin erilaiset siivoustyöt.</p>
+              <p>Tein myös lukuisia kahvituksia koululla pienistä ryhmistä yli sadan hengen tilaisuuksiin.</p>
+              <span class="timeline__block__body__date">2011-2012</span>
+            </div>
+          </div>
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-graduation-cap fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">TREDU Hotelli-, ravintola- ja cateringalan perustutkinto</h2>
+              <p>Peruskoulun jälkeen aloitin opiskelun Tampereen seudun ammattiopistossa. Kuitenkin janotessani vaativampia/ uudempia haasteita, vaihdoin alaa vuoden jälkeen Tietoliikennealalle.</p>
+              <span class="timeline__block__body__date">Elokuu 2013, 1 vuosi</span>
+            </div>
+          </div>
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-briefcase fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">Opiskelijaravintola Eetvartti</h2>
+              <p>Ennen alanvaihtoa ehdin kuitenkin suorittaa yhden työharjoittelun Hotelli-, ravintola- ja cateringalalla.</p>
+              <p>Työtehtäviin kuului kassanhoito, asiakaspalvelu, ruoanlaitto ja tilausten tekeminen. Meidän porukka järjesti myös upean Presidentin itsenäisyyspäivän brunssin!</p>
+              <span class="timeline__block__body__date"> Lokakuu 2013, 3kk</span>
+            </div>
+          </div>	
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-graduation-cap fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">TREDU Tieto- ja tietoliikennetekniikan perustutkinto</h2>
+              <p>Löysin oman alani, vihdoin! Suoritin perustutkinnon hyvin paperein. Juhlin valmistujaisiani keväällä 2017!</p>
+              <span class="timeline__block__body__date">Huhtikuu 2014, 3 vuotta</span>
+            </div>
+          </div>	
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-briefcase fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">Kahvilaravintola Wanha Narva</h2>
+              <p>Sain kivan kesätyöpaikan ravintola-baarityöntekijänä.</p>
+                <p>Työtehtäviini kuului salin hoitamista, ruoanlaittoa sekä apulaisen tehtävät keittiössä ja salin puolella.</p>
+              <span class="timeline__block__body__date">Kesäkuu 2014, 1kk</span>
+            </div>
+          </div>	
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-briefcase fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">Staffline Oy</h2>
+              <p>Etsin töitä koulun ohelle ja ottaessani yhteyttä vanhaan TET-paikkaan Ideaparkin Beefkingiin, minut otettiin ilomielin uudelleen vastaan. Tein Stafflinen kanssa sopimuksen "keikkatyösuhteisiin".</p>
+              <span class="timeline__block__body__date">Lokakuu 2014</span>
+            </div>
+          </div>		
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-briefcase fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">Yleisradio, Elävä arkisto</h2>
+              <p>Minut valittiin suuresta hakijajoukosta Yleisradiolle kesätöihin! Pääsin korjaamaan Ylen medianhallinta- järjestelmään digitoitujen tv-ohjelmien metatietoja sekä arkiston kuvanauhalogistiikkaa.</p>
+              <span class="timeline__block__body__date">Kesäkuu 2015, 1kk</span>
+            </div>
+          </div>			
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-briefcase fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">Protacon Oy</h2>
+              <p>Ammattikoulun ensimmäisen työharjoittelun suoritin mielenkiintoisessa työpaikassa Protacon Oy:llä.</p>
+              <p>Työtehtäviin kuului mm. asiakkaille menevien koneiden kunnon tarkistusta, asiakkaiden sopimustietojen täydentämistä ja syöttämistä järjestelmään, kiintolevyjen formatointia ja Image-asennuksia.</p>
+              <span class="timeline__block__body__date">Lokakuu 2015, 3kk</span>
+            </div>
+          </div>			
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-briefcase fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">Ideapark Karkkiparkki Oy</h2>
+              <p>Ollessani ammattikoulussa, tein töitä koulun ohella.</p> 
+              <p>Työtehtäviin kuului kioskin ylläpito ja siivoustehtävät itsenäisesti, asiakaspalvelu ja kassankäyttö sekä tuotteiden tilaaminen tarvittaessa.</p>
+              <span class="timeline__block__body__date">Helmikuu 2016, 1 vuosi</span>
+            </div>
+          </div>			
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-briefcase fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">WizIT Oy</h2>
+              <p>Ammattikoulun työharjoittelun suoritin mahtavassa porukassa, WizIT Oy:llä!</p>
+              <p>Työtehtäviin kuului koneiden ja ohjelmien asennusta, sekä kaikenlaiset IT-tuen tehtävät.</p>
+              <span class="timeline__block__body__date">Maaliskuu 2017, 3kk</span>
+            </div>
+          </div>			
+					<div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-graduation-cap fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">TAMK, Tietojenkäsittelijä</h2>
+              <p>Pääsin opiskelemaan mahtavaan kouluun, toiveenani suuntautua Web-suunnittelun puolelle!</p>
+              <span class="timeline__block__body__date">2017-2020, 3.5 vuotta</span>
+            </div>
+          </div>			
+          <div class="timeline__block is-clearfix">
+            <div class="timeline__block__image">
+              <i class="fa fa-lightbulb-o fa-fw"></i>
+            </div>
+            <div class="timeline__block__body is-clearfix">
+              <h2 class="is-size-4">Olisiko seuraava työpaikkani teillä?</h2>
+              <p>Ota yhteyttä!</p>
+              <span class="timeline__block__body__date"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--EXPERIENCE PÄÄTTYY-->  
+
   </div>
 </template>
 
@@ -60,7 +211,7 @@ export default {
     font-family: 'Abel', sans-serif;
   }
 .columnsHero {
-  margin: -5em auto -5em auto;
+  margin: -12em auto -5em auto;
   background-color: white;
   padding: 20px;
   border-radius: 15px;
@@ -70,7 +221,15 @@ export default {
     padding: 40px;
   }
 }
-
+.profile {
+    display: block;
+    margin: auto;
+    width: 300px;
+    border: 20px solid white;
+    border-radius:50%;
+    margin-top: -200px;
+    padding-bottom: 2em;
+}
 /*TIMELINE*/
 .timeline {
   position: relative;
@@ -99,7 +258,7 @@ export default {
       margin-bottom: 0;
     }
     &__image {
-      background: #75ce66;
+      background: #998c7f;
       height: 40px;
       left: 0;
       position: absolute;
@@ -136,6 +295,16 @@ export default {
         margin-left: 0;
         padding: 1.6em;
         width: 45%;
+      }
+      h2 {
+        font-family: 'Abel', sans-serif;
+      }
+      p {
+        font-family: 'Abel', sans-serif;
+        padding: 5px;
+        @include desktop {
+        font-size: 1em;
+        }
       }
       &::before {
         content: '';

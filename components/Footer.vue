@@ -16,7 +16,7 @@
           <i class="fa fa-diamond" aria-hidden="true"></i>
         </span>
       </div>
-      <span class="pacifico">
+      <span>
         Copyright @2016 Susanna Lepola, All Rights Reserved.
       </span>
     </section>
