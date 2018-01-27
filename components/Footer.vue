@@ -39,7 +39,7 @@ footer {
         border: 1px solid white;
         border-radius: 10px;
         font-size: 1.5em;
-        margin:4em 0.15em 1em 0.15em;
+        margin:3em 0.15em 1em 0.15em;
         transition: .5s;
         @include desktop {
           padding: 10px;

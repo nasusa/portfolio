@@ -2,13 +2,13 @@
   <nav class="navbar-menu has-text-centered">
     <div id="navbarExampleTransparentExample" class="navbar-menu">
       <div class="navbar-start is-uppercase">
-        <a class="navbar-item" href="https://bulma.io/">
+        <a class="navbar-item" href="">
           frontbage
         </a>
-        <a class="navbar-item" href="https://bulma.io/">
+        <a class="navbar-item" href="">
           portfolio/blog
         </a>
-        <a class="navbar-item" href="https://bulma.io/">
+        <a class="navbar-item" href="">
           about me
         </a>
       </div>
