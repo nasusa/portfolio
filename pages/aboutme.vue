@@ -1,7 +1,7 @@
 <template>
   <div> 
     <!--HEADER ALKAA-->     
-    <div class="headerContent has-text-centered">
+    <div class="aboutmeHeader has-text-centered">
       <section class="section">  
         <div class="container">
           <ul>
@@ -13,7 +13,7 @@
     <!--HEADER PÄÄTTYY-->
 
     <!--PROFIILIKUVA ALKAA-->
-    <section class="section">  
+    <section class="section aboutmeImg">  
       <div class="container">
         <div class="card-image">
           <figure class="">
@@ -24,13 +24,13 @@
     </section>
     <!--PROFIILIKUVA PÄÄTTYY-->
    
-    <section class="section">
+    <section class="section aboutmeInfo">
       <div class="container columnsHero">
-
+        <!--ENSIMMÄINEN SLIDE ALKAA-->
         <section class="section">  
           <div class="columns">
             <div class="column is-half">
-              <h1>Kuka minä olen?</h1>
+              <h1 class="aboutmeTitle is-uppercase">Kuka minä olen?</h1>
             </div>
             <div class="column">
               <ul class="aboutmeIcons">
@@ -56,9 +56,52 @@
             </div>
           </div>
         </section>
+        <!--ENSIMMÄINEN SLIDE PÄÄTTYY-->
+
+        <!--TOINEN SLIDE ALKAA-->
+        <section class="section">  
+          <div class="columns">
+            <div class="column is-half">
+              <h1 class="aboutmeTitle is-uppercase">Koulutukseni</h1>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column is-one-third">
+              <h1>Tampereen seudun ammattiopisto, TREDU</h1>
+              <h2>Hotelli-, ravintola- ja cateringala</h2>
+              <h2>2013-2014</h2>
+              <p>Peruskoulun jälkeen päätin suunnata hotelli-, ravintola- ja cateringalalle. Olen tehnyt useammassa alan työpaikassa
+                kesätöitä sekä suorittanut harjoitteluita. Kuitenkin janotessani uusia haasteita, päätin vuoden jälkeen tehdä täyskäännöksen
+                ja suunnata tietotekniikan pariin. Onneksi!
+              </p>
+            </div>
+            <div class="column">
+              <h1>Tampereen seudun ammattiopisto, TREDU</h1>
+              <h2>Tieto- ja tietoliikennetekniikka</h2>
+              <h2>2014-2017</h2>
+              <p>Aloitin opiskelut kesken lukuvuoden vaihtaessani alaa hotelli-, ravintola- ja cateringalalta. Löysin suuren intohimoni
+                tietotekniikan puolelta, se ei tosin ollut yllätys sillä pienestä asti olen viihtynyt elektroniikan parissa.
+              </p>
+            </div>
+            <div class="column">
+              <h1>Tampereen ammattikorkeakoulu, TAMK</h1>
+              <h2>Tietojenkäsittelijä</h2>
+              <h2>2017-2020</h2>
+              <p>Mauris at odio nulla. Aliquam risus erat, pretium quis arcu in, eleifend viverra lorem. Donec consectetur velit ut accumsan vehicula. 
+                Donec tincidunt velit mi, vel hendrerit sem rutrum et. Pellentesque tincidunt gravida tempus.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--TOINEN SLIDE PÄÄTTYY-->
+
+        <!--KOLMAS SLIDE ALKAA-->
+        <!--KOLMAS SLIDE PÄÄTTYY-->
 
       <!--EXPERIENCE ALKAA--> 
-        <section>
+        <section class="aboutmeTimeline">
           <div class="timeline is-clearfix">
             <div class="timeline__block is-clearfix">
               <div class="timeline__block__image">
@@ -218,7 +261,7 @@ export default {
 </script>
 
 <style lang="scss">
-.headerContent {
+.aboutmeHeader {
   height: 600px;
   font-size: 3em;
   display: -webkit-flex;
@@ -230,39 +273,16 @@ export default {
   background-repeat: no-repeat;
   background-position: center 20%;
   z-index: -1;
-}
-.headerFont {
+  .headerFont {
     font-size: 3em;
     color: rgba(48,48,48,1);
     text-shadow: 1px 1px #FFFAF0;
     opacity: 0.6;
     font-family: 'Sacramento', cursive;
   }
-.headerSloganFont {
-    font-size: 0.5em;
-    color:  #cccccc;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-family: 'Abel', sans-serif;
-  }
-.columnsHero {
-  margin: -12em auto -5em auto;
-  background-color: white;
-  padding: 20px;
-  border-radius: 15px;
-  max-width: 1000px;
-  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  z-index: -1;
-  @include desktop {
-    padding: 40px;
-  }
 }
-.aboutmeIcons {
-  display: flex;
-  padding-right: 20px;
-  font-size: 2em;
-}
-.profile {
+.aboutmeImg {
+  .profile {
     display: block;
     margin: auto;
     width: 300px;
@@ -270,131 +290,157 @@ export default {
     border-radius:50%;
     margin-top: -200px;
     padding-bottom: 2em;
+  }
+}
+.aboutmeInfo {
+  .aboutmeTitle {
+    font-family: 'Abel', sans-serif;
+    font-size: 2em;
+  }
+.aboutmeIcons {
+    display: flex;
+    padding-right: 20px;
+    font-size: 2em;
+  }
+}
+.columnsHero {
+  margin: -12em auto -5em auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 1000px;
+  //box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: -1;
+  @include desktop {
+    padding: 40px;
+  }
 }
 /*TIMELINE*/
-.timeline {
-  position: relative;
-  padding: 2em 0;
-  margin: 2em 0;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 18px;
-    height: 100%;
-    width: 4px;
-    background: #d7d7d7;
-    @include desktop {
-      left: 50%;
-      margin-left: -2px;
-    }
-  }
-  &__block {
+.aboutmeTimeline {
+  .timeline {
     position: relative;
+    padding: 2em 0;
     margin: 2em 0;
-    &:first-child {
-      margin-top: 0;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-    &__image {
-      background: #998c7f;
-      height: 40px;
-      left: 0;
+    &::before {
+      content: '';
       position: absolute;
       top: 0;
-      width: 40px;
-      border-radius: 50%;
-      box-shadow: 0 0 0 4px white,
-                  inset 0 2px 0 rgba(0,0,0,0.08),
-                  0 3px 0 4px rgba(0,0,0,0.05);
+      left: 18px;
+      height: 100%;
+      width: 4px;
+      background: #d7d7d7;
       @include desktop {
-        width: 60px;
-        height: 60px;
         left: 50%;
-        margin-left: -30px;
-      }
-      i {
-        font-size: 28px;
-        line-height: 40px;
-        color: white;
-        @include desktop {
-          line-height: 60px;
-          font-size: 47px;
-        }
+        margin-left: -2px;
       }
     }
-    &__body {
+    &__block {
       position: relative;
-      margin-left: 60px;
-      background: white;
-      border-radius: .25em;
-      padding: 1em;
-      box-shadow: 0 3px 0 #d7e4ed;
-      @include desktop {
-        margin-left: 0;
-        padding: 1.6em;
-        width: 45%;
+      margin: 2em 0;
+      &:first-child {
+        margin-top: 0;
       }
-      h2 {
-        font-family: 'Abel', sans-serif;
+      &:last-child {
+        margin-bottom: 0;
       }
-      p {
-        font-family: 'Abel', sans-serif;
-        padding: 5px;
-        @include desktop {
-        font-size: 1em;
-        }
-      }
-      &::before {
-        content: '';
+      &__image {
+        background: #998c7f;
+        height: 40px;
+        left: 0;
         position: absolute;
-        top: 16px;
-        right: 100%;
-        height: 0;
-        width: 0;
-        border: 7px solid transparent;
-        border-right: 7px solid white;
+        top: 0;
+        width: 40px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px white,
+                    inset 0 2px 0 rgba(0,0,0,0.08),
+                    0 3px 0 4px rgba(0,0,0,0.05);
         @include desktop {
-          top: 24px;
-          left: 100%;
-          border-color: transparent;
-          border-left-color: white;
+          width: 60px;
+          height: 60px;
+          left: 50%;
+          margin-left: -30px;
+        }
+        i {
+          font-size: 28px;
+          line-height: 40px;
+          color: white;
+          @include desktop {
+            line-height: 60px;
+            font-size: 47px;
+          }
         }
       }
-      &__date {
-        float: left;
-        padding: .8em 0;
-        opacity: .7;
-        @include tablet {
-          font-size: .875rem;
-        }
+      &__body {
+        position: relative;
+        margin-left: 60px;
+        background: white;
+        border-radius: .25em;
+        padding: 1em;
+        box-shadow: 0 3px 0 #d7e4ed;
         @include desktop {
-          position: absolute;
-          width: 100%;
-          left: 122%;
-          top: 6px;
+          margin-left: 0;
+          padding: 1.6em;
+          width: 45%;
+        }
+        h2 {
+          font-family: 'Abel', sans-serif;
+        }
+        p {
+          font-family: 'Abel', sans-serif;
+          padding: 5px;
+          @include desktop {
           font-size: 1em;
+          }
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          top: 16px;
+          right: 100%;
+          height: 0;
+          width: 0;
+          border: 7px solid transparent;
+          border-right: 7px solid white;
+          @include desktop {
+            top: 24px;
+            left: 100%;
+            border-color: transparent;
+            border-left-color: white;
+          }
+        }
+        &__date {
+          float: left;
+          padding: .8em 0;
+          opacity: .7;
+          @include tablet {
+            font-size: .875rem;
+          }
+          @include desktop {
+            position: absolute;
+            width: 100%;
+            left: 122%;
+            top: 6px;
+            font-size: 1em;
+          }
         }
       }
-    }
-    &:nth-child(even) {
-      .timeline__block {
-        @include desktop {
-          &__body {
-            float: right;
-            &::before {
-              top: 24px;
-              left: auto;
-              right: 100%;
-              border-color: transparent;
-              border-right-color: white;
-            }
-            &__date {
-              left: auto;
-              right: 122%;
-              text-align: right;
+      &:nth-child(even) {
+        .timeline__block {
+          @include desktop {
+            &__body {
+              float: right;
+              &::before {
+                top: 24px;
+                left: auto;
+                right: 100%;
+                border-color: transparent;
+                border-right-color: white;
+              }
+              &__date {
+                left: auto;
+                right: 122%;
+                text-align: right;
+              }
             }
           }
         }

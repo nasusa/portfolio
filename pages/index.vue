@@ -1,7 +1,7 @@
 <template>
   <div> 
       <!--HEADER ALKAA-->     
-      <div class="headerContent has-text-centered">
+      <div class="indexHeader has-text-centered">
         <section class="section">  
           <div class="container">
             <ul>
@@ -16,7 +16,7 @@
 
       <!--BOXIT ALKAA-->
       <!--YLÄBOXIT-->    
-      <section class="section">
+      <section class="section indexColumns">
         <div class="container columnsHero">
           <div class="columns">
             <div class="column has-text-centered">
@@ -112,7 +112,7 @@ export default {
 </script>
 
 <style lang="scss">
-.headerContent {
+.indexHeader {
   height: 600px;
   font-size: 3em;
   display: -webkit-flex;
@@ -124,55 +124,56 @@ export default {
   background-repeat: no-repeat;
   background-position: center 20%;
   z-index: -1;
-}
-.headerFont {
+  .headerFont {
     font-size: 1em;
     color: rgba(48,48,48,1);
     text-shadow: 1px 1px #FFFAF0;
     opacity: 0.6;
     font-family: 'Sacramento', cursive;
   }
-.headerSloganFont {
+  .headerSloganFont {
     font-size: 0.5em;
     color:  #cccccc;
     letter-spacing: 3px;
     font-weight: bold;
     font-family: 'Abel', sans-serif;
   }
-.columnsHero {
-  margin: -5em auto -5em auto;
-  background-color: white;
-  padding: 20px;
-  border-radius: 15px;
-  max-width: 1000px;
-  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  @include desktop {
-    padding: 40px;
+}
+.indexColumns {
+  .columnsHero {
+    margin: -5em auto -5em auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 1000px;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @include desktop {
+      padding: 40px;
+    }
   }
-}
-.contentBox {
-  padding: 20px;
-}
-.headerAbel {
-  color: black;
-  font-family: 'Abel', sans-serif;
-  padding-top: 20px;
-}
-.headerSacramento {
-  font-size: 2em;
-  color: black;
-  font-family: 'Sacramento', cursive;
-  padding-top: 20px;
-}
-a {
-  color:black;
-}
-.contentImage {
-  border-radius: 15px;
-
-  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.indexParagraph {
-  padding: 10px 0 10px 0;
+  .contentBox {
+    padding: 20px;
+  }
+  .headerAbel {
+    color: black;
+    font-family: 'Abel', sans-serif;
+    padding-top: 20px;
+  }
+  .headerSacramento {
+    font-size: 2em;
+    color: black;
+    font-family: 'Sacramento', cursive;
+    padding-top: 20px;
+  }
+  a {
+    color:black;
+  }
+  .contentImage {
+    border-radius: 15px;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .indexParagraph {
+    padding: 10px 0 10px 0;
+  }
 }
 </style>
