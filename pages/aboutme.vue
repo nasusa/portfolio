@@ -102,40 +102,59 @@
           <!--KOLMAS SLIDE ALKAA-->
           <section class="section thirdSlide">  
             <div class="columns">
-              <div class="column is-half">
-                <h1 class="aboutmeTitle is-uppercase">Kurssit ja koulutukset</h1>
+              <div class="column aboutmeThirdSlide has-text-centered">
+                  <h1 class="aboutmeTitle is-uppercase">Kurssit ja koulutukset</h1>
+                <div class="columns thirdSlideSocial">
+                  <div class="column is-4">
+                    <a href="#"><i class="fa fa-id-card-o fa-2x"></i></a>
+                    <h1 class="socialHeading is-uppercase">B-kortti</h1>
+                  </div>
+                  <div class="column">
+                    <a href="#"><i class="fa fa-exclamation-triangle fa-2x"></i></a>
+                    <h1 class="socialHeading is-uppercase">Työturvallisuus-<br>kortti</h1>
+                  </div>
+                  <div class="column">
+                    <a href="#"><i class="fa fa-fire fa-2x"></i></a>
+                    <h1 class="socialHeading is-uppercase">Tulityökortti</h1>
+                  </div>
+                </div>
+                <div class="columns thirdSlideSocial">
+                  <div class="column is-4">
+                    <a href="#"><i class="fa fa-truck fa-2x"></i></a>
+                    <h1 class="socialHeading is-uppercase">Tietyökortti</h1>
+                  </div>
+                  <div class="column">
+                    <a href="#"><i class="fa fa-medkit fa-2x"></i></a>
+                    <h1 class="socialHeading is-uppercase">Ensiapu 1 & 2</h1>  
+                  </div>
+                  <div class="column"> 
+                    <a href="#"><i class="fa fa-cutlery fa-2x"></i></a>
+                    <h1 class="socialHeading is-uppercase">Hygieniapassi</h1>
+                  </div>             
+                </div>
               </div>
-              <div class="column">
+              <div class="column has-text-centered">
                 <h1 class="aboutmeTitle is-uppercase">Kielitaito</h1>
+                <div class="columns thirdSlideSocial">
+                  <div class="column is-3">
+                    <img class="socialFlagIcon" src="~/static/finnish.png" alt="Placeholder image">
+                    <h1 class="socialHeading is-uppercase">suomi</h1>
+                  </div>
+                  <div class="column">  
+                    <img class="socialFlagIcon" src="~/static/english.png" alt="Placeholder image">
+                    <h1 class="socialHeading is-uppercase">englanti</h1>
+                  </div>
+                  <div class="column ">
+                    <img class="socialFlagIcon" src="~/static/sweden.png" alt="Placeholder image">
+                    <h1 class="socialHeading is-uppercase">ruotsi</h1>
+                  </div>
+                  <div class="column ">
+                    <img class="socialFlagIcon" src="~/static/germany.png" alt="Placeholder image">
+                    <h1 class="socialHeading is-uppercase">saksa</h1>
+                  </div>
+                </div>  
+                <p>Olin opiskelijavaihdossa Saksassa vuonna 2012 ja vaihto-oppilaana Ranskassa vuonna 2014. Olen myös majoittanut pidempiaikaisiakin vaihto-oppilaita useista eri maista.<br>Osaan hotelli-, ravintola- ja cateringalan sekä tieto- ja tietoliikennealan ammattienglantia.</p>
               </div>
-            </div>
-            <div class="columns thirdSlideSocial has-text-centered">
-              <div class="column is-2">
-                <a href="#"><i class="fa fa-id-card-o fa-3x"></i></a>
-                <h1 class="socialHeading is-uppercase">B-kortti</h1>
-              </div>
-              <div class="column is-2">
-                <a href="#"><i class="fa fa-exclamation-triangle fa-3x"></i></a>
-                <h1 class="socialHeading is-uppercase">Työturvallisuus-<br>kortti</h1>
-              </div>
-              <div class="column is-2">
-                <a href="#"><i class="fa fa-fire fa-3x"></i></a>
-                <h1 class="socialHeading is-uppercase">Tulityökortti</h1>
-              </div>
-            </div>
-            <div class="columns thirdSlideSocial has-text-centered">
-              <div class="column is-2">
-                <a href="#"><i class="fa fa-truck fa-3x"></i></a>
-                <h1 class="socialHeading is-uppercase">Tietyökortti</h1>
-              </div>
-              <div class="column is-2">
-                <a href="#"><i class="fa fa-medkit fa-3x"></i></a>
-                <h1 class="socialHeading is-uppercase">Ensiapu 1 & 2</h1>  
-              </div>
-              <div class="column is-2"> 
-                <a href="#"><i class="fa fa-cutlery fa-3x"></i></a>
-                <h1 class="socialHeading is-uppercase">Hygieniapassi</h1>
-              </div>             
             </div>
           </section>
           <!--KOLMAS SLIDE PÄÄTTYY-->
@@ -148,7 +167,7 @@
             <div class="timeline is-clearfix">
               <div class="timeline__block is-clearfix">
                 <div class="timeline__block__image">
-                  <i class="fa fa-briefcase fa-fw"></i>
+                  <i class="fa fa-coffee fa-fw"></i>
                 </div>
                 <div class="timeline__block__body is-clearfix">
                   <h2 class="is-size-4">Vesilahden Aittakahvila</h2>
@@ -171,17 +190,7 @@
               </div>
               <div class="timeline__block is-clearfix">
                 <div class="timeline__block__image">
-                  <i class="fa fa-graduation-cap fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix">
-                  <h2 class="is-size-4">TREDU Hotelli-, ravintola- ja cateringalan perustutkinto</h2>
-                  <p>Peruskoulun jälkeen aloitin opiskelun Tampereen seudun ammattiopistossa. Kuitenkin janotessani vaativampia/ uudempia haasteita, vaihdoin alaa vuoden jälkeen Tietoliikennealalle.</p>
-                  <span class="timeline__block__body__date">Elokuu 2013, 1 vuosi</span>
-                </div>
-              </div>
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image">
-                  <i class="fa fa-briefcase fa-fw"></i>
+                  <i class="fa fa-cutlery fa-fw"></i>
                 </div>
                 <div class="timeline__block__body is-clearfix">
                   <h2 class="is-size-4">Opiskelijaravintola Eetvartti</h2>
@@ -192,17 +201,7 @@
               </div>	
               <div class="timeline__block is-clearfix">
                 <div class="timeline__block__image">
-                  <i class="fa fa-graduation-cap fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix">
-                  <h2 class="is-size-4">TREDU Tieto- ja tietoliikennetekniikan perustutkinto</h2>
-                  <p>Löysin oman alani, vihdoin! Suoritin perustutkinnon hyvin paperein. Juhlin valmistujaisiani keväällä 2017!</p>
-                  <span class="timeline__block__body__date">Huhtikuu 2014, 3 vuotta</span>
-                </div>
-              </div>	
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image">
-                  <i class="fa fa-briefcase fa-fw"></i>
+                  <i class="fa fa-cutlery fa-fw"></i>
                 </div>
                 <div class="timeline__block__body is-clearfix">
                   <h2 class="is-size-4">Kahvilaravintola Wanha Narva</h2>
@@ -213,7 +212,7 @@
               </div>	
               <div class="timeline__block is-clearfix">
                 <div class="timeline__block__image">
-                  <i class="fa fa-briefcase fa-fw"></i>
+                  <i class="fa fa-cutlery fa-fw"></i>
                 </div>
                 <div class="timeline__block__body is-clearfix">
                   <h2 class="is-size-4">Staffline Oy</h2>
@@ -223,7 +222,7 @@
               </div>		
               <div class="timeline__block is-clearfix">
                 <div class="timeline__block__image">
-                  <i class="fa fa-briefcase fa-fw"></i>
+                  <i class="fa fa-laptop fa-fw"></i>
                 </div>
                 <div class="timeline__block__body is-clearfix">
                   <h2 class="is-size-4">Yleisradio, Elävä arkisto</h2>
@@ -233,7 +232,7 @@
               </div>			
               <div class="timeline__block is-clearfix">
                 <div class="timeline__block__image">
-                  <i class="fa fa-briefcase fa-fw"></i>
+                  <i class="fa fa-laptop fa-fw"></i>
                 </div>
                 <div class="timeline__block__body is-clearfix">
                   <h2 class="is-size-4">Protacon Oy</h2>
@@ -244,7 +243,7 @@
               </div>			
               <div class="timeline__block is-clearfix">
                 <div class="timeline__block__image">
-                  <i class="fa fa-briefcase fa-fw"></i>
+                  <i class="fa fa-coffee fa-fw"></i>
                 </div>
                 <div class="timeline__block__body is-clearfix">
                   <h2 class="is-size-4">Ideapark Karkkiparkki Oy</h2>
@@ -255,7 +254,7 @@
               </div>			
               <div class="timeline__block is-clearfix">
                 <div class="timeline__block__image">
-                  <i class="fa fa-briefcase fa-fw"></i>
+                  <i class="fa fa-laptop fa-fw"></i>
                 </div>
                 <div class="timeline__block__body is-clearfix">
                   <h2 class="is-size-4">WizIT Oy</h2>
@@ -263,17 +262,7 @@
                   <p>Työtehtäviin kuului koneiden ja ohjelmien asennusta, sekä kaikenlaiset IT-tuen tehtävät.</p>
                   <span class="timeline__block__body__date">Maaliskuu 2017, 3kk</span>
                 </div>
-              </div>			
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image">
-                  <i class="fa fa-graduation-cap fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix">
-                  <h2 class="is-size-4">TAMK, Tietojenkäsittelijä</h2>
-                  <p>Pääsin opiskelemaan mahtavaan kouluun, toiveenani suuntautua Web-suunnittelun puolelle!</p>
-                  <span class="timeline__block__body__date">2017-2020, 3.5 vuotta</span>
-                </div>
-              </div>			
+              </div>				
               <div class="timeline__block is-clearfix">
                 <div class="timeline__block__image">
                   <i class="fa fa-lightbulb-o fa-fw"></i>
@@ -303,75 +292,81 @@
   }
   </script>
 
-  <style lang="scss">
-  .aboutmeHeader {
-    height: 600px;
+<style lang="scss">
+.aboutmeHeader {
+  height: 600px;
+  font-size: 3em;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-justify-content: center;
+  background-image: url("~/static/susa.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  z-index: -1;
+  .headerFont {
     font-size: 3em;
-    display: -webkit-flex;
-    align-items: center;
-    -webkit-justify-content: center;
-    background-image: url("~/static/susa.jpg");
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 20%;
-    z-index: -1;
-    .headerFont {
-      font-size: 3em;
-      color: rgba(48,48,48,1);
-      text-shadow: 1px 1px #FFFAF0;
-      opacity: 0.6;
-      font-family: 'Sacramento', cursive;
-    }
+    color: rgba(48,48,48,1);
+    text-shadow: 1px 1px #FFFAF0;
+    opacity: 0.6;
+    font-family: 'Sacramento', cursive;
   }
-  .aboutmeImg {
-    .profile {
-      display: block;
-      margin: auto;
-      width: 300px;
-      border: 20px solid white;
-      border-radius:50%;
-      margin-top: -200px;
-      padding-bottom: 2em;
-    }
+}
+.aboutmeImg {
+  .profile {
+    display: block;
+    margin: auto;
+    width: 300px;
+    border: 20px solid white;
+    border-radius:50%;
+    margin-top: -200px;
+    padding-bottom: 2em;
   }
-  .aboutmeInfo {
-    .aboutmeTitle {
-      font-family: 'Abel', sans-serif;
-      font-size: 2em;
-    }
-    .aboutmeIcons {
-      display: flex;
-      padding-right: 20px;
-      font-size: 2em;
-    }
-    .aboutmeSchool {
-      font-family: 'Abel', sans-serif;
-      font-size: 1.5em;    
-    }
-    .dateProgram {
-      color: grey;
-    }
+}
+.aboutmeInfo {
+  .aboutmeTitle {
+    font-family: 'Abel', sans-serif;
+    font-size: 2em;
   }
-  .columnsHero {
-    margin: -12em auto -5em auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 1000px;
-    //box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: -1;
-    @include desktop {
-      padding: 40px;
-    }
+  .aboutmeIcons {
+    display: flex;
+    padding-right: 20px;
+    font-size: 2em;
   }
-  .thirdSlideSocial {
-    padding-top: 30px;
-    .socialHeading {
-      font-family: 'Abel', sans-serif;
-      padding-top: 10px;
-    }
+  .aboutmeSchool {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5em;    
   }
+  .dateProgram {
+    color: grey;
+  }
+}
+.columnsHero {
+  margin: -12em auto -5em auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 1000px;
+  //box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: -1;
+  @include desktop {
+    padding: 40px;
+  }
+}
+.socialFlagIcon {
+  width: 50px;
+}
+.socialHeading {
+  font-family: 'Abel', sans-serif;
+  padding-top: 10px;
+}
+.thirdSlideSocial {
+  padding-top: 30px;
+}
+.aboutmeThirdSlide {
+  padding-right: 5em;
+}
   /*TIMELINE*/
   .aboutmeTimeline {
     .timeline {
@@ -401,7 +396,7 @@
           margin-bottom: 0;
         }
         &__image {
-          background: #998c7f;
+          background: #6db2c4;
           height: 40px;
           left: 0;
           position: absolute;
