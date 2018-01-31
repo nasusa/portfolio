@@ -15,7 +15,66 @@
     <!--HEADER PÄÄTTYY-->
    
     <section class="section">
-        <div class="container columnsHero">
+        <div class="container"> <!--columnsHero-->
+          <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+              <div class="tile">
+                <div class="tile is-parent is-vertical">
+                  <article class="tile is-child box">
+                    <h1 class="is-uppercase">Peliprojekti</h1>
+                    <p>Tamkin ensimmäisen vuoden peliprojekti, joka toteutetaan joka vuosi eri asiakkaalle. Toimin oman tiimini Scrum masterina ja projektipäällikkönä.</p>
+                  </article>
+                  <article class="tile is-child box">
+                    <h1 class="is-uppercase">Kauneushoitola www-sivut</h1>
+                    <p>Tein ensimmäiselle asiakkaalleni nettisivut. Sivut löytää osoitteesta <a href="www.hoitoladreamskin.fi/">www.hoitoladreamskin.fi</a></p>
+                    <figure class="image">
+                        <img src="~static/dreamskin.png/" alt="Placeholder image">
+                    </figure>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child box">
+                    <h1 class="is-uppercase">Tredu lanit www-sivut</h1>
+                    <p>Opiskellessani Tampereen seudun ammattiopistossa tieto- ja tietoliikennealalla, viimeisenä vuonna oli tarkoitus järjestää lanit koululla 
+                      opiskelijoille. Tein nettisivut, mutta ne eivät ole enää ylhäällä.
+                    </p>
+                    <figure class="image">
+                      <img src="~static/tredulan2.png/" alt="Placeholder image">
+                    </figure>
+                    <figure class="image">
+                      <img src="~static/tredulan1.png/" alt="Placeholder image">
+                    </figure>
+                  </article>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <h1 class="is-uppercase">Portfolio www-sivut</h1>
+                  <p>Ensimmäisen portfolio-sivun tein v.2016.</p>
+                  <div class="columns">
+                    <div class="column">
+                    <figure class="image">
+                        <img src="~static/portfolio.jpg/" alt="Placeholder image">
+                    </figure>
+                    </div>
+                    <div class="column">
+                    <figure class="image">
+                        <img src="~static/portfolio2.jpg/" alt="Placeholder image">
+                    </figure>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                  <h1 class="is-uppercase">Auton RGB-LED projekti</h1>
+                  <p>Tieto- ja tietoliikennealalla tein opinnäytetyönä LED-valonohjaus järjestelmän autoon Arduino Standalonella. Tein myös Android-sovelluksen, 
+                    jolla valoja pystyi ohjaamaan.
+                  </p>
+              </article>
+            </div>
+          </div>
         </div>
     </section>
   </div>
