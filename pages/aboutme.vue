@@ -453,13 +453,13 @@
         &__body {
           position: relative;
           margin-left: 60px;
-          background: white;
+          background: #f2f2f2;
           border-radius: .25em;
           padding: 1em;
+            padding: 1.6em;
           box-shadow: 0 3px 0 #d7e4ed;
           @include desktop {
             margin-left: 0;
-            padding: 1.6em;
             width: 45%;
           }
           h2 {
@@ -480,12 +480,12 @@
             height: 0;
             width: 0;
             border: 7px solid transparent;
-            border-right: 7px solid white;
+            border-right: 7px solid #f2f2f2;
             @include desktop {
               top: 24px;
               left: 100%;
               border-color: transparent;
-              border-left-color: white;
+              border-left-color: #f2f2f2;
             }
           }
           &__date {
@@ -514,7 +514,7 @@
                   left: auto;
                   right: 100%;
                   border-color: transparent;
-                  border-right-color: white;
+                  border-right-color: #f2f2f2;
                 }
                 &__date {
                   left: auto;
