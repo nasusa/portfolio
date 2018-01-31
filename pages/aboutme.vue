@@ -159,8 +159,33 @@
           </section>
           <!--KOLMAS SLIDE PÄÄTTYY-->
 
-          <!--KOLMAS SLIDE ALKAA-->
-          <!--KOLMAS SLIDE PÄÄTTYY-->
+          <!--NELJÄS SLIDE ALKAA-->
+          <section class="section thirdSlide">  
+            <div class="columns">
+              <div class="column aboutmeThirdSlide">
+                <h1 class="aboutmeTitle is-uppercase">Osaaminen</h1>
+                <div class="columns">
+                  <div class="column">
+                    <h1 class="skillsHeading is-uppercase">MsOffice</h1>
+                    <progress class="progress is-large is-primary" value="80" max="100">80%</progress>
+                    <h1 class="skillsHeading is-uppercase">Photoshop</h1>
+                    <progress class="progress is-large is-link" value="60" max="100">60%</progress>
+                    <h1 class="skillsHeading is-uppercase">Design</h1>
+                    <progress class="progress is-large is-info" value="85" max="100">85%</progress>
+                    </div>
+                    <div class="column">
+                    <h1 class="skillsHeading is-uppercase">Html</h1>
+                    <progress class="progress is-large is-primary" value="75" max="100">75%</progress>
+                    <h1 class="skillsHeading is-uppercase">Css</h1>
+                    <progress class="progress is-large is-link" value="75" max="100">75%</progress>
+                    <h1 class="skillsHeading is-uppercase">Java</h1>
+                    <progress class="progress is-large is-info" value="50" max="100">50%</progress>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--NELJÄS SLIDE PÄÄTTYY-->
 
         <!--EXPERIENCE ALKAA--> 
           <section class="aboutmeTimeline">
@@ -360,6 +385,9 @@
 .socialHeading {
   font-family: 'Abel', sans-serif;
   padding-top: 10px;
+}
+.skillsHeading {
+  font-family: 'Abel', sans-serif;
 }
 .thirdSlideSocial {
   padding-top: 30px;
