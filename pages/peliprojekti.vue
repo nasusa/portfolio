@@ -46,6 +46,7 @@
                             eroorem ipsum dol. or sit amt consc tetuer aiing elit. Mauris fermentum tumagna. Sed laoreet aliquam leo. Ut te dolor dapibus eget 
                             elentu vel cursus eleifend elit.
                         </p>
+                        
                     </div>
                     <div class="column">
                         <h1 class="title is-uppercase is-size-3">Ketä olemme?</h1>
