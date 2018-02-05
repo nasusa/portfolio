@@ -2,13 +2,13 @@
   <nav class="navbar-menu has-text-centered">
     <div id="navbarExampleTransparentExample" class="navbar-menu">
       <div class="navbar-start is-uppercase">
-        <a class="navbar-item" href="">
+        <a class="navbar-item" href="/">
           frontbage
         </a>
-        <a class="navbar-item" href="">
+        <a class="navbar-item" href="/portfolio">
           portfolio/blog
         </a>
-        <a class="navbar-item" href="">
+        <a class="navbar-item" href="/aboutme">
           about me
         </a>
       </div>

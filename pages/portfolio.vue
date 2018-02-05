@@ -19,7 +19,7 @@
         <div class="columns has-text-centered">
           <div class="column is-one-third">
             <figure class="image is-4by3">
-              <img src="~/static/arduino.jpg" alt="Placeholder image">
+              <img src="~/static/blog.jpg" alt="Placeholder image">
             </figure>
           </div>
           <div class="column">
