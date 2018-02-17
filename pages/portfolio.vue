@@ -18,37 +18,152 @@
       <div class="container columnsHero">
         <div class="columns has-text-centered">
           <div class="column is-one-third">
-            <figure class="image is-4by3">
-              <img src="~/static/blog.jpg" alt="Placeholder image">
-            </figure>
+
+          <a class="readmore" @click="open"><img class="modal-button" data-target="modal" src="~/static/design.jpg" alt="Placeholder image"></a>
+            <div class="modal" :class="{'is-active': popup}">
+              <div class="modal-background"></div>
+              <div class="modal-card">
+                <header class="modal-card-head has-text-centered">
+                  <p class="modal-card-title">Kauneushoitola Dreamskin - nettisivut</p>
+                  <button class="delete" aria-label="close" @click="close"></button>
+                </header>
+                <section class="modal-card-body has-text-centered">
+                  <p>Nettisivut kauneushoitolalle.</p>
+                  <img src="~/static/kauneushoitola2.png">
+                  <p>
+                    Ensimmäiset oikealle asiakkaalle tuotetut sivut, joita myös tällähetkellä päivittelen tarvittaessa.
+                  </p>
+                  <p>Marraskuu 2016 - </p>
+                  <p>Kauneushoitola Dreamskin</p>
+                  <p>Laravel PHP Framework, Bootstrap</p>
+                  <a href="https://hoitoladreamskin.fi/" target="_blank" class="button is-primary is-rounded">www-sivuille</a>
+                </section>
+              </div>
+            </div>
+
+          </div>
+         <!-- <div class="column">
+
+          <a class="readmore" @click="open"><img class="modal-button" data-target="modal" src="~/static/design.jpg" alt="Placeholder image"></a>
+            <div class="modal" :class="{'is-active': popup}">
+              <div class="modal-background"></div>
+              <div class="modal-card">
+                <header class="modal-card-head has-text-centered">
+                  <p class="modal-card-title">Projektin nimi</p>
+                  <button class="delete" aria-label="close" @click="close"></button>
+                </header>
+                <section class="modal-card-body has-text-centered">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <img src="~/static/design.jpg">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi 
+                    sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p>
+                  <p>January 2017 - January 2017</p>
+                  <p>Asiakas</p>
+                </section>
+              </div>
+            </div>
+
           </div>
           <div class="column">
-            <figure class="image is-4by3">
-              <img src="~/static/arduino.jpg" alt="Placeholder image">
-            </figure>
+
+          <a class="readmore" @click="open"><img class="modal-button" data-target="modal" src="~/static/design.jpg" alt="Placeholder image"></a>
+            <div class="modal" :class="{'is-active': popup}">
+              <div class="modal-background"></div>
+              <div class="modal-card">
+                <header class="modal-card-head has-text-centered">
+                  <p class="modal-card-title">Projektin nimi</p>
+                  <button class="delete" aria-label="close" @click="close"></button>
+                </header>
+                <section class="modal-card-body has-text-centered">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <img src="~/static/design.jpg">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi 
+                    sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p>
+                  <p>January 2017 - January 2017</p>
+                  <p>Asiakas</p>
+                </section>
+              </div>
+            </div>
+
           </div>
-          <div class="column">
-            <figure class="image is-4by3">
-              <img src="~/static/game.jpg" alt="Placeholder image">
-            </figure>
-          </div>
-          </div>
+        </div>
         <div class="columns">
           <div class="column is-one-third">
-            <figure class="image is-4by3">
-              <img src="~/static/kauneushoitola.jpeg" alt="Placeholder image">
-            </figure>
+
+          <a class="readmore" @click="open"><img class="modal-button" data-target="modal" src="~/static/design.jpg" alt="Placeholder image"></a>
+            <div class="modal" :class="{'is-active': popup}">
+              <div class="modal-background"></div>
+              <div class="modal-card">
+                <header class="modal-card-head has-text-centered">
+                  <p class="modal-card-title">Projektin nimi</p>
+                  <button class="delete" aria-label="close" @click="close"></button>
+                </header>
+                <section class="modal-card-body has-text-centered">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <img src="~/static/design.jpg">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi 
+                    sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p>
+                  <p>January 2017 - January 2017</p>
+                  <p>Asiakas</p>
+                </section>
+              </div>
+            </div>
+
           </div>
           <div class="column">
-            <figure class="image is-4by3">
-              <img src="~/static/portfolio.jpeg" alt="Placeholder image">
-            </figure>
+
+          <a class="readmore" @click="open"><img class="modal-button" data-target="modal" src="~/static/design.jpg" alt="Placeholder image"></a>
+            <div class="modal" :class="{'is-active': popup}">
+              <div class="modal-background"></div>
+              <div class="modal-card">
+                <header class="modal-card-head has-text-centered">
+                  <p class="modal-card-title">Projektin nimi</p>
+                  <button class="delete" aria-label="close" @click="close"></button>
+                </header>
+                <section class="modal-card-body has-text-centered">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <img src="~/static/design.jpg">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi 
+                    sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p>
+                  <p>January 2017 - January 2017</p>
+                  <p>Asiakas</p>
+                </section>
+              </div>
+            </div>
+
           </div>
           <div class="column">
-            <figure class="image is-4by3">
-              <img src="~/static/tredulan.jpeg" alt="Placeholder image">
-            </figure>
-          </div>
+
+          <a class="readmore" @click="open"><img class="modal-button" data-target="modal" src="~/static/design.jpg" alt="Placeholder image"></a>
+            <div class="modal" :class="{'is-active': popup}">
+              <div class="modal-background"></div>
+              <div class="modal-card">
+                <header class="modal-card-head has-text-centered">
+                  <p class="modal-card-title">Projektin nimi</p>
+                  <button class="delete" aria-label="close" @click="close"></button>
+                </header>
+                <section class="modal-card-body has-text-centered">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <img src="~/static/design.jpg">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi 
+                    sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p>
+                  <p>January 2017 - January 2017</p>
+                  <p>Asiakas</p>
+                </section>
+              </div>
+            </div>
+
+          </div>-->
         </div>
       </div>
     </section>
@@ -56,13 +171,22 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+  export default {
 
-export default {
-  components: {
-    AppLogo
+    data () {
+      return {
+        popup: false
+      }
+    },
+    methods: {
+      close () {
+        this.popup = false
+      },
+      open () {
+        this.popup = true
+      }
+    }
   }
-}
 </script>
 
 <style lang="scss">
@@ -71,7 +195,7 @@ export default {
   font-size: 3em;
   display: -webkit-flex;
   align-items: center;
-  -webkit-justify-content: center;
+  justify-content: center;
   background-image: url("~/static/susa.jpg");
   position: relative;
   background-size: cover;
@@ -103,6 +227,9 @@ export default {
   @include desktop {
     padding: 40px;
   }
+}
+.modal-background {
+  background-color:rgba(10, 10, 10, 0.66);
 }
 .portfolioParagraph {
   padding: 15px 0 15px 0;

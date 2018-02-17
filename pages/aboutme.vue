@@ -98,20 +98,7 @@
             </div>
           </section>
           <!--TOINEN SLIDE PÄÄTTYY-->
-          <section>
-            <div class="slider js_slider">
-                <div class="frame js_frame">
-                    <ul class="slides js_slides">
-                        <li class="js_slide">HELLO</li>
-                        <li class="js_slide">2</li>
-                        <li class="js_slide">HELLOO</li>
-                        <li class="js_slide">4</li>
-                        <li class="js_slide">HELLOOOO</li>
-                        <li class="js_slide">6</li>
-                    </ul>
-                </div>
-            </div>
-          </section>
+
           <!--KOLMAS SLIDE ALKAA-->
           <section class="section thirdSlide">  
             <div class="columns">
@@ -181,15 +168,15 @@
                   <div class="column">
                     <h1 class="skillsHeading is-uppercase">MsOffice</h1>
                     <progress class="progress is-large is-primary" value="80" max="100">80%</progress>
-                    <h1 class="skillsHeading is-uppercase">Photoshop</h1>
-                    <progress class="progress is-large is-link" value="60" max="100">60%</progress>
-                    <h1 class="skillsHeading is-uppercase">Design</h1>
-                    <progress class="progress is-large is-info" value="85" max="100">85%</progress>
+                    <h1 class="skillsHeading is-uppercase">Adobe Photoshop & XD</h1>
+                    <progress class="progress is-large is-link" value="75" max="100">75%</progress>
+                    <h1 class="skillsHeading is-uppercase">Sosiaalinen media</h1>
+                    <progress class="progress is-large is-info" value="90" max="100">90%</progress>
                     </div>
                     <div class="column">
-                    <h1 class="skillsHeading is-uppercase">Html</h1>
+                    <h1 class="skillsHeading is-uppercase">Html5 & xhtml</h1>
                     <progress class="progress is-large is-primary" value="75" max="100">75%</progress>
-                    <h1 class="skillsHeading is-uppercase">Css</h1>
+                    <h1 class="skillsHeading is-uppercase">Css & scss</h1>
                     <progress class="progress is-large is-link" value="75" max="100">75%</progress>
                     <h1 class="skillsHeading is-uppercase">Java</h1>
                     <progress class="progress is-large is-info" value="50" max="100">50%</progress>
@@ -320,24 +307,7 @@
     </div>
   </template>
 
-  <script>
-  import AppLogo from '~/components/AppLogo.vue'
-  import lory from 'lory.js'
 
-  export default {
-    components: {
-      AppLogo,
-      lory
-    },
-  }
-    document.addEventListener('DOMContentLoaded', () => {
-        const slider = document.querySelector('.js_slider');
-
-        lory(slider, {
-            // options going here
-        });
-    });
-  </script>
 
 <style lang="scss">
 .aboutmeHeader {
@@ -346,11 +316,11 @@
   display: -webkit-flex;
   align-items: center;
   -webkit-justify-content: center;
-  background-image: url("~/static/susa.jpg");
+  background-image: url("~/static/banneri.jpg");
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 20%;
+  background-position: center 70%;
   z-index: -1;
   .headerFont {
     font-size: 3em;
@@ -550,34 +520,4 @@
       }
     }
   }
-.slider {
-
-}
-
-.frame {
-    /**
-     * (optional) wrapper width, specifies width of the slider frame.
-     */
-    width: 880px;
-
-    position: relative;
-    font-size: 0;
-    line-height: 0;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.slides {
-    display: inline-block;
-}
-
-li {
-    position: relative;
-    display: inline-block;
-
-    /**
-     * (optional) if the content inside the slide element has a defined size.
-     */
-    width: 880px;
-}
   </style>
