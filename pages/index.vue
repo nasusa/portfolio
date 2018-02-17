@@ -161,12 +161,12 @@ export default {
   }
   .headerSacramento {
     font-size: 2em;
-    color: black;
+    color: #282828;
     font-family: 'Sacramento', cursive;
     padding-top: 20px;
   }
   a {
-    color:black;
+    color:#282828;
   }
   .contentImage {
     border-radius: 15px;

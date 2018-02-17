@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "bulma": "^0.6.2",
+    "lory.js": "^2.3.4",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {

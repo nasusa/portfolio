@@ -98,7 +98,20 @@
             </div>
           </section>
           <!--TOINEN SLIDE PÄÄTTYY-->
-
+          <section>
+            <div class="slider js_slider">
+                <div class="frame js_frame">
+                    <ul class="slides js_slides">
+                        <li class="js_slide">HELLO</li>
+                        <li class="js_slide">2</li>
+                        <li class="js_slide">HELLOO</li>
+                        <li class="js_slide">4</li>
+                        <li class="js_slide">HELLOOOO</li>
+                        <li class="js_slide">6</li>
+                    </ul>
+                </div>
+            </div>
+          </section>
           <!--KOLMAS SLIDE ALKAA-->
           <section class="section thirdSlide">  
             <div class="columns">
@@ -309,12 +322,21 @@
 
   <script>
   import AppLogo from '~/components/AppLogo.vue'
+  import lory from 'lory.js'
 
   export default {
     components: {
-      AppLogo
-    }
+      AppLogo,
+      lory
+    },
   }
+    document.addEventListener('DOMContentLoaded', () => {
+        const slider = document.querySelector('.js_slider');
+
+        lory(slider, {
+            // options going here
+        });
+    });
   </script>
 
 <style lang="scss">
@@ -528,4 +550,34 @@
       }
     }
   }
+.slider {
+
+}
+
+.frame {
+    /**
+     * (optional) wrapper width, specifies width of the slider frame.
+     */
+    width: 880px;
+
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slides {
+    display: inline-block;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+
+    /**
+     * (optional) if the content inside the slide element has a defined size.
+     */
+    width: 880px;
+}
   </style>
