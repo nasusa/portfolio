@@ -50,3 +50,46 @@
         opacity: 1;
     }
 }
+
+.slideInLeft-enter-active {
+    animation: slideInLeft .3s ease-out;
+}
+
+.slideInLeft-leave-active {
+    animation: slideInLeft .3s ease-in reverse;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible
+    }
+    to {
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.bounce-enter-active {
+    animation: bounceIn 0.6s;
+}
+
+.bounce-leave-active {
+    animation: bounceIn 0.6s reverse;
+}
+
+@keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+   
+    60% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+   
+    100% {
+      transform: scale(1);
+    }
+}
+

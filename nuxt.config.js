@@ -1,4 +1,5 @@
 const resolve = require('path').resolve
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = {
   /*
@@ -31,6 +32,12 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+  ** Customize the progress bar color
+  */
+  plugins: [
+    { src: '~/plugins/lory', ssr: false }
+  ],
+  /*
   ** Build configuration
   */
   build: {
@@ -53,6 +60,12 @@ module.exports = {
         changeLoaderOptions(rule.use)
       }
     },
+    babel: {
+      plugins: ['lodash']
+    },
+    plugins: [
+      new LodashModuleReplacementPlugin
+    ],
     extractCSS: true,
     postcss: {
       plugins: {
@@ -61,6 +74,10 @@ module.exports = {
         }
       }
     },
+    vendor: [
+      // 'lodash',
+      'lory.js'
+    ]
   }
 }
 
