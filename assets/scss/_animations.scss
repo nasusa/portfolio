@@ -51,6 +51,25 @@
     }
 }
 
+.fadeInDown-enter-active {
+    animation: fadeInDown .3s ease-out;
+}
+
+.fadeInDown-leave-active {
+    animation: fadeInDown .3s ease-in reverse;
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 .slideInLeft-enter-active {
     animation: slideInLeft .3s ease-out;
 }

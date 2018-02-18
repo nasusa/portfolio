@@ -216,131 +216,22 @@
             <hr class="titleHr">
             <div class="timeline is-clearfix" ref="timeline">
               <div class="timeline__block is-clearfix" v-for="(timeline, index) in timelines" :key="index">
-                <div class="timeline__block__image is-notvisible">
+                <div class="timeline__block__image" :class="{ 'is-notvisible': !timeline.rendered }">
                   <i class="fa-fw" :class="timeline.icon"></i>
                 </div>
-                <div class="timeline__block__body is-clearfix is-notvisible">
+                <div class="timeline__block__body is-clearfix" :class="{ 'is-notvisible': !timeline.rendered }">
                   <h2 class="is-size-4">{{ timeline.title }}</h2>
-                  <p v-for="(paragraph, paraIndex) in timeline.content" :key="paraIndex">
-                    {{ paragraph }}
-                  </p>
-                  <!-- @todo lisää dynaamisesti <a class="button is-primary" @click="timelineReadMore">adg</a> -->
+                  <template v-for="(paragraph, paraIndex) in timeline.content">
+                    <transition name="fadeInDown" :key="paraIndex">
+                      <p v-show="!timelineShowReadMore || (timelineShowReadMore && (timeline.readmore || paraIndex === 0))">
+                        {{ paragraph }}
+                      </p>
+                    </transition>
+                  </template>
+                  <a v-show="timelineShowReadMore" class="button is-link" @click="timeline.readmore = !timeline.readmore">
+                    {{timeline.readmore ? 'Älä lue enään..' : 'Lue lisää..'}}
+                  </a>
                   <span class="timeline__block__body__date">{{ timeline.date }}</span>
-                </div>
-              </div>
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image is-notvisible">
-                  <i class="fa fa-coffee fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix is-notvisible">
-                  <h2 class="is-size-4">Vesilahden Aittakahvila</h2>
-                  <p>Ensimmäinen kesätyöpaikkani löytyy yläaste ajoilta Vesilahden Aittakahvilasta.</p>
-                  <p class="hidden">Työtehtäviin kuului tuotevalikoimasta huolehtiminen, asiakaspalvelu, tilausten tekeminen sekä kahvitusten järjestäminen.</p>
-                  <p class="hidden"> Aittakahvila kesätyön ajaksi oli mahdollista ottaa koulun kautta vaihto-oppilas Latviasta töihin mukaan, joten töihin opastus tapahtui englannin kielellä.</p>
-                  <a class="button is-primary" @click="timelineReadMore">Lue lisää...</a>
-                  <span class="timeline__block__body__date">Kesäkuu 2011 ja 2012, 2vko</span>
-                </div>
-              </div>	
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image is-notvisible">
-                  <i class="fa fa-briefcase fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix is-notvisible">
-                  <h2 class="is-size-4">TET-harjoittelut ja kahvitukset</h2>
-                  <p>Yläaste aikana TET-paikkani oli Minimani Ideapark jossa harjoittelin tavaroiden esillepanoa, lastien purkua ja inventaariota.</p>
-                  <p class="hidden">Toinen TET-paikka löytyi myös Ideaparkista; Beefking Steakhouse, jossa työtehtäviin kuului salin hoitaminen, pöytien täyttäminen, tarjoilu ja salin erilaiset siivoustyöt.</p>
-                  <p class="hidden">Tein myös lukuisia kahvituksia koululla pienistä ryhmistä yli sadan hengen tilaisuuksiin.</p>
-                  <a class="button is-primary">Lue lisää...</a>
-                  <span class="timeline__block__body__date">2011-2012</span>
-                </div>
-              </div>
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image is-notvisible">
-                  <i class="fa fa-cutlery fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix is-notvisible">
-                  <h2 class="is-size-4">Opiskelijaravintola Eetvartti</h2>
-                  <p>Ennen alanvaihtoa ehdin kuitenkin suorittaa yhden työharjoittelun Hotelli-, ravintola- ja cateringalalla.</p>
-                  <p class="hidden">Työtehtäviin kuului kassanhoito, asiakaspalvelu, ruoanlaitto ja tilausten tekeminen. Meidän porukka järjesti myös upean Presidentin itsenäisyyspäivän brunssin!</p>
-                  <a class="button is-primary">Lue lisää...</a>
-                  <span class="timeline__block__body__date"> Lokakuu 2013, 3kk</span>
-                </div>
-              </div>	
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image is-notvisible">
-                  <i class="fa fa-cutlery fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix is-notvisible">
-                  <h2 class="is-size-4">Kahvilaravintola Wanha Narva</h2>
-                  <p>Sain kivan kesätyöpaikan ravintola-baarityöntekijänä.</p>
-                  <p class="hidden">Työtehtäviini kuului salin hoitamista, ruoanlaittoa sekä apulaisen tehtävät keittiössä ja salin puolella.</p>
-                  <span class="timeline__block__body__date">Kesäkuu 2014, 1kk</span>
-                </div>
-              </div>	
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image is-notvisible">
-                  <i class="fa fa-cutlery fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix is-notvisible">
-                  <h2 class="is-size-4">Staffline Oy</h2>
-                  <p>Etsin töitä koulun ohelle ja ottaessani yhteyttä vanhaan TET-paikkaan Ideaparkin Beefkingiin, minut otettiin ilomielin uudelleen vastaan.</p>
-                  <p class="hidden">Tein Stafflinen kanssa sopimuksen "keikkatyösuhteisiin".</p>
-                  <span class="timeline__block__body__date">Lokakuu 2014</span>
-                </div>
-              </div>		
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image is-notvisible">
-                  <i class="fa fa-laptop fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix is-notvisible">
-                  <h2 class="is-size-4">Yleisradio, Elävä arkisto</h2>
-                  <p>Minut valittiin suuresta hakijajoukosta Yleisradiolle kesätöihin!</p>
-                  <p> Pääsin korjaamaan Ylen medianhallinta- järjestelmään digitoitujen tv-ohjelmien metatietoja sekä arkiston kuvanauhalogistiikkaa.</p>
-                  <span class="timeline__block__body__date">Kesäkuu 2015, 1kk</span>
-                </div>
-              </div>			
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image is-notvisible">
-                  <i class="fa fa-laptop fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix is-notvisible">
-                  <h2 class="is-size-4">Protacon Oy</h2>
-                  <p>Ammattikoulun ensimmäisen työharjoittelun suoritin mielenkiintoisessa työpaikassa Protacon Oy:llä.</p>
-                  <p class="hidden">Työtehtäviin kuului mm. asiakkaille menevien koneiden kunnon tarkistusta, asiakkaiden sopimustietojen täydentämistä ja syöttämistä järjestelmään, kiintolevyjen formatointia ja Image-asennuksia.</p>
-                  <a class="button is-primary">Normal</a>
-                  <span class="timeline__block__body__date">Lokakuu 2015, 3kk</span>
-                </div>
-              </div>			
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image is-notvisible">
-                  <i class="fa fa-coffee fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix is-notvisible">
-                  <h2 class="is-size-4">Ideapark Karkkiparkki Oy</h2>
-                  <p>Ollessani ammattikoulussa, tein töitä koulun ohella.</p> 
-                  <p>Työtehtäviin kuului kioskin ylläpito ja siivoustehtävät itsenäisesti, asiakaspalvelu ja kassankäyttö sekä tuotteiden tilaaminen tarvittaessa.</p>
-                  <span class="timeline__block__body__date">Helmikuu 2016, 1 vuosi</span>
-                </div>
-              </div>			
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image is-notvisible">
-                  <i class="fa fa-laptop fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix is-notvisible">
-                  <h2 class="is-size-4">WizIT Oy</h2>
-                  <p>Ammattikoulun työharjoittelun suoritin mahtavassa porukassa, WizIT Oy:llä!</p>
-                  <p>Työtehtäviin kuului koneiden ja ohjelmien asennusta, sekä kaikenlaiset IT-tuen tehtävät.</p>
-                  <span class="timeline__block__body__date">Maaliskuu 2017, 3kk</span>
-                </div>
-              </div>				
-              <div class="timeline__block is-clearfix">
-                <div class="timeline__block__image is-notvisible">
-                  <i class="fa fa-lightbulb-o fa-fw"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix is-notvisible">
-                  <h2 class="is-size-4">Olisiko seuraava työpaikkani teillä?</h2>
-                  <p>Ota yhteyttä!</p>
-                  <span class="timeline__block__body__date"></span>
                 </div>
               </div>
             </div>
@@ -364,6 +255,7 @@
           currentSlide: 1
         },
         experienceVisible: null,
+        timelineShowReadMore: true,
         timelines: [
           {
             icon: 'fa fa-coffee',
@@ -372,7 +264,9 @@
               'Ensimmäinen kesätyöpaikkani löytyy yläaste ajoilta Vesilahden Aittakahvilasta. Työtehtäviin kuului tuotevalikoimasta huolehtiminen, asiakaspalvelu, tilausten tekeminen sekä kahvitusten järjestäminen.',
               'Aittakahvila kesätyön ajaksi oli mahdollista ottaa koulun kautta vaihto-oppilas Latviasta töihin mukaan, joten töihin opastus tapahtui englannin kielellä.'
             ],
-            date: 'Kesäkuu 2011 ja 2012, 2vko'
+            date: 'Kesäkuu 2011 ja 2012, 2vko',
+            readmore: false,
+            rendered: false
           },
           {
             icon: 'fa fa-briefcase',
@@ -382,7 +276,9 @@
               'Toinen TET-paikka löytyi myös Ideaparkista; Beefking Steakhouse, jossa työtehtäviin kuului salin hoitaminen, pöytien täyttäminen, tarjoilu ja salin erilaiset siivoustyöt.',
               'Tein myös lukuisia kahvituksia koululla pienistä ryhmistä yli sadan hengen tilaisuuksiin.'
             ],
-            date: '2011-2013'
+            date: '2011-2013',
+            readmore: false,
+            rendered: false
           },
           {
             icon: 'fa fa-cutlery',
@@ -391,7 +287,9 @@
               'Ennen alanvaihtoa ehdin kuitenkin suorittaa yhden työharjoittelun Hotelli-, ravintola- ja cateringalalla.',
               'Työtehtäviin kuului kassanhoito, asiakaspalvelu, ruoanlaitto ja tilausten tekeminen. Meidän porukka järjesti myös upean Presidentin itsenäisyyspäivän brunssin!'
             ],
-            date: 'Lokakuu 2013, 3kk'
+            date: 'Lokakuu 2013, 3kk',
+            readmore: false,
+            rendered: false
           },
           {
             icon: 'fa fa-cutlery ',
@@ -400,7 +298,9 @@
               'Sain kivan kesätyöpaikan ravintola-baarityöntekijänä.',
               'Työtehtäviini kuului salin hoitamista, ruoanlaittoa sekä apulaisen tehtävät keittiössä ja salin puolella.'
             ],
-            date: 'Kesäkuu 2014, 1kk'
+            date: 'Kesäkuu 2014, 1kk',
+            readmore: false,
+            rendered: false
           },
           {
             icon: 'fa fa-cutlery',
@@ -409,7 +309,9 @@
               'Etsin töitä koulun ohelle ja ottaessani yhteyttä vanhaan TET-paikkaan Ideaparkin Beefkingiin, minut otettiin ilomielin uudelleen vastaan.',
               'Tein Stafflinen kanssa sopimuksen lyhyisiin keikkatyösuhteisiin.'
             ],
-            date: 'Lokakuu 2014'
+            date: 'Lokakuu 2014',
+            readmore: false,
+            rendered: false
           },
           {
             icon: 'fa fa-laptop',
@@ -418,7 +320,9 @@
               'Minut valittiin suuresta hakijajoukosta Yleisradiolle kesätöihin!',
               'Pääsin korjaamaan Ylen medianhallinta- järjestelmään digitoitujen tv-ohjelmien metatietoja sekä arkiston kuvanauhalogistiikkaa.'
             ],
-            date: 'Kesäkuu 2015, 1kk'
+            date: 'Kesäkuu 2015, 1kk',
+            readmore: false,
+            rendered: false
           },
           {
             icon: 'fa fa-laptop',
@@ -427,7 +331,9 @@
               'Ammattikoulun ensimmäisen työharjoittelun suoritin mielenkiintoisessa työpaikassa Protacon Oy:llä.',
               'Työtehtäviin kuului mm. asiakkaille menevien koneiden kunnon tarkistusta, asiakkaiden sopimustietojen täydentämistä ja syöttämistä järjestelmään, kiintolevyjen formatointia ja Image-asennuksia.'
             ],
-            date: 'Lokakuu 2015, 3kk'
+            date: 'Lokakuu 2015, 3kk',
+            readmore: false,
+            rendered: false
           },
           {
             icon: 'fa fa-coffee',
@@ -436,7 +342,9 @@
               'Ollessani ammattikoulussa, tein töitä koulun ohella.',
               'Työtehtäviin kuului kioskin ylläpito ja siivoustehtävät itsenäisesti, asiakaspalvelu ja kassankäyttö sekä tuotteiden tilaaminen tarvittaessa.'
             ],
-            date: 'Helmikuu 2016, 1 vuosi'
+            date: 'Helmikuu 2016, 1 vuosi',
+            readmore: false,
+            rendered: false
           },
           {
             icon: 'fa fa-laptop',
@@ -445,7 +353,9 @@
               'Ammattikoulun työharjoittelun suoritin mahtavassa porukassa, WizIT Oy:llä!',
               'Työtehtäviin kuului koneiden ja ohjelmien asennusta, sekä kaikenlaiset IT-tuen tehtävät.'
             ],
-            date: 'Maaliskuu 2017, 3kk'
+            date: 'Maaliskuu 2017, 3kk',
+            readmore: false,
+            rendered: false
           },
           {
             icon: 'fa fa-lightbulb-o',
@@ -453,7 +363,9 @@
             content: [
               'Ota yhteyttä!'
             ],
-            date: ''
+            date: '',
+            readmore: false,
+            rendered: false
           }
         ]
       }
@@ -471,6 +383,8 @@
           // Luodaan scroll event, joka tuo sisällön näkyviin
           // window.addEventListener('scroll', _.throttle(this.handleScroll, 1000, { leading: false }))
           window.addEventListener('scroll', this.handleScroll)
+
+          this.timelineShowReadMore = this.getScreenWidth() <= 425
         })
       }
     },
@@ -490,7 +404,7 @@
         const elements = this.$refs.timeline.children
         Array.prototype.forEach.call(elements, (element, index) => {
           const topOffset = element.getBoundingClientRect().top + window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-          if (this.experienceVisible <= index && topOffset <= window.scrollY + window.innerHeight * 0.75) {
+          if (!this.timelines[index].rendered && topOffset <= window.scrollY + window.innerHeight * 0.75) {
             const blocksToShow = element.querySelectorAll('.timeline__block__image, .timeline__block__body');
             blocksToShow.forEach((block, blockIndex) => {
               block.classList.remove('is-notvisible')
@@ -504,7 +418,7 @@
                 block.classList.add('bounce-enter-active')
               }
               // Define allready shown block
-              this.experienceVisible = index;
+              this.timelines[index].rendered = true
               // Remove event handler when its not needed
               if (index === elements.length - 1) {
                 window.removeEventListener('scroll', this.handleScroll);
@@ -513,22 +427,8 @@
           }
         })
       },
-      timelineReadMore(event) {
-        const parent = event.target.parentNode
-        const paragraphs = parent.querySelectorAll('p')
-        if (parent.classList.contains('showingMore')) {
-          paragraphs.forEach((paragraph, index) => {
-            if (index === 0) return true;
-            paragraph.classList.add('hidden')
-            event.target.innerHTML = 'Lue lisää...'
-          })
-        } else {
-          paragraphs.forEach((paragraph) => {
-            paragraph.classList.remove('hidden')
-            parent.classList.add('showingMore')
-            event.target.innerHTML = 'Piiloita'
-          })
-        }
+      getScreenWidth() {
+        return window.innerWidth || documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth
       }
     }
   }
@@ -694,13 +594,13 @@
           }
           i {
             font-size: 28px;
-            line-height: 40px;
-            margin-left: 7%;
-            color: #64a07f;
+            line-height: 46px;
+            margin-left: 5%;
+            color: hsla(135, 30%, 32%, 0.644);
             @include desktop {
-              line-height: 60px;
+              line-height: 65px;
               font-size: 37px;
-              margin-left: 13%;
+              margin-left: 11%;
             }
           }
         }
@@ -734,11 +634,6 @@
               font-size: 1em;
             }
           }
-          @media screen and (min-width: 426px) {
-              a.button {
-                display: none;
-              }
-            }
           &::before {
             content: '';
             position: absolute;

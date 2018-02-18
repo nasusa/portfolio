@@ -2,12 +2,12 @@
   <footer class="footer">
     <section class="footerFirst">
       <ul>
-        <li><a href="https://www.facebook.com/susannalepolan"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.instagram.com/susannalepola/"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a></li>
-        <li><a href="https://fi.linkedin.com/in/susannalepola"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a></li>
-        <li><a href="https://github.com/nasusa"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a></li>
-        <li><a href="http://codepen.io/nasusa/"><i class="fa fa-codepen fa-fw" aria-hidden="true"></i></a></li>
-        <li><a href="http://steamcommunity.com/id/sussunanna/"><i class="fa fa-steam fa-fw" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/susannalepolan" target="_blank"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/susannalepola/" target="_blank"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a></li>
+        <li><a href="https://fi.linkedin.com/in/susannalepola" target="_blank"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/nasusa" target="_blank"><i class="fa fa-github fa-fw" aria-hidden="true"></i></a></li>
+        <li><a href="http://codepen.io/nasusa/" target="_blank"><i class="fa fa-codepen fa-fw" aria-hidden="true"></i></a></li>
+        <li><a href="http://steamcommunity.com/id/sussunanna/" target="_blank"><i class="fa fa-steam fa-fw" aria-hidden="true"></i></a></li>
       </ul>
     </section>
     <section class="footerSecond has-text-centered">
@@ -17,7 +17,7 @@
         </span>
       </div>
       <span>
-        Copyright @2016 Susanna Lepola, All Rights Reserved.
+        Copyright @2018 Susanna Lepola, All Rights Reserved.
       </span>
     </section>
   </footer>
@@ -27,7 +27,7 @@
 footer {
   padding: 0rem!important;
   .footerFirst {
-    background-color: #64a07f;
+    background-color: hsla(135, 30%, 32%, 0.644);
     display:flex;
     align-items: center;
     justify-content: center;
