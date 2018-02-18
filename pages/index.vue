@@ -17,10 +17,10 @@
         <start/>
       </section>-->
       <!--INDEX PÄÄTTYY-->
-      <section>
+      <section class="pageSections">
         <about/>
       </section>
-      <section>
+      <section class="pageSections">
         <projects/>
       </section>
   </div>
@@ -45,6 +45,9 @@ export default {
   .aboutmeTitle {
       font-family: 'Abel', sans-serif;
       font-size: 2em;
+      @include desktop {
+      font-size: 2em;
+    }
   }
   .socialHeading {
     font-family: 'Abel', sans-serif;
@@ -78,20 +81,21 @@ export default {
     padding-top: 20px;
   }
   .headerSloganFont {
-    font-size: 0.5em;
+    font-size: 0.4em;
     color: white;
     text-shadow: 1px 1px 1px black;
     opacity: 0.8;
-    letter-spacing: 3px;
+    letter-spacing: 0.5px;
     font-weight: bold;
     font-family: 'Abel', sans-serif;
     @include desktop {
       font-size: 0.8em;
+      letter-spacing: 3px;
     }
   }
   /*MUU*/
   .indexHeader {
-    height: 600px;
+    height: 550px;
     font-size: 3em;
     display: -webkit-flex;
     align-items: center;
@@ -99,10 +103,14 @@ export default {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 70%;
+    background-position: center 30%;
+      @include desktop {
+       background-position: center 70%; 
+       height: 600px;
+      }
     &:before {
       background-image: url("~/static/banneri.jpg");
-      background-position: center 70%;
+      background-position: center 30%;
       background-repeat: no-repeat;
       background-size: cover;
       content: "";
@@ -110,9 +118,17 @@ export default {
       height: 100%;
       position: absolute;
       width: 100%;
+      @include desktop {
+       background-position: center 70%; 
+      }
     }
   }
   .indexHeader::before {
     color: black;
+  }
+  .titleHr {
+    width: 200px;
+    height: 2px;
+    margin: auto;
   }
 </style>

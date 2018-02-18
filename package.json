@@ -19,6 +19,7 @@
     "lodash": "^4.17.5",
     "lory.js": "^2.3.4",
     "nuxt": "^1.0.0",
+    "raven-js": "^3.22.3",
     "remove": "^0.1.5"
   },
   "devDependencies": {

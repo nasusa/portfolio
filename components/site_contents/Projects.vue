@@ -1,17 +1,25 @@
 <template>
   <div> 
-    <section class="section has-text-centered">
+    <section class="section projectSection has-text-centered">
       <h1 class="aboutmeTitle is-uppercase">Projektini</h1>
+      <hr class="titleHr">
       <div class="container columnsHero">
         <div class="columns has-text-centered">
-          <div class="column is-one-third">
-
-          <a class="readmore" @click="open(1)"><img class="modal-button" data-target="modal" src="~/static/game.jpg" alt="Placeholder image"></a>
+          <div class="column">
+            
+            <div class="projectLayer">
+              <img class="modal-button" data-target="modal" src="~/static/game.jpg" alt="Placeholder image">
+              <div class="overlay is-uppercase">
+                <h3 class="referenceTitle">Peliprojekti</h3>
+                <a class="readmore" @click="open(1)"><p>Lue lisää...</p></a>
+              </div>
+            </div>
+          
             <div class="modal" :class="{'is-active': popup === 1}">
               <div class="modal-background"></div>
               <div class="modal-card">
                 <header class="modal-card-head has-text-centered">
-                  <h1 class="aboutmeTitle modal-card-title is-uppercase">Peliprojekti - tamk</h1>
+                  <h1 class="skillsHeading modal-card-title is-uppercase">Peliprojekti - tamk</h1>
                   <button class="delete" aria-label="close" @click="close"></button>
                 </header>
                 <section class="modal-card-body has-text-centered">
@@ -34,12 +42,19 @@
           </div>
          <div class="column">
 
-          <a class="readmore" @click="open(2)"><img class="modal-button" data-target="modal" src="~/static/kauneushoitola.jpeg" alt="Placeholder image"></a>
+            <div class="projectLayer">
+              <img class="modal-button" data-target="modal" src="~/static/design.jpg" alt="Placeholder image">
+              <div class="overlay is-uppercase">
+                <h3 class="referenceTitle">Www-sivut</h3>
+                <a class="readmore" @click="open(2)"><p>Lue lisää...</p></a>
+              </div>
+            </div>
+
             <div class="modal" :class="{'is-active': popup === 2}">
               <div class="modal-background"></div>
               <div class="modal-card">
                 <header class="modal-card-head has-text-centered">
-                  <p class="aboutmeTitle modal-card-title is-uppercase">Kauneushoitola Dreamskin - nettisivut</p>
+                  <p class="skillsHeading modal-card-title is-uppercase">Kauneushoitola Dreamskin - nettisivut</p>
                   <button class="delete" aria-label="close" @click="close"></button>
                 </header>
                 <section class="modal-card-body has-text-centered">
@@ -59,16 +74,23 @@
           </div>
           <div class="column">
 
-          <a class="readmore" @click="open(3)"><img class="modal-button" data-target="modal" src="~/static/arduino.jpg" alt="Placeholder image"></a>
+            <div class="projectLayer">
+              <img class="modal-button" data-target="modal" src="~/static/Arduino.jpg" alt="Placeholder image">
+              <div class="overlay is-uppercase">
+                <h3 class="referenceTitle">Arduino projekti</h3>
+                <a class="readmore" @click="open(3)"><p>Lue lisää...</p></a>
+              </div>
+            </div>
+
             <div class="modal" :class="{'is-active': popup === 3}">
               <div class="modal-background"></div>
               <div class="modal-card">
                 <header class="modal-card-head has-text-centered">
-                  <p class="aboutmeTitle modal-card-title is-uppercase">Auton RGB LED-valonohjausjärjestelmä - projekti</p>
+                  <p class="skillsHeading modal-card-title is-uppercase">RGB LED-valonohjausjärjestelmä</p>
                   <button class="delete" aria-label="close" @click="close"></button>
                 </header>
                 <section class="modal-card-body has-text-centered">
-                  <h1 class="headerAbel paragraphPadding">Ammattikoulun lopputyönä tein Arduinolla RGB LED-valonohjausjärjestelmän autooni.</h1>
+                  <h1 class="headerAbel paragraphPadding">Ammattikoulun lopputyönä tein Arduinolla RGB LED-valonohjausjärjestelmän Arduinolla autooni.</h1>
                   <img class="projectImage" src="~/static/AR3.png">
                   <p class="paragraphPadding">
                     Työssäni oli tarkoituksena rakentaa järjestelmä, jonka avulla voidaan ohjata RGB LED-nauhoja Android-sovelluksella.
@@ -103,14 +125,21 @@
           </div>
         </div>
         <div class="columns">
-          <div class="column is-one-third">
+          <div class="column">
 
-          <a class="readmore" @click="open(4)"><img class="modal-button" data-target="modal" src="~/static/tredulan.jpeg" alt="Placeholder image"></a>
+            <div class="projectLayer">
+              <img class="modal-button" data-target="modal" src="~/static/tredulan.jpeg" alt="Placeholder image">
+              <div class="overlay is-uppercase">
+                <h3 class="referenceTitle">Www-sivut</h3>
+                <a class="readmore" @click="open(4)"><p>Lue lisää...</p></a>
+              </div>
+            </div>
+
           <div class="modal" :class="{'is-active': popup === 4}">
             <div class="modal-background"></div>
             <div class="modal-card">
               <header class="modal-card-head has-text-centered">
-                <p class="aboutmeTitle modal-card-title is-uppercase">Tredulan - nettisivut</p>
+                <p class="skillsHeading modal-card-title is-uppercase">Tredulan - nettisivut</p>
                 <button class="delete" aria-label="close" @click="close"></button>
               </header>
               <section class="modal-card-body has-text-centered">
@@ -128,12 +157,19 @@
           </div>
           <div class="column">
 
-          <a class="readmore" @click="open(5)"><img class="modal-button" data-target="modal" src="~/static/portfolio.jpeg" alt="Placeholder image"></a>
+            <div class="projectLayer">
+              <img class="modal-button" data-target="modal" src="~/static/portfolio.jpeg" alt="Placeholder image">
+              <div class="overlay is-uppercase">
+                <h3 class="referenceTitle">Portfolio sivut</h3>
+                <a class="readmore" @click="open(5)"><p>Lue lisää...</p></a>
+              </div>
+            </div>
+
           <div class="modal" :class="{'is-active': popup === 5}">
             <div class="modal-background"></div>
             <div class="modal-card">
               <header class="modal-card-head has-text-centered">
-                <p class="aboutmeTitle modal-card-title is-uppercase">Portfolio - nettisivut</p>
+                <p class="skillsHeading modal-card-title is-uppercase">Portfolio - nettisivut</p>
                 <button class="delete" aria-label="close" @click="close"></button>
               </header>
               <section class="modal-card-body has-text-centered">
@@ -153,12 +189,19 @@
           </div>
           <div class="column">
 
-          <a class="readmore" @click="open(6)"><img class="modal-button" data-target="modal" src="~/static/blog.jpg" alt="Placeholder image"></a>
+            <div class="projectLayer">
+              <img class="modal-button" data-target="modal" src="~/static/blog.jpg" alt="Placeholder image">
+              <div class="overlay is-uppercase">
+                <h3 class="referenceTitle">Blogi</h3>
+                <a class="readmore" @click="open(6)"><p>Lue lisää...</p></a>
+              </div>
+            </div>
+
           <div class="modal" :class="{'is-active': popup === 6}">
             <div class="modal-background"></div>
             <div class="modal-card">
               <header class="modal-card-head has-text-centered">
-                <p class="aboutmeTitle modal-card-title is-uppercase">Ammattikoulun blogi</p>
+                <p class="skillsHeading modal-card-title is-uppercase">Ammattikoulun blogi</p>
                 <button class="delete" aria-label="close" @click="close"></button>
               </header>
               <section class="modal-card-body has-text-centered">
@@ -209,6 +252,54 @@ export default {
 </script>
 
 <style lang="scss">
+.section {
+  @include mobile {
+  padding: 0!important;
+  }
+}
+.projectLayer {
+  position: relative;
+    .overlay {
+    position: absolute;
+    margin-bottom: 6px;
+    bottom: 0;
+    left: 0;
+    color: white;
+    right: 0;
+    background-color: rgba(44, 44, 44, 0.829);
+    overflow: hidden;
+    width: 100%;
+    height: 0px;
+    transition: .5s ease;
+    @include mobile {
+      height: 97%;
+      background-color: rgba(44, 44, 44, 0.712);
+    }
+    .referenceTitle {
+      padding-top: 20%;
+      @include desktop {
+      padding-top: 25%;
+      font-family: 'Abel', sans-serif;
+      font-size: 2em;
+      }
+    }
+  }
+}
+
+.projectLayer:hover .overlay {
+  height: 98%;
+  padding-bottom: 20px;
+}
+.modal-card-head {
+  @include mobile {
+  display: inline-block;
+  }
+  button {
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+}
 .columnsHero {
   margin: auto;
   background-color: white;
@@ -234,8 +325,11 @@ export default {
   box-shadow: none;
 }
 .projectImage {
-  padding: 30px;
-  max-height: 600px;
+  padding: 10px;
+  @include desktop {
+    padding: 30px;
+    max-height: 600px;
+  }
 }
 .projectButton {
   margin: 10px;
