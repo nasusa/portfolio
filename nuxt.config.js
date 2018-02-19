@@ -18,7 +18,7 @@ module.exports = {
     ]
   },
   router: {
-    base: proccess.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
+    base: '/portfolio/',
     linkExactActiveClass: 'is-active'
   },
   /*
