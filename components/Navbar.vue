@@ -5,10 +5,10 @@
         <a class="navbar-item" href="/">
           Kuka olen
         </a>
-        <a class="navbar-item" href="/">
+        <a class="navbar-item" href="#">
           Työkokemukseni
         </a>
-        <a class="navbar-item" href="/">
+        <a class="navbar-item" href="#">
           Projektit
         </a>
       </div>
