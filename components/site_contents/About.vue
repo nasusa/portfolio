@@ -219,7 +219,7 @@
                 <div class="timeline__block__image" :class="{ 'is-notvisible': !timeline.rendered }">
                   <i class="fa-fw" :class="timeline.icon"></i>
                 </div>
-                <div class="timeline__block__body is-clearfix" :class="{ 'is-notvisible': !timeline.rendered }">
+                <div class="timeline__block__body is-clearfix" v-show="timeline.rendered">
                   <h2 class="is-size-4">{{ timeline.title }}</h2>
                   <template v-for="(paragraph, paraIndex) in timeline.content">
                     <transition name="fadeInDown" :key="paraIndex">
@@ -252,7 +252,7 @@
       return {
         slider: {
           lory: null,
-          currentSlide: 1
+          currentSlide: 0
         },
         experienceVisible: null,
         timelineShowReadMore: true,
