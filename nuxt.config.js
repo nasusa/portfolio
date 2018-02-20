@@ -18,6 +18,7 @@ module.exports = {
     ]
   },
   router: {
+    base: '/portfolio/',
     linkExactActiveClass: 'is-active'
   },
   /*
