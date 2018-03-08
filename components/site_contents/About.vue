@@ -358,6 +358,17 @@
             rendered: false
           },
           {
+            icon: 'fa fa-laptop',
+            title: 'Lantrek Ry',
+            content: [
+              'Lantrek on Tampereella vuosittain järjestettävä verkkopelitapahtuma, jonka takana häärää 100-120 ihmistä. Osa meistä on opiskelijoita, osa työskentelee tietokoneiden ja ohjelmistojen parissa ja osaa meistä yhdistää vain into organisoida ja järjestää tapahtumia.',
+              'Löysin itseni mahtavasta Lantrek-joukosta ensimmäisen kerran vuonna 2016, ja loppua ei näy. Tällähetkellä toimin Lantrekin rakennusvastaavana joka tuo mukanaan lisää vastuuta ja pidempiä päiviä Lantrekien parissa; mistä olen enemmän kuin innoissani! Lantrek toimii vapaaehtoistyövoimin, ja sen takana on mahtava joukko erilaisia mutta samanmielisiä ihmisiä.'
+            ],
+            date: 'Maaliskuu 2016 - 2018, 1vko',
+            readmore: false,
+            rendered: false
+          },
+          {
             icon: 'fa fa-lightbulb-o',
             title: 'Olisiko seuraava työpaikkani teillä?',
             content: [
