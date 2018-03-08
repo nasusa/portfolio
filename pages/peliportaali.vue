@@ -100,6 +100,26 @@
                 </div>
             </div>
         </section>
+
+        <section class="hero">
+            <div class="hero-body heroSponsor">
+                <div class="container has-text-centered">
+                    <img class="sponsor" src="~/static/exerium_logo_low_pixel.png">
+                    <img class="sponsor" src="~/static/tiko_logo_musta_fin.png">
+                    <img class="sponsor" src="~/static/tamk_RGB.png">
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>@Potku Productions.</strong> Kaikki oikeudet pidätetään.
+                    </p>
+                </div>
+            </div>
+        </footer>
     </section>
 </template>
 
@@ -112,5 +132,12 @@
 <style lang="scss">
     .game {
         height: 80%;
+    }
+    .heroSponsor {
+        background-color: #DCDCDC; 
+    }
+    .sponsor {
+        width: 300px;
+        padding: 0px 30px;
     }
 </style>

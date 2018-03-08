@@ -123,6 +123,14 @@
             </div>
         </section>
 
+        <section class="hero">
+            <div class="hero-body heroSponsor">
+                <div class="container has-text-centered">
+                    <h1><i class="fa-fa-arrow-right"></i> Lisää pelejä löydät 17TIKO yhteisestä peliportaalista.</h1>
+                </div>
+            </div>
+        </section>
+
         <footer class="footer">
             <div class="container">
                 <div class="content has-text-centered">
@@ -178,5 +186,12 @@
 }
 .infoHero {
     background-color: white;
+}
+.heroSponsor {
+    background-color: #DCDCDC; 
+}
+.sponsor {
+    width: 300px;
+    padding: 0px 30px;
 }
 </style>
