@@ -1,6 +1,6 @@
 <template>
   <div> 
-    <section class="section projectSection has-text-centered">
+    <section id="#projects" class="section projectSection has-text-centered">
       <h1 class="aboutmeTitle is-uppercase">Projektini</h1>
       <hr class="titleHr">
       <div class="container columnsHero">
@@ -24,6 +24,7 @@
                 </header>
                 <section class="modal-card-body has-text-centered">
                   <h1 class="headerAbel paragraphPadding">Tampereen ammattikorkeakoulun ensimmäisen vuoden peliprojekti.</h1>
+                  <img class="projectImage" src="~/static/peliprojekti.jpg">
                   <p class="paragraphPadding">
                     Peliprojekti starttasi 2018 tammikuussa. Itse toimin projektin Scrum masterina, sekä kahden muun tiimiläisen kanssa graafikkona.
                     Sain myös tehtäväkseni tehdä www-sivut peliportaalille. 
@@ -33,6 +34,7 @@
                   </p>
                   <p class="paragraphPadding">Tammikuu 2018 - </p>
                   <p class="paragraphPadding">Asiakkaana <a href="http://exerium.com/" target="_blank">Exerium</a></p>
+                  <a href="http://17tiko2c.projects.tamk.fi/" target="_blank" class="projectButton button is-primary is-rounded">Pelin www-sivut</a>
                   <a href="http://tiko.blogs.tamk.fi/" target="_blank" class="projectButton button is-primary is-rounded">tiko-blogi</a>
                   <a href="https://www.facebook.com/pelimessut/" target="_blank" class="projectButton button is-primary is-rounded">Pelimessu-tapahtuma</a>
                 </section>

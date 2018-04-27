@@ -13,7 +13,7 @@
       </section>
       <!--PROFIILIKUVA PÄÄTTYY-->
     
-      <section class="section aboutmeInfo">
+      <section id="aboutme" class="section aboutmeInfo">
         <div class="container columnsHero">
           <!-- Slider valikko -->
           <div class="tabs is-centered is-boxed is-medium">
@@ -211,7 +211,7 @@
           </div>
 
         <!--EXPERIENCE ALKAA--> 
-          <section class="aboutmeTimeline">
+          <section id ="experience" class="aboutmeTimeline">
             <h1 class="aboutmeTitle is-uppercase has-text-centered">Työkokemukseni</h1>
             <hr class="titleHr">
             <div class="timeline is-clearfix" ref="timeline">
