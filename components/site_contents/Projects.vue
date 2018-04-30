@@ -1,6 +1,6 @@
 <template>
   <div> 
-    <section id="#projects" class="section projectSection has-text-centered">
+    <section id="projects" class="section projectSection has-text-centered">
       <h1 class="aboutmeTitle is-uppercase">Projektini</h1>
       <hr class="titleHr">
       <div class="container columnsHero">

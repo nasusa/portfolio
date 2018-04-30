@@ -27,7 +27,7 @@
 footer {
   padding: 0rem!important;
   .footerFirst {
-    background-color: hsla(135, 30%, 32%, 0.644);
+    background-color: hsla(0, 0%, 0%, 0.6);
     display:flex;
     align-items: center;
     justify-content: center;
