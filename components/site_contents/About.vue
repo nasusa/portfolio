@@ -49,6 +49,7 @@
                     <div class="columns">
                       <div class="column is-half">
                         <h1 class="aboutmeTitle is-uppercase">Kuka minä olen?</h1>
+                        <p><i>Susanna Lepola | lepolsussu@gmail.com | +35840 579 4728</i></p>
                       </div>
                       <div class="column aboutmeColumn">
                         <ul class="aboutmeIcons">
@@ -228,8 +229,8 @@
                       </p>
                     </transition>
                   </template>
-                  <a v-show="timelineShowReadMore" class="button is-link" @click="timeline.readmore = !timeline.readmore">
-                    {{timeline.readmore ? 'Älä lue enään..' : 'Lue lisää..'}}
+                  <a v-show="timelineShowReadMore" class="button is-rounded" @click="timeline.readmore = !timeline.readmore">
+                    {{timeline.readmore ? 'Näytä vähemmän..' : 'Lue lisää..'}}
                   </a>
                   <span class="timeline__block__body__date">{{ timeline.date }}</span>
                 </div>
@@ -405,6 +406,7 @@
        * @param {number} slide Number to slide to
        */
       changeSlide(slide) {
+        console.log(slide);
         this.slider.lory.slideTo(slide);
         this.slider.currentSlide = slide;
       },
@@ -524,11 +526,11 @@
       width: 100%;
       display: inline-block;
     }
-    li {
+    li.js_slide {
       position: relative;
       display: inline-block;
       width: 100%;
-      &.js_slide.active { 
+      &.active { 
         font-size: 1rem;
         line-height: 1.5;
         white-space: normal;
@@ -560,6 +562,12 @@
   /*TIMELINE*/
   .aboutmeTimeline {
     padding-top: 3em;
+    .button {
+      padding: 17px;
+      margin: 10px;
+      background-color: rgba(57, 106, 69, 0.644);
+      color: white;
+    }
     .timeline {
       position: relative;
       padding: 2em 0;
