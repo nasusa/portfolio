@@ -13,9 +13,7 @@
         </section>
       </div>
       <!--HEADER PÄÄTTYY-->
-      <!--<section>
-        <start/>
-      </section>-->
+
       <!--INDEX PÄÄTTYY-->
       <section class="pageSections">
         <about/>

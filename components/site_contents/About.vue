@@ -6,7 +6,7 @@
         <div class="container">
           <div class="card-image">
             <figure class="">
-              <img class="profile" src="~/static/profile.jpg/" alt="Placeholder image">
+              <img class="profile" src="~/static/profile.jpg/" alt="Profile picture">
             </figure>
           </div>
         </div>
