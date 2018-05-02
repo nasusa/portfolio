@@ -2,13 +2,13 @@
   <nav class="navbar-menu has-text-centered">
     <div id="navbarExampleTransparentExample" class="navbar-menu">
       <div class="navbar-start is-uppercase">
-        <a class="navbar-item" href="/">
+        <a class="navbar-item" href="#aboutme">
           Kuka olen
         </a>
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="#experience">
           Työkokemukseni
         </a>
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="#projects">
           Projektit
         </a>
       </div>
@@ -18,7 +18,8 @@
 
 <style lang="scss">
 nav {
-  height: 90px;
+  position: fixed!important;
+  height: 50px;
   line-height: 70px;
   background-color: hsla(0, 0%, 0%, 0.6);
   position: absolute;
