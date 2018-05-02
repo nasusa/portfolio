@@ -6,15 +6,13 @@
       <div class="container columnsHero">
         <div class="columns has-text-centered">
           <div class="column">
-            
             <div class="projectLayer">
-              <img class="modal-button" data-target="modal" src="~/static/game.jpg" alt="Placeholder image">
+              <img class="modal-button" data-target="modal" src="~/static/game.jpg" alt="Project placeholder-image">
               <div class="overlay is-uppercase">
                 <h3 class="referenceTitle">Peliprojekti</h3>
                 <a class="readmore" @click="open(1)"><p>Lue lisää...</p></a>
               </div>
             </div>
-          
             <div class="modal" :class="{'is-active': popup === 1}">
               <div class="modal-background"></div>
               <div class="modal-card">
@@ -24,7 +22,7 @@
                 </header>
                 <section class="modal-card-body has-text-centered">
                   <h1 class="headerAbel paragraphPadding">Tampereen ammattikorkeakoulun ensimmäisen vuoden peliprojekti.</h1>
-                  <img class="projectImage" src="~/static/peliprojekti.jpg">
+                  <img class="projectImage" src="~/static/peliprojekti.jpg" alt="Project image">
                   <p class="paragraphPadding">
                     Peliprojekti starttasi 2018 tammikuussa. Itse toimin projektin Scrum masterina, sekä kahden muun tiimiläisen kanssa graafikkona.
                     Sain myös tehtäväkseni tehdä www-sivut peliportaalille. 
@@ -40,18 +38,15 @@
                 </section>
               </div>
             </div>
-
           </div>
-         <div class="column">
-
+          <div class="column">
             <div class="projectLayer">
-              <img class="modal-button" data-target="modal" src="~/static/design.jpg" alt="Placeholder image">
+              <img class="modal-button" data-target="modal" src="~/static/design.jpg" alt="Project placeholder-image">
               <div class="overlay is-uppercase">
                 <h3 class="referenceTitle">Www-sivut</h3>
                 <a class="readmore" @click="open(2)"><p>Lue lisää...</p></a>
               </div>
             </div>
-
             <div class="modal" :class="{'is-active': popup === 2}">
               <div class="modal-background"></div>
               <div class="modal-card">
@@ -61,7 +56,7 @@
                 </header>
                 <section class="modal-card-body has-text-centered">
                   <h1 class="headerAbel paragraphPadding">Nettisivut kauneushoitolalle.</h1>
-                  <img class="projectImage" src="~/static/kauneushoitola2.png">
+                  <img class="projectImage" src="~/static/kauneushoitola2.png" alt="Project image">
                   <p class="paragraphPadding">
                     Ensimmäiset oikealle asiakkaalle tuotetut sivut, joita myös tällähetkellä päivittelen tarvittaessa.
                   </p>
@@ -72,18 +67,15 @@
                 </section>
               </div>
             </div>
-
           </div>
           <div class="column">
-
             <div class="projectLayer">
-              <img class="modal-button" data-target="modal" src="~/static/Arduino.jpg" alt="Placeholder image">
+              <img class="modal-button" data-target="modal" src="~/static/Arduino.jpg" alt="Project placeholder-image">
               <div class="overlay is-uppercase">
                 <h3 class="referenceTitle">Arduino projekti</h3>
                 <a class="readmore" @click="open(3)"><p>Lue lisää...</p></a>
               </div>
             </div>
-
             <div class="modal" :class="{'is-active': popup === 3}">
               <div class="modal-background"></div>
               <div class="modal-card">
@@ -93,7 +85,7 @@
                 </header>
                 <section class="modal-card-body has-text-centered">
                   <h1 class="headerAbel paragraphPadding">Ammattikoulun lopputyönä tein Arduinolla RGB LED-valonohjausjärjestelmän Arduinolla autooni.</h1>
-                  <img class="projectImage" src="~/static/AR3.png">
+                  <img class="projectImage" src="~/static/AR3.png" alt="Project image">
                   <p class="paragraphPadding">
                     Työssäni oli tarkoituksena rakentaa järjestelmä, jonka avulla voidaan ohjata RGB LED-nauhoja Android-sovelluksella.
                     Android-sovelluksessa oli profiilit, joista pystyi määrittämään onko LEDit vain tietyn värisiä still-valoja vai välkkyvätkö
@@ -108,8 +100,8 @@
                     Opinnäytetyön kirjallisessa osuudessa kävin lävitse järjestelmän toiminnan sekä asentamisen, osat joista järjestelmä koostui,
                     ohjelmat joita työssä tarvittiin sekä järjestelmää ohjaavien ohjelmien koodin perusteet.
                   </p>
-                  <img class="projectImage" src="~/static/AR1.png">
-                  <img class="projectImage" src="~/static/AR2.png">
+                  <img class="projectImage" src="~/static/AR1.png" alt="Project image">
+                  <img class="projectImage" src="~/static/AR2.png" alt="Project image">
                   <p class="paragraphPadding">
                     Valitsin työn opinnäytetyöni aiheeksi, sillä olin ollut kiinnostunut LED-valojen toiminnasta sekä Arduino-alustan käytöstä jo pitkään.
                     Aiempaa kokemusta Java-ohjelmoinnista oli ollut vain hieman netissä käytävien kurssien kautta joten sekin tuli itselleni uutena asiana.
@@ -123,111 +115,101 @@
                 </section>
               </div>
             </div>
-
           </div>
         </div>
         <div class="columns">
           <div class="column">
-
             <div class="projectLayer">
-              <img class="modal-button" data-target="modal" src="~/static/tredulan.jpeg" alt="Placeholder image">
+              <img class="modal-button" data-target="modal" src="~/static/tredulan.jpeg" alt="Project placeholder-image">
               <div class="overlay is-uppercase">
                 <h3 class="referenceTitle">Www-sivut</h3>
                 <a class="readmore" @click="open(4)"><p>Lue lisää...</p></a>
               </div>
             </div>
-
-          <div class="modal" :class="{'is-active': popup === 4}">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-              <header class="modal-card-head has-text-centered">
-                <p class="skillsHeading modal-card-title is-uppercase">Tredulan - nettisivut</p>
-                <button class="delete" aria-label="close" @click="close"></button>
-              </header>
-              <section class="modal-card-body has-text-centered">
-                  <h1 class="headerAbel paragraphPadding">Ammattikoulun valmistuvien oppilaiden järjestämät lanit.</h1>
-                <img class="projectImage" src="~/static/tredulan1.png">
-                <p class="paragraphPadding">
-                  Olin laneissa pääjärjestäjänä. Tein myös nettisivut LAN-tapahtumalle.
-                </p>
-                <p>Marraskuu 2016 - Helmikuu 2017</p>
-                <a href="https://github.com/nasusa/tredulan" target="_blank" class="projectButton button is-primary is-rounded">Github</a>
-              </section>
+            <div class="modal" :class="{'is-active': popup === 4}">
+              <div class="modal-background"></div>
+              <div class="modal-card">
+                <header class="modal-card-head has-text-centered">
+                  <p class="skillsHeading modal-card-title is-uppercase">Tredulan - nettisivut</p>
+                  <button class="delete" aria-label="close" @click="close"></button>
+                </header>
+                <section class="modal-card-body has-text-centered">
+                    <h1 class="headerAbel paragraphPadding">Ammattikoulun valmistuvien oppilaiden järjestämät lanit.</h1>
+                  <img class="projectImage" src="~/static/tredulan1.png" alt="Project image">
+                  <p class="paragraphPadding">
+                    Olin laneissa pääjärjestäjänä. Tein myös nettisivut LAN-tapahtumalle.
+                  </p>
+                  <p>Marraskuu 2016 - Helmikuu 2017</p>
+                  <a href="https://github.com/nasusa/tredulan" target="_blank" class="projectButton button is-primary is-rounded">Github</a>
+                </section>
+              </div>
             </div>
           </div>
-
-          </div>
           <div class="column">
-
             <div class="projectLayer">
-              <img class="modal-button" data-target="modal" src="~/static/portfolio.jpeg" alt="Placeholder image">
+              <img class="modal-button" data-target="modal" src="~/static/portfolio.jpeg" alt="Project placeholder-image">
               <div class="overlay is-uppercase">
                 <h3 class="referenceTitle">Portfolio sivut</h3>
                 <a class="readmore" @click="open(5)"><p>Lue lisää...</p></a>
               </div>
             </div>
-
-          <div class="modal" :class="{'is-active': popup === 5}">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-              <header class="modal-card-head has-text-centered">
-                <p class="skillsHeading modal-card-title is-uppercase">Portfolio - nettisivut</p>
-                <button class="delete" aria-label="close" @click="close"></button>
-              </header>
-              <section class="modal-card-body has-text-centered">
-                <p class="headerAbel paragraphPadding">Ensimmäiset tekemäni portfolio-nettisivut.</p>
-                <img class="projectImage" src="~/static/portfolioEtusivu.jpg">
-                <hr>
-                <img class="projectImage" src="~/static/portfolioEtusivu3.jpg">
-                <hr>
-                <img class="projectImage" src="~/static/portfolioEtusivu2.jpg">
-                <p class="paragraphPadding">Tein sivut Laravel Frameworkilla.</p>
-                <p class="paragraphPadding">January 2017 - January 2017</p>
-                <a href="https://github.com/nasusa/portfolio-old" target="_blank" class="projectButton button is-primary is-rounded">Github</a>
-              </section>
+            <div class="modal" :class="{'is-active': popup === 5}">
+              <div class="modal-background"></div>
+              <div class="modal-card">
+                <header class="modal-card-head has-text-centered">
+                  <p class="skillsHeading modal-card-title is-uppercase">Portfolio - nettisivut</p>
+                  <button class="delete" aria-label="close" @click="close"></button>
+                </header>
+                <section class="modal-card-body has-text-centered">
+                  <p class="headerAbel paragraphPadding">Ensimmäiset tekemäni portfolio-nettisivut.</p>
+                  <img class="projectImage" src="~/static/portfolioEtusivu.jpg" alt="Project image">
+                  <hr>
+                  <img class="projectImage" src="~/static/portfolioEtusivu3.jpg" alt="Project image">
+                  <hr>
+                  <img class="projectImage" src="~/static/portfolioEtusivu2.jpg" alt="Project image">
+                  <p class="paragraphPadding">Tein sivut Laravel Frameworkilla.</p>
+                  <p class="paragraphPadding">January 2017 - January 2017</p>
+                  <a href="https://github.com/nasusa/portfolio-old" target="_blank" class="projectButton button is-primary is-rounded">Github</a>
+                </section>
+              </div>
             </div>
           </div>
-
-          </div>
           <div class="column">
-
             <div class="projectLayer">
-              <img class="modal-button" data-target="modal" src="~/static/blog.jpg" alt="Placeholder image">
+              <img class="modal-button" data-target="modal" src="~/static/blog.jpg" alt="Project placeholder-image">
               <div class="overlay is-uppercase">
                 <h3 class="referenceTitle">Blogi</h3>
                 <a class="readmore" @click="open(6)"><p>Lue lisää...</p></a>
               </div>
             </div>
-
-          <div class="modal" :class="{'is-active': popup === 6}">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-              <header class="modal-card-head has-text-centered">
-                <p class="skillsHeading modal-card-title is-uppercase">Ammattikoulun blogi</p>
-                <button class="delete" aria-label="close" @click="close"></button>
-              </header>
-              <section class="modal-card-body has-text-centered">
-                <p class="headerAbel paragraphPadding">Ammattikoulussa tehtävänämme oli kirjoittaa blogia työssäoppien aikana sekä tehdä raportteja koululla tehdyistä töistä.</p>
-                <div class="columns">
-                  <div class="column is-third">
-                    <img class="projectImage" src="~/static/blogi.jpg/">
+            <div class="modal" :class="{'is-active': popup === 6}">
+              <div class="modal-background"></div>
+              <div class="modal-card">
+                <header class="modal-card-head has-text-centered">
+                  <p class="skillsHeading modal-card-title is-uppercase">Ammattikoulun blogi</p>
+                  <button class="delete" aria-label="close" @click="close"></button>
+                </header>
+                <section class="modal-card-body has-text-centered">
+                  <p class="headerAbel paragraphPadding">Ammattikoulussa tehtävänämme oli kirjoittaa blogia työssäoppien aikana sekä tehdä raportteja koululla tehdyistä töistä.</p>
+                  <div class="columns">
+                    <div class="column is-third">
+                      <img class="projectImage" src="~/static/blogi.jpg/" alt="Project image">
+                    </div>
+                    <div class="column">
+                      <img class="projectImage" src="~/static/blogi2.jpg" alt="Project image">
+                    </div>
+                    <div class="column">
+                      <img class="projectImage" src="~/static/blogi3.jpg" alt="Project image">
+                    </div>
                   </div>
-                  <div class="column">
-                    <img class="projectImage" src="~/static/blogi2.jpg">
-                  </div>
-                  <div class="column">
-                    <img class="projectImage" src="~/static/blogi3.jpg">
-                  </div>
-                </div>
-                <p class="paragraphPadding">
-                  Blogista löytyy tarkemmin millaisia töitä ja projekteja ammattikoulussa tietoliikenneasentajana pääsin tekemään. 
-                </p>
-                <p class="paragraphPadding">Lokakuu 2015 - toukokuu 2017</p>
-                <a href="http://14ttic02blepola.blogspot.fi/" target="_blank" class="projectButton button is-primary is-rounded">Blogi</a>
-              </section>
+                  <p class="paragraphPadding">
+                    Blogista löytyy tarkemmin millaisia töitä ja projekteja ammattikoulussa tietoliikenneasentajana pääsin tekemään. 
+                  </p>
+                  <p class="paragraphPadding">Lokakuu 2015 - toukokuu 2017</p>
+                  <a href="http://14ttic02blepola.blogspot.fi/" target="_blank" class="projectButton button is-primary is-rounded">Blogi</a>
+                </section>
+              </div>
             </div>
-          </div>
-
           </div>
         </div>
       </div>

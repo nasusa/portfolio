@@ -535,7 +535,7 @@
       }
     }
     .prev, .next {
-      display: hidden;
+      display: none;
       @include desktop {
       position: absolute;
       top: 11em;
