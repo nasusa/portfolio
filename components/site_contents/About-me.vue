@@ -45,32 +45,32 @@
         <li class="js_slide">
           <section class="section slide">  
             <div class="columns">
-              <div class="column aboutmeThirdSlide has-text-centered">
+              <div class="column aboutmeThirdSlide is-two-fifths">
                   <h1 class="aboutmeTitle is-uppercase">Kurssit ja koulutukset</h1>
-                <div class="columns is-mobile is-multiline thirdSlideSocial">
-                  <div class="column is-6-mobile is-4-desktop">
-                    <i class="fa fa-id-card-o fa-2x"></i>
-                    <h1 class="socialHeading is-uppercase">B-kortti</h1>
+                <div class="columns is-mobile is-multiline thirdSlideSocial is-pulled-left">
+                  <div class="column is-full">
+                    <h1 class="socialHeading is-uppercase"><i class="fa fa-id-card-o fa-1x"></i>
+                    Sähkötyöturvallisuus</h1>
                   </div>
-                  <div class="column is-6-mobile is-4-desktop">
-                    <i class="fa fa-exclamation-triangle fa-2x"></i>
-                    <h1 class="socialHeading is-uppercase">Työturvallisuus-<br>kortti</h1>
+                  <div class="column is-full">
+                    <h1 class="socialHeading is-uppercase"><i class="fa fa-exclamation-triangle fa-1x"></i>
+                    Työturvallisuus</h1>
                   </div>
-                  <div class="column is-6-mobile is-4-desktop">
-                    <i class="fa fa-fire fa-2x"></i>
-                    <h1 class="socialHeading is-uppercase">Tulityökortti</h1>
+                  <div class="column is-full">
+                    <h1 class="socialHeading is-uppercase"><i class="fa fa-fire fa-1x"></i>
+                    Tulityö</h1>
                   </div>
-                  <div class="column is-6-mobile is-4-desktop">
-                    <i class="fa fa-truck fa-2x"></i>
-                    <h1 class="socialHeading is-uppercase">Tietyökortti</h1>
+                  <div class="column is-full">
+                    <h1 class="socialHeading is-uppercase"><i class="fa fa-truck fa-1x"></i>
+                    Tietyö</h1>
                   </div>
-                  <div class="column is-6-mobile is-4-desktop">
-                    <i class="fa fa-medkit fa-2x"></i>
-                    <h1 class="socialHeading is-uppercase">Ensiapu 1 & 2</h1>  
+                  <div class="column is-full">
+                    <h1 class="socialHeading is-uppercase"><i class="fa fa-medkit fa-1x"></i>
+                    Ensiapu 1 & 2</h1>  
                   </div>
-                  <div class="column is-6-mobile is-4-desktop"> 
-                    <i class="fa fa-cutlery fa-2x"></i>
-                    <h1 class="socialHeading is-uppercase">Hygieniapassi</h1>
+                  <div class="column is-full"> 
+                    <h1 class="socialHeading is-uppercase"><i class="fa fa-cutlery fa-1x"></i>
+                    Hygieniapassi</h1>
                   </div>             
                 </div>
               </div>
@@ -106,20 +106,20 @@
                 <h1 class="aboutmeTitle is-uppercase">Osaaminen</h1>
                 <div class="columns">
                   <div class="column">
-                    <h1 class="skillsHeading is-uppercase">MsOffice</h1>
-                    <progress class="progress is-large is-primary" value="80" max="100">80%</progress>
-                    <h1 class="skillsHeading is-uppercase">Adobe Photoshop & XD</h1>
-                    <progress class="progress is-large is-link" value="75" max="100">75%</progress>
-                    <h1 class="skillsHeading is-uppercase">Sosiaalinen media</h1>
-                    <progress class="progress is-large is-info" value="90" max="100">90%</progress>
+                    <h1 class="skillsHeading is-uppercase">Adobe Illustrator, Photoshop, XD</h1>
+                    <progress class="progress is-large is-primary" value="90" max="100">90%</progress>
+                    <h1 class="skillsHeading is-uppercase">HTML & CSS</h1>
+                    <progress class="progress is-large is-link" value="90" max="100">90%</progress>
+                    <h1 class="skillsHeading is-uppercase">Java & JavaScript</h1>
+                    <progress class="progress is-large is-info" value="60" max="100">60%</progress>
                     </div>
                     <div class="column">
-                    <h1 class="skillsHeading is-uppercase">Html5 & xhtml</h1>
+                    <h1 class="skillsHeading is-uppercase">PHP</h1>
+                    <progress class="progress is-large is-info" value="60" max="100">60%</progress>
+                    <h1 class="skillsHeading is-uppercase">WordPress</h1>
                     <progress class="progress is-large is-primary" value="75" max="100">75%</progress>
-                    <h1 class="skillsHeading is-uppercase">Css & scss</h1>
-                    <progress class="progress is-large is-link" value="75" max="100">75%</progress>
-                    <h1 class="skillsHeading is-uppercase">Java</h1>
-                    <progress class="progress is-large is-info" value="50" max="100">50%</progress>
+                    <h1 class="skillsHeading is-uppercase">MySQL</h1>
+                    <progress class="progress is-large is-link" value="55" max="100">55%</progress>
                   </div>
                 </div>
               </div>
@@ -159,12 +159,6 @@
             rewind: true
           });
           this.$refs.slider.addEventListener('after.lory.slide',  this.handleSlideEvent)
-
-          // Luodaan scroll event, joka tuo sisällön näkyviin
-          // window.addEventListener('scroll', _.throttle(this.handleScroll, 1000, { leading: false }))
-          window.addEventListener('scroll', this.handleScroll)
-
-          this.timelineShowReadMore = this.getScreenWidth() <= 425
         })
       }
     },
@@ -180,36 +174,6 @@
       },
       handleSlideEvent(event) {
         this.slider.currentSlide = event.detail.currentSlide
-      },
-      handleScroll(event) {
-        const elements = this.$refs.timeline.children
-        Array.prototype.forEach.call(elements, (element, index) => {
-          const topOffset = element.getBoundingClientRect().top + window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-          if (!this.timelines[index].rendered && topOffset <= window.scrollY + window.innerHeight * 0.75) {
-            const blocksToShow = element.querySelectorAll('.timeline__block__image, .timeline__block__body');
-            blocksToShow.forEach((block, blockIndex) => {
-              block.classList.remove('is-notvisible')
-              if (blockIndex) {
-                if (index % 2) {
-                  block.classList.add('slideInRight-enter-active')
-                } else {
-                  block.classList.add('slideInLeft-enter-active')
-                }
-              } else {
-                block.classList.add('bounce-enter-active')
-              }
-              // Define allready shown block
-              this.timelines[index].rendered = true
-              // Remove event handler when its not needed
-              if (index === elements.length - 1) {
-                window.removeEventListener('scroll', this.handleScroll);
-              }
-            });
-          }
-        })
-      },
-      getScreenWidth() {
-        return window.innerWidth || documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth
       }
     }
   }
@@ -265,10 +229,20 @@
     }
     .thirdSlideSocial {
       padding-top: 30px;
+      .socialHeading {
+        font-size: 1em;
+        i {
+          padding-right: 20px;
+          color: #d5d5d5;
+        }
+      }
     }
     .aboutmeThirdSlide {
       @include desktop {
       padding-right: 5em;
+      }
+      .skillsHeading {
+        font-size: 1em;
       }
     }
     /*SLIDER*/
