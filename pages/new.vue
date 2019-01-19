@@ -1,6 +1,6 @@
 <template>
   <section class="hero is-fullheight is-dark">
-    <div class="welcome-block menu-block">
+    <div class="welcome-block">
       <div class="welcome-block-container">
         <h1>Hi, I'm </h1>
         <h1 class="name">Susanna Lepola</h1>
@@ -23,7 +23,7 @@
         </nav>
       </div>
     </div>
-    <div class="about-block menu-block">
+    <div class="about-block menu-block" @click="open(1)">
       <div class="about-block-container">
         <h1 class="is-uppercase">About me</h1>
       </div>
@@ -33,10 +33,13 @@
         <h1 class="is-uppercase">My portfolio</h1>
       </div>
     </div>
-    <div class="resume-block">
+    <div class="resume-block menu-block">
       <div class="resume-block-container">
         <h1 class="is-uppercase">My resume</h1>
       </div>
+    </div>
+    <div class="test" :class="{'is-active': popup === 1}">
+      <button class="delete" aria-label="close" @click="close"></button>
     </div>
   </section>
 </template>
@@ -44,6 +47,19 @@
 <script>
 export default {
   layout: 'blank',
+    data() {
+    return {
+      popup: null
+    };
+  },
+  methods: {
+    close() {
+      this.popup = null;
+    },
+    open(number) {
+      this.popup = number;
+    }
+  },
   mounted () {
     class TextScramble {
     constructor(el) {
@@ -99,10 +115,6 @@ export default {
     }
   }
 
-  // ——————————————————————————————————————————————————
-  // Example
-  // ——————————————————————————————————————————————————
-
   const phrases = [
     'Dog mom',
     'Coder',
@@ -128,6 +140,20 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Poppins:500|Roboto+Mono');
+
+.test {
+  width: 50vw;
+  position: absolute;
+  height: 100vh;
+  background-color: white;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}
 
   .hero {
     display: -webkit-flex;
@@ -157,6 +183,9 @@ h1 {
   font-size: 2em;
   font-family: 'Poppins', sans-serif;
 }
+.menu-block {
+  cursor: pointer;
+}
 .welcome-block {
   width: 700px;
   height: 700px;
@@ -185,6 +214,12 @@ h1 {
   .social-icons {
     padding-top: 30px;
     font-size: 2em;
+    a, i {
+      &:hover {
+        text-decoration: none;
+        color: #dedede;
+      }
+    }
     .level-item {
       padding-right: 10px;
     }
