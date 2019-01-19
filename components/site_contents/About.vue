@@ -1,17 +1,5 @@
   <template>
     <div> 
-
-      <!--PROFIILIKUVA ALKAA-->
-      <section class="section aboutmeImg">  
-        <div class="container">
-          <div class="card-image">
-            <figure class="">
-              <img class="profile" src="~/static/profile.jpg/" alt="Profile picture">
-            </figure>
-          </div>
-        </div>
-      </section>
-      <!--PROFIILIKUVA PÄÄTTYY-->
     
       <section id="aboutme" class="section aboutmeInfo">
         <div class="container columnsHero">
@@ -20,20 +8,15 @@
             <ul>
               <li :class="{ 'is-active': slider.currentSlide === 0 }" @click="changeSlide(0)">
                 <a>
-                  <span class="is-uppercase">Minä</span>
+                  <span class="is-uppercase">Koulutukseni</span>
                 </a>
               </li>
               <li :class="{ 'is-active': slider.currentSlide === 1 }" @click="changeSlide(1)">
                 <a>
-                  <span class="is-uppercase">Koulutukseni</span>
-                </a>
-              </li>
-              <li :class="{ 'is-active': slider.currentSlide === 2 }" @click="changeSlide(2)">
-                <a>
                   <span class="is-uppercase">Kurssit ja kielitaito</span>
                 </a>
               </li>
-              <li :class="{ 'is-active': slider.currentSlide === 3 }" @click="changeSlide(3)">
+              <li :class="{ 'is-active': slider.currentSlide === 2 }" @click="changeSlide(2)">
                 <a>
                   <span class="is-uppercase">Osaaminen</span>
                 </a>
@@ -44,39 +27,6 @@
           <div class="slider js_slider" ref="slider">
             <div class="frame js_frame">
               <ul class="slides js_slides">
-                <li class="js_slide">
-                  <section class="section slide">  
-                    <div class="columns">
-                      <div class="column is-half">
-                        <h1 class="aboutmeTitle is-uppercase">Kuka minä olen?</h1>
-                        <p><i>Susanna Lepola | lepolsussu@gmail.com | +35840 579 4728</i></p>
-                      </div>
-                      <div class="column aboutmeColumn">
-                        <ul class="aboutmeIcons">
-                          <li><a href="https://www.facebook.com/susannalepolan" target="_blank"><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i></a></li>
-                          <li><a href="https://www.linkedin.com/in/susannalepola/" target="_blank"><i class="fa fa-linkedin-square fa-fw" aria-hidden="true"></i></a></li>
-                          <li><a href="https://github.com/nasusa" target="_blank"><i class="fa fa-github-square fa-fw" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="columns">
-                      <div class="column is-half">
-                        <p class="paragraphPadding">Olen 20-vuotias kahviaddikti ja "älytön koodin työntäjä" Tampereelta.</p>
-                        <p class="">Intohimoni koneiden ja koodaamisen rinnalla, olen myös suuri musiikkifriikki ja todellinen 
-                          herkkusuu joka rakastaa kaikkea hyvää elämässä. Olen myös hullu koiranainen, entinen heppatyttö. Arvomaailmassani korkeimmalta löytyy perhe ja ystävät.
-                        </p>
-                      </div>
-                      <div class="column">
-                        <p class="paragraphPadding">Minulla on luonnollinen tarve luoda, kuvitella ja suunnitella; joka on tullut esiin graffit-maalaamisessa sekä valokuvaamisessa. Näitä taitoja olen 
-                          hyödyntänyt myös www-sivuja työstäessäni.
-                        </p>
-                        <p class="">Rakastan löytää uusia asioita, oppia uusia asioita, käydä uusissa paikoissa
-                          ja tavata uusia ihmisiä. Kiva kun eksyit sivuilleni, toivottavasti viihdyt!
-                        </p>
-                      </div>
-                    </div>
-                  </section>
-                </li>
                 <li class="js_slide">
                   <section class="section slide">  
                     <div class="columns">
@@ -448,21 +398,6 @@
 </script>
 
 <style lang="scss">
-  .aboutmeImg {
-    padding-bottom: 0;
-    .profile {
-      display: block;
-      margin: auto;
-      width: 300px;
-      border: 20px solid white;
-      border-radius:50%;
-      padding-bottom: 0;
-      margin-top: 10px;
-      @include desktop {
-      margin-top: -150px;        
-      }
-    }
-  }
   .aboutmeInfo {
     padding-top: 0;
     .aboutmeIcons {
