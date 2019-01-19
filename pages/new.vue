@@ -1,45 +1,41 @@
 <template>
   <section class="hero is-fullheight is-dark">
-    <div class="">
-      <div class="">
-        <div class="welcome-block menu-block">
-          <div class="welcome-block-container">
-            <h1>Hi, I'm </h1>
-            <h1 class="name">Susanna Lepola</h1>
-            <div class="text"></div>
-             <nav class="level is-mobile social-icons">
-              <div class="level-left">
-                <a class="level-item">
-                  <span class="icon is-small"><i class="fa fa-facebook"></i></span>
-                </a>
-                <a class="level-item">
-                  <span class="icon is-small"><i class="fa fa-instagram"></i></span>
-                </a>
-                <a class="level-item">
-                  <span class="icon is-small"><i class="fa fa-linkedin"></i></span>
-                </a>
-                <a class="level-item">
-                  <span class="icon is-small"><i class="fa fa-github"></i></span>
-                </a>
-              </div>
-            </nav>
+    <div class="welcome-block menu-block">
+      <div class="welcome-block-container">
+        <h1>Hi, I'm </h1>
+        <h1 class="name">Susanna Lepola</h1>
+        <div class="text"></div>
+          <nav class="level is-mobile social-icons">
+          <div class="level-left">
+            <a class="level-item">
+              <span class="icon is-small"><i class="fa fa-facebook"></i></span>
+            </a>
+            <a class="level-item">
+              <span class="icon is-small"><i class="fa fa-instagram"></i></span>
+            </a>
+            <a class="level-item">
+              <span class="icon is-small"><i class="fa fa-linkedin"></i></span>
+            </a>
+            <a class="level-item">
+              <span class="icon is-small"><i class="fa fa-github"></i></span>
+            </a>
           </div>
-        </div>
-        <div class="about-block menu-block">
-          <div class="about-block-container">
-            <h1 class="is-uppercase">About me</h1>
-          </div>
-        </div>
-        <div class="portfolio-block menu-block">
-          <div class="portfolio-block-container">
-            <h1 class="is-uppercase">My portfolio</h1>
-          </div>
-        </div>
-        <div class="resume-block">
-          <div class="resume-block-container">
-            <h1 class="is-uppercase">My resume</h1>
-          </div>
-        </div>
+        </nav>
+      </div>
+    </div>
+    <div class="about-block menu-block">
+      <div class="about-block-container">
+        <h1 class="is-uppercase">About me</h1>
+      </div>
+    </div>
+    <div class="portfolio-block menu-block">
+      <div class="portfolio-block-container">
+        <h1 class="is-uppercase">My portfolio</h1>
+      </div>
+    </div>
+    <div class="resume-block">
+      <div class="resume-block-container">
+        <h1 class="is-uppercase">My resume</h1>
       </div>
     </div>
   </section>
@@ -300,28 +296,30 @@ h1 {
         transform: rotate(-34deg);
         left: -100px;
         top: 50px;
+        width: 600px;
+        height: 600px;
     }
     .about-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 589px;
-        top: 18px;
+        left: 469px;
+        top: -46px;
     }
     .portfolio-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 784px;
-        top: 357px;
+        left: 333px;
+        top: 516px;
 
     }
     .resume-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 1198px;
-        top: 108px;
+        left: 749px;
+        top: 267px;
     }
 }
 
@@ -369,29 +367,35 @@ h1 {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: -190px;
-        top: 10px;
+        left: -100px;
+        top: 40px;
+        width: 600px;
+        height: 500px;
     }
     .about-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 382px;
-        top: -150px;
+        left: 442px;
+        top: -148px;
+      &-container {
+        padding: 85px 0 0 82px
+      }
     }
     .portfolio-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 577px;
-        top: 89px;
+        left: 637px;
+        top: 191px;
     }
     .resume-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 772px;
-        top: 428px;
+        left: 334px;
+        top: 406px;
+        height: 400px;
     }
 }
 
@@ -400,29 +404,64 @@ h1 {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: -190px;
+        left: -100px;
         top: 10px;
     }
     .about-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 382px;
-        top: -150px;
+        left: 590px;
+        top: -23px;
     }
     .portfolio-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 577px;
-        top: 89px;
+        left: 535px;
+        top: 484px;
     }
     .resume-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 336px;
-        top: 548px;
+        left: 288px;
+        top: 683px;
     }
+}
+
+@media (max-width: 800px) {
+.welcome-block, .about-block, .portfolio-block, .resume-block {
+    position: relative;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    height: auto;
+    width: auto;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: table;
+    left: 0;
+    top: 0;
+    h1 {
+      padding-left: 0px;
+    }
+    .text {
+      padding-left: 0px;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 30px;
+    }
+    .welcome-block-container, .about-block-container, .portfolio-block-container, .resume-block-container {
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      padding: 0 0 0 0;
+    }
+  }
 }
 </style>
