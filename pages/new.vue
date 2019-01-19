@@ -1,0 +1,428 @@
+<template>
+  <section class="hero is-fullheight is-dark">
+    <div class="">
+      <div class="">
+        <div class="welcome-block menu-block">
+          <div class="welcome-block-container">
+            <h1>Hi, I'm </h1>
+            <h1 class="name">Susanna Lepola</h1>
+            <div class="text"></div>
+             <nav class="level is-mobile social-icons">
+              <div class="level-left">
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fa fa-facebook"></i></span>
+                </a>
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fa fa-instagram"></i></span>
+                </a>
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fa fa-linkedin"></i></span>
+                </a>
+                <a class="level-item">
+                  <span class="icon is-small"><i class="fa fa-github"></i></span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="about-block menu-block">
+          <div class="about-block-container">
+            <h1 class="is-uppercase">About me</h1>
+          </div>
+        </div>
+        <div class="portfolio-block menu-block">
+          <div class="portfolio-block-container">
+            <h1 class="is-uppercase">My portfolio</h1>
+          </div>
+        </div>
+        <div class="resume-block">
+          <div class="resume-block-container">
+            <h1 class="is-uppercase">My resume</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  layout: 'blank',
+  mounted () {
+    class TextScramble {
+    constructor(el) {
+      this.el = el
+      this.chars = '!<>-_\\/[]{}—=+*^?#________'
+      this.update = this.update.bind(this)
+    }
+    setText(newText) {
+      const oldText = this.el.innerText
+      const length = Math.max(oldText.length, newText.length)
+      const promise = new Promise((resolve) => this.resolve = resolve)
+      this.queue = []
+      for (let i = 0; i < length; i++) {
+        const from = oldText[i] || ''
+        const to = newText[i] || ''
+        const start = Math.floor(Math.random() * 40)
+        const end = start + Math.floor(Math.random() * 40)
+        this.queue.push({ from, to, start, end })
+      }
+      cancelAnimationFrame(this.frameRequest)
+      this.frame = 0
+      this.update()
+      return promise
+    }
+    update() {
+      let output = ''
+      let complete = 0
+      for (let i = 0, n = this.queue.length; i < n; i++) {
+        let { from, to, start, end, char } = this.queue[i]
+        if (this.frame >= end) {
+          complete++
+          output += to
+        } else if (this.frame >= start) {
+          if (!char || Math.random() < 0.28) {
+            char = this.randomChar()
+            this.queue[i].char = char
+          }
+          output += `<span class="dud">${char}</span>`
+        } else {
+          output += from
+        }
+      }
+      this.el.innerHTML = output
+      if (complete === this.queue.length) {
+        this.resolve()
+      } else {
+        this.frameRequest = requestAnimationFrame(this.update)
+        this.frame++
+      }
+    }
+    randomChar() {
+      return this.chars[Math.floor(Math.random() * this.chars.length)]
+    }
+  }
+
+  // ——————————————————————————————————————————————————
+  // Example
+  // ——————————————————————————————————————————————————
+
+  const phrases = [
+    'Dog mom',
+    'Coder',
+    'Student',
+    'Entrepreneur'
+  ]
+
+  const el = document.querySelector('.text')
+  const fx = new TextScramble(el)
+
+  let counter = 0
+  const next = () => {
+    fx.setText(phrases[counter]).then(() => {
+      setTimeout(next, 800)
+    })
+    counter = (counter + 1) % phrases.length
+  }
+
+  next()
+  }
+}
+</script>
+
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Poppins:500|Roboto+Mono');
+
+  .hero {
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:before {
+      background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("~/static/testi.jpg");
+      // background-position: center 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      filter: blur(3px);
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+  }
+h1 {
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+}
+.welcome-block {
+  width: 700px;
+  height: 700px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: table;
+  position: absolute;
+  transition: all 0.5s;
+  z-index: 1;
+  &-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 190px;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg)
+  }
+  .name {
+    font-size: 3em;
+    padding-left: 20px;
+  }
+  .text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+    padding-left: 20px;
+  }
+  .social-icons {
+    padding-top: 30px;
+    font-size: 2em;
+    .level-item {
+      padding-right: 10px;
+    }
+  }
+}
+
+.about-block {
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: table;
+  position: absolute;
+  transition: all 0.5s;
+  z-index: 1;
+  &:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+  }
+  &-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0 0 50px;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg);
+  }
+}
+
+.portfolio-block {
+  width: 400px;
+  height: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: table;
+  position: absolute;
+  transition: all 0.5s;
+  z-index: 1;
+  &:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+  }
+  &-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 55px 0 0px 70px;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg);
+  }
+}
+
+.resume-block {
+  width: 400px;
+  height: 600px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: table;
+  position: absolute;
+  transition: all 0.5s;
+  z-index: 1;
+  &:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+  }
+  &-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0 0 55px;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg);
+  }
+}
+
+@media (min-width: 1920px) {
+  .welcome-block {
+    position: absolute;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 122px;
+    top: 90px;
+  }
+  .about-block {
+    position: absolute;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 812px;
+    top: 57px;
+  }
+  .portfolio-block {
+    position: absolute;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 1007px;
+    top: 396px;
+  }
+  .resume-block {
+    position: absolute;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 1422px;
+    top: 148px;
+  }
+}
+
+@media (min-width:1280px) and (max-width:1919px) {
+    .welcome-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: -100px;
+        top: 50px;
+    }
+    .about-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 589px;
+        top: 18px;
+    }
+    .portfolio-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 784px;
+        top: 357px;
+
+    }
+    .resume-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 1198px;
+        top: 108px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1280px) {
+    .welcome-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: -181px;
+        top: 163px;
+        width: 600px;
+        height: 600px;
+    }
+    .about-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 407px;
+        top: 127px;
+        width: 350px;
+        height: 350px;
+    }
+    .portfolio-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 575px;
+        top: 425px;
+        width: 350px;
+        height: 250px;
+    }
+    .resume-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 947px;
+        top: 204px;
+        width: 350px;
+        height: 550px;
+    }
+}
+
+@media (min-width:981px) and (max-width:1024px) {
+    .welcome-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: -190px;
+        top: 10px;
+    }
+    .about-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 382px;
+        top: -150px;
+    }
+    .portfolio-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 577px;
+        top: 89px;
+    }
+    .resume-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 772px;
+        top: 428px;
+    }
+}
+
+@media (min-width:768px) and (max-width:980px) {
+    .welcome-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: -190px;
+        top: 10px;
+    }
+    .about-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 382px;
+        top: -150px;
+    }
+    .portfolio-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 577px;
+        top: 89px;
+    }
+    .resume-block {
+        -ms-transform: rotate(-34deg);
+        -webkit-transform: rotate(-34deg);
+        transform: rotate(-34deg);
+        left: 336px;
+        top: 548px;
+    }
+}
+</style>

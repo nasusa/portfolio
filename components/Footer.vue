@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <section class="footerFirst">
+    <!-- <section class="footerFirst">
       <ul>
         <li><a href="https://www.facebook.com/susannalepolan" target="_blank"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>
         <li><a href="https://www.instagram.com/susannalepola/" target="_blank"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a></li>
@@ -19,7 +19,7 @@
       <span>
         Copyright @2018 Susanna Lepola, All Rights Reserved.
       </span>
-    </section>
+    </section> -->
   </footer>
 </template>
 
