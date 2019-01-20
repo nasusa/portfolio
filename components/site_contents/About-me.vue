@@ -2,44 +2,6 @@
   <div class="experience">
     <section class="section">  
       <div class="columns">
-        <div class="column is-half">
-          <h1 class="aboutmeTitle is-uppercase">Education</h1>
-          <hr>
-        </div>
-        <div class="column">
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column is-one-third">
-          <h1 class="aboutmeSchool">Tampere Vocational College, TREDU</h1>
-          <h2 class="dateProgram">Restaurant and Catering</h2>
-          <h2 class="dateProgram">2013-2014</h2>
-          <p>After elementary school, I decided to go to study Vocational Qualification in the Restaurant and Catering. I've been working in multiple cafes and restaurants,
-            also I had 3 months internship. However, after wanting new challenges I decided to make a sfull turn and focus on information technology.
-          </p>
-        </div>
-        <div class="column">
-          <h1 class="aboutmeSchool">Tampereen seudun ammattiopisto, TREDU</h1>
-          <h2 class="dateProgram">Tietoliikenneasentaja</h2>
-          <h2 class="dateProgram">Information and Communication Technology</h2>
-          <p>I started studying in the middle of the semester, as I moved from the Restaurant and Catering degree. I found my great passion from
-             information technology side, not that it was a surprise because from child I've enjoyed working with electronics. <br>
-             You can access the Information and Communication Technology curriculum <a href="http://inter16.tampere.fi/tredu/material/koulutukset/opintosuunnitelmat/43xEhfiOl/Tieto-_ja_tietoliikennetekniikan_pt_ict-asentaja_2016.pdf" target="blank">HERE</a>.
-          </p>
-        </div>
-        <div class="column">
-          <h1 class="aboutmeSchool">Tampere University of Applied Siences, TAMK</h1>
-          <h2 class="dateProgram">Degree Programme in Business Information Systems</h2>
-          <h2 class="dateProgram">2017-2020</h2>
-          <p>A great passion to achieve and learn new was pushing me forward even after a vocational school. After I graduated from vocational school, I
-            ended up to continue my dream in TAMK; in the middle of good networks, great teachers and a variety of opportunities.<br>
-            You can access the Business Information Systems curriculum <a href="http://opinto-opas-ops.tamk.fi/index.php/fi/167/fi/46/13TIKO/year/2013" target="blank">HERE</a>.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="section">  
-      <div class="columns">
         <div class="column aboutmeThirdSlide">
             <h1 class="aboutmeTitle is-uppercase">Courses and licenses</h1>
             <hr>

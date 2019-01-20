@@ -4,6 +4,8 @@
     <div class="content">
       <h1 class="is-uppercase">Experience</h1>
       <hr>
+      <h1 class="is-uppercase">Work experience</h1>
+      <hr>
       <ul class="timeline">
         <!-- Item 1 -->
         <li>
@@ -12,7 +14,7 @@
               <span class="flag">Eventa Creative Osk</span>
               <span class="time-wrapper"><span class="time">2018 - present</span></span>
             </div>
-            <div class="desc">Entrepreneur at Eventa Creative Osk</div>
+            <div class="desc">Entrepreneur at Eventa Creative Osk.</div>
           </div>
         </li>
         
@@ -20,10 +22,10 @@
         <li>
           <div class="direction-l">
             <div class="flag-wrapper">
-              <span class="flag">Apple Inc.</span>
-              <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+              <span class="flag">Seravo Oy</span>
+              <span class="time-wrapper"><span class="time">2018 - present</span></span>
             </div>
-            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+            <div class="desc">Network Services Specialist at Seravo Oy. I started as summer employee.</div>
           </div>
         </li>
 
@@ -31,13 +33,88 @@
         <li>
           <div class="direction-r">
             <div class="flag-wrapper">
-              <span class="flag">Harvard University</span>
-              <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+              <span class="flag">Lantrek Ry</span>
+              <span class="time-wrapper"><span class="time">2016 - present</span></span>
             </div>
-            <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+            <div class="desc">I've been organizer in several LanTrek events. Lantrek is one of the largest LAN parties in Finland.</div>
+          </div>
+        </li> 
+
+                <!-- Item 2 -->
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">WizIT Oy</span>
+              <span class="time-wrapper"><span class="time">2017 - 3 months</span></span>
+            </div>
+            <div class="desc">I was in an internship at WizIT Oy.</div>
+          </div>
+        </li>
+
+        <!-- Item 3 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Ideapark Karkkiparkki Oy</span>
+              <span class="time-wrapper"><span class="time">2016 - 2017</span></span>
+            </div>
+            <div class="desc">I was working in a café besides school.</div>
+          </div>
+        </li> 
+                        <!-- Item 2 -->
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">Protacon Oy</span>
+              <span class="time-wrapper"><span class="time">2015 - 3 months</span></span>
+            </div>
+            <div class="desc">I was in an internship at Protacon Oy.</div>
+          </div>
+        </li>
+
+        <!-- Item 3 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Yleisradio Oy</span>
+              <span class="time-wrapper"><span class="time">2015 - 1 month</span></span>
+            </div>
+            <div class="desc">I was chosen from a large group of applicants to be an summer employee in Public service broadcasting company, Yle.</div>
           </div>
         </li> 
       </ul>
+      <section class="section">  
+        <h1 class="aboutmeTitle is-uppercase">Education</h1>
+        <hr>
+        <div class="columns">
+          <div class="column is-one-third">
+            <h1 class="aboutmeSchool">Tampere Vocational College, TREDU</h1>
+            <h2 class="dateProgram">Restaurant and Catering</h2>
+            <h2 class="dateProgram">2013-2014</h2>
+            <p>After elementary school, I decided to go to study Vocational Qualification in the Restaurant and Catering. I've been working in multiple cafes and restaurants,
+              also I had 3 months internship. However, after wanting new challenges I decided to make a sfull turn and focus on information technology.
+            </p>
+          </div>
+          <div class="column">
+            <h1 class="aboutmeSchool">Tampereen seudun ammattiopisto, TREDU</h1>
+            <h2 class="dateProgram">Tietoliikenneasentaja</h2>
+            <h2 class="dateProgram">Information and Communication Technology</h2>
+            <p>I started studying in the middle of the semester, as I moved from the Restaurant and Catering degree. I found my great passion from
+               information technology side, not that it was a surprise because from child I've enjoyed working with electronics. <br>
+               You can access the Information and Communication Technology curriculum <a href="http://inter16.tampere.fi/tredu/material/koulutukset/opintosuunnitelmat/43xEhfiOl/Tieto-_ja_tietoliikennetekniikan_pt_ict-asentaja_2016.pdf" target="blank">HERE</a>.
+            </p>
+          </div>
+          <div class="column">
+            <h1 class="aboutmeSchool">Tampere University of Applied Siences, TAMK</h1>
+            <h2 class="dateProgram">Degree Programme in Business Information Systems</h2>
+            <h2 class="dateProgram">2017-2020</h2>
+            <p>A great passion to achieve and learn new was pushing me forward even after a vocational school. After I graduated from vocational school, I
+              ended up to continue my dream in TAMK; in the middle of good networks, great teachers and a variety of opportunities.<br>
+              You can access the Business Information Systems curriculum <a href="http://opinto-opas-ops.tamk.fi/index.php/fi/167/fi/46/13TIKO/year/2013" target="blank">HERE</a>.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -153,8 +230,7 @@ export default {
   background: rgb(248,248,248);
   padding: 6px 10px;
   border-radius: 5px;
-  
-  font-weight: 600;
+  color: #424242;
   text-align: left;
 }
 
@@ -245,6 +321,7 @@ export default {
   font-size: 0.77777em;
   font-style: italic;
   line-height: 1.5em;
+  color: #424242;
 }
 
 .direction-r .desc {
