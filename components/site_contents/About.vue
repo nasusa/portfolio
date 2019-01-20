@@ -351,6 +351,13 @@
       }
     },
     methods: {
+      open () {
+        this.isOpen = true
+      },
+      close () {
+        this.isOpen = false
+        this.$emit('close')
+      },
       /**
        * This does that
        * @param {number} slide Number to slide to

@@ -1,18 +1,21 @@
 <template>
   <section class="hero is-fullheight is-dark">
     <blocks ref="blocks" @openPage="$refs[`page-${$event}`].open()"/>
-    <block-content ref="page-1" @close="$refs.blocks.close()"/>
+    <block-content-about ref="page-1" @close="$refs.blocks.close()"/>
+    <block-content-experience ref="page-2" @close="$refs.blocks.close()"/>
   </section>
 </template>
 
 <script>
 import Blocks from '~/components/site_contents/Blocks.vue'
-import BlockContent from '~/components/site_contents/Block-content.vue'
+import BlockContentAbout from '~/components/site_contents/Block-content-about.vue'
+import BlockContentExperience from '~/components/site_contents/Block-content-experience.vue'
 
 export default {
   components: {
     Blocks,
-    BlockContent
+    BlockContentAbout,
+    BlockContentExperience,
   },
   layout: 'blank'
 }

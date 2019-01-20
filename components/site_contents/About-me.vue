@@ -3,7 +3,7 @@
     <section class="section">  
       <div class="columns">
         <div class="column is-half">
-          <h1 class="aboutmeTitle is-uppercase">Koulutukseni</h1>
+          <h1 class="aboutmeTitle is-uppercase">Education</h1>
           <hr>
         </div>
         <div class="column">
@@ -11,30 +11,29 @@
       </div>
       <div class="columns">
         <div class="column is-one-third">
-          <h1 class="aboutmeSchool">Tampereen seudun ammattiopisto, TREDU</h1>
-          <h2 class="dateProgram">Hotelli-, ravintola- ja cateringala</h2>
+          <h1 class="aboutmeSchool">Tampere Vocational College, TREDU</h1>
+          <h2 class="dateProgram">Restaurant and Catering</h2>
           <h2 class="dateProgram">2013-2014</h2>
-          <p>Peruskoulun jälkeen päätin suunnata hotelli-, ravintola- ja cateringalalle. Olen tehnyt useammassa alan työpaikassa
-            kesätöitä sekä suorittanut harjoitteluita. Kuitenkin janotessani uusia haasteita, päätin vuoden jälkeen tehdä täyskäännöksen
-            ja suunnata tietotekniikan pariin.
+          <p>After elementary school, I decided to go to study Vocational Qualification in the Restaurant and Catering. I've been working in multiple cafes and restaurants,
+            also I had 3 months internship. However, after wanting new challenges I decided to make a sfull turn and focus on information technology.
           </p>
         </div>
         <div class="column">
           <h1 class="aboutmeSchool">Tampereen seudun ammattiopisto, TREDU</h1>
           <h2 class="dateProgram">Tietoliikenneasentaja</h2>
-          <h2 class="dateProgram">2014-2017</h2>
-          <p>Aloitin opiskelut kesken lukuvuoden vaihtaessani alaa hotelli-, ravintola- ja cateringalalta. Löysin suuren intohimoni
-            tietotekniikan puolelta, se ei tosin ollut yllätys sillä pienestä asti olen viihtynyt elektroniikan parissa.<br>
-            ICT-asentajan opetussuunnitelmaan pääset <a href="http://inter16.tampere.fi/tredu/material/koulutukset/opintosuunnitelmat/43xEhfiOl/Tieto-_ja_tietoliikennetekniikan_pt_ict-asentaja_2016.pdf" target="blank">TÄSTÄ</a>.
+          <h2 class="dateProgram">Information and Communication Technology</h2>
+          <p>I started studying in the middle of the semester, as I moved from the Restaurant and Catering degree. I found my great passion from
+             information technology side, not that it was a surprise because from child I've enjoyed working with electronics. <br>
+             You can access the Information and Communication Technology curriculum <a href="http://inter16.tampere.fi/tredu/material/koulutukset/opintosuunnitelmat/43xEhfiOl/Tieto-_ja_tietoliikennetekniikan_pt_ict-asentaja_2016.pdf" target="blank">HERE</a>.
           </p>
         </div>
         <div class="column">
-          <h1 class="aboutmeSchool">Tampereen ammattikorkeakoulu, TAMK</h1>
-          <h2 class="dateProgram">Tietojenkäsittelijä</h2>
+          <h1 class="aboutmeSchool">Tampere University of Applied Siences, TAMK</h1>
+          <h2 class="dateProgram">Degree Programme in Business Information Systems</h2>
           <h2 class="dateProgram">2017-2020</h2>
-          <p>Suuri intohimo saavuttaa ja oppia uutta puski eteenpäin ammattikoulun jälkeenkin. Päädyin ammattikoulusta valmistumisen jälkeen 
-            jatkamaan unelmaani TAMK:issa; hyvien verkostojen, mahtavien opettajien ja monenlaisten mahdollisuuksien keskelle.<br>
-            Tietojenkäsittelijän koulutusohjelmaan pääset <a href="http://opinto-opas-ops.tamk.fi/index.php/fi/167/fi/46/13TIKO/year/2013" target="blank">TÄSTÄ</a>.
+          <p>A great passion to achieve and learn new was pushing me forward even after a vocational school. After I graduated from vocational school, I
+            ended up to continue my dream in TAMK; in the middle of good networks, great teachers and a variety of opportunities.<br>
+            You can access the Business Information Systems curriculum <a href="http://opinto-opas-ops.tamk.fi/index.php/fi/167/fi/46/13TIKO/year/2013" target="blank">HERE</a>.
           </p>
         </div>
       </div>
@@ -42,32 +41,32 @@
     <section class="section">  
       <div class="columns">
         <div class="column aboutmeThirdSlide">
-            <h1 class="aboutmeTitle is-uppercase">Kurssit ja koulutukset</h1>
+            <h1 class="aboutmeTitle is-uppercase">Courses and licenses</h1>
             <hr>
           <div class="columns is-mobile is-multiline thirdSlideSocial has-text-centered">
             <div class="column is-6-mobile is-4-desktop">
               <i class="fa fa-id-card-o fa-2x"></i>
-              <h1 class="socialHeading is-uppercase">B-kortti</h1>
+              <h1 class="socialHeading is-uppercase">Safety at electrical work license</h1>
             </div>
             <div class="column is-6-mobile is-4-desktop">
               <i class="fa fa-exclamation-triangle fa-2x"></i>
-              <h1 class="socialHeading is-uppercase">Työturvallisuus-<br>kortti</h1>
+              <h1 class="socialHeading is-uppercase">occupational-<br>Safety license</h1>
             </div>
             <div class="column is-6-mobile is-4-desktop">
               <i class="fa fa-fire fa-2x"></i>
-              <h1 class="socialHeading is-uppercase">Tulityökortti</h1>
+              <h1 class="socialHeading is-uppercase">Hot Work license</h1>
             </div>
             <div class="column is-6-mobile is-4-desktop">
               <i class="fa fa-truck fa-2x"></i>
-              <h1 class="socialHeading is-uppercase">Tietyökortti</h1>
+              <h1 class="socialHeading is-uppercase">Road work safety license</h1>
             </div>
             <div class="column is-6-mobile is-4-desktop">
               <i class="fa fa-medkit fa-2x"></i>
-              <h1 class="socialHeading is-uppercase">Ensiapu 1 & 2</h1>  
+              <h1 class="socialHeading is-uppercase">First aid course 1 & 2 license</h1>  
             </div>
             <div class="column is-6-mobile is-4-desktop"> 
               <i class="fa fa-cutlery fa-2x"></i>
-              <h1 class="socialHeading is-uppercase">Hygieniapassi</h1>
+              <h1 class="socialHeading is-uppercase">hygiene proficiency certificate</h1>
             </div>             
           </div>
         </div>
@@ -76,7 +75,7 @@
     <section class="section">  
       <div class="columns">
         <div class="column aboutmeThirdSlide">
-          <h1 class="aboutmeTitle is-uppercase">Osaaminen</h1>
+          <h1 class="aboutmeTitle is-uppercase">Skills</h1>
           <hr>
           <div class="columns">
             <div class="column">

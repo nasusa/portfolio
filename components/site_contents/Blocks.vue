@@ -28,14 +28,14 @@
         <h1 class="is-uppercase">About me</h1>
       </div>
     </div>
-    <div class="portfolio-block menu-block">
+    <div class="portfolio-block menu-block" @click="open(2)">
       <div class="portfolio-block-container">
-        <h1 class="is-uppercase">My portfolio</h1>
+        <h1 class="is-uppercase">My experience</h1>
       </div>
     </div>
     <div class="resume-block menu-block">
       <div class="resume-block-container">
-        <h1 class="is-uppercase">My resume</h1>
+        <h1 class="is-uppercase">My portfolio</h1>
       </div>
     </div>
   </div>
