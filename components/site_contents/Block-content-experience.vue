@@ -4,221 +4,61 @@
     <div class="content">
       <h1 class="is-uppercase">Experience</h1>
       <hr>
-      <section id ="experience" class="aboutmeTimeline">
-            <h1 class="aboutmeTitle is-uppercase has-text-centered">Työkokemukseni</h1>
-            <hr class="titleHr">
-            <div class="timeline is-clearfix" ref="timeline">
-              <div class="timeline__block is-clearfix" v-for="(timeline, index) in timelines" :key="index">
-                <div class="timeline__block__image" :class="{ 'is-notvisible': !timeline.rendered }">
-                  <i class="fa-fw" :class="timeline.icon"></i>
-                </div>
-                <div class="timeline__block__body is-clearfix" v-show="timeline.rendered">
-                  <h2 class="is-size-4">{{ timeline.title }}</h2>
-                  <template v-for="(paragraph, paraIndex) in timeline.content">
-                    <transition name="fadeInDown" :key="paraIndex">
-                      <p v-show="!timelineShowReadMore || (timelineShowReadMore && (timeline.readmore || paraIndex === 0))">
-                        {{ paragraph }}
-                      </p>
-                    </transition>
-                  </template>
-                  <a v-show="timelineShowReadMore" class="button is-rounded" @click="timeline.readmore = !timeline.readmore">
-                    {{timeline.readmore ? 'Näytä vähemmän..' : 'Lue lisää..'}}
-                  </a>
-                  <span class="timeline__block__body__date">{{ timeline.date }}</span>
-                </div>
-              </div>
+      <ul class="timeline">
+        <!-- Item 1 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Eventa Creative Osk</span>
+              <span class="time-wrapper"><span class="time">2018 - present</span></span>
             </div>
-          </section>
+            <div class="desc">Entrepreneur at Eventa Creative Osk</div>
+          </div>
+        </li>
+        
+        <!-- Item 2 -->
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">Apple Inc.</span>
+              <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+            </div>
+            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+          </div>
+        </li>
+
+        <!-- Item 3 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="flag">Harvard University</span>
+              <span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+            </div>
+            <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+          </div>
+        </li> 
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
-  import _ from 'lodash'
-  import lory from '~/plugins/lory'
-
-  export default {
-    data() {
-      return {
-        isOpen: false,
-        experienceVisible: null,
-        timelineShowReadMore: true,
-        timelines: [
-          {
-            icon: 'fa fa-coffee',
-            title: 'Vesilahden Aittakahvila',
-            content: [
-              'Ensimmäinen kesätyöpaikkani löytyy yläaste ajoilta Vesilahden Aittakahvilasta. Työtehtäviin kuului tuotevalikoimasta huolehtiminen, asiakaspalvelu, tilausten tekeminen sekä kahvitusten järjestäminen.',
-              'Aittakahvila kesätyön ajaksi oli mahdollista ottaa koulun kautta vaihto-oppilas Latviasta töihin mukaan, joten töihin opastus tapahtui englannin kielellä.'
-            ],
-            date: 'Kesäkuu 2011 ja 2012, 2vko',
-            readmore: false,
-            rendered: false
-          },
-          {
-            icon: 'fa fa-briefcase',
-            title: 'TET-harjoittelut ja kahvitukset',
-            content: [
-              'Yläaste aikana TET-paikkani oli Minimani Ideapark jossa harjoittelin tavaroiden esillepanoa, lastien purkua ja inventaariota.',
-              'Toinen TET-paikka löytyi myös Ideaparkista; Beefking Steakhouse, jossa työtehtäviin kuului salin hoitaminen, pöytien täyttäminen, tarjoilu ja salin erilaiset siivoustyöt.',
-              'Tein myös lukuisia kahvituksia koululla pienistä ryhmistä yli sadan hengen tilaisuuksiin.'
-            ],
-            date: '2011-2013',
-            readmore: false,
-            rendered: false
-          },
-          {
-            icon: 'fa fa-cutlery',
-            title: 'Opiskeluravintola Eetvartti',
-            content: [
-              'Ennen alanvaihtoa ehdin kuitenkin suorittaa yhden työharjoittelun Hotelli-, ravintola- ja cateringalalla.',
-              'Työtehtäviin kuului kassanhoito, asiakaspalvelu, ruoanlaitto ja tilausten tekeminen. Meidän porukka järjesti myös upean Presidentin itsenäisyyspäivän brunssin!'
-            ],
-            date: 'Lokakuu 2013, 3kk',
-            readmore: false,
-            rendered: false
-          },
-          {
-            icon: 'fa fa-cutlery ',
-            title: 'Kahvilaravintola Wanha Narva',
-            content: [
-              'Sain kivan kesätyöpaikan ravintola-baarityöntekijänä.',
-              'Työtehtäviini kuului salin hoitamista, ruoanlaittoa sekä apulaisen tehtävät keittiössä ja salin puolella.'
-            ],
-            date: 'Kesäkuu 2014, 1kk',
-            readmore: false,
-            rendered: false
-          },
-          {
-            icon: 'fa fa-cutlery',
-            title: 'Staffline Oy',
-            content: [
-              'Etsin töitä koulun ohelle ja ottaessani yhteyttä vanhaan TET-paikkaan Ideaparkin Beefkingiin, minut otettiin ilomielin uudelleen vastaan.',
-              'Tein Stafflinen kanssa sopimuksen lyhyisiin keikkatyösuhteisiin.'
-            ],
-            date: 'Lokakuu 2014',
-            readmore: false,
-            rendered: false
-          },
-          {
-            icon: 'fa fa-laptop',
-            title: 'Yleisradio, Elävä arkisto',
-            content: [
-              'Minut valittiin suuresta hakijajoukosta Yleisradiolle kesätöihin!',
-              'Pääsin korjaamaan Ylen medianhallinta- järjestelmään digitoitujen tv-ohjelmien metatietoja sekä arkiston kuvanauhalogistiikkaa.'
-            ],
-            date: 'Kesäkuu 2015, 1kk',
-            readmore: false,
-            rendered: false
-          },
-          {
-            icon: 'fa fa-laptop',
-            title: 'Protacon Oy',
-            content: [
-              'Ammattikoulun ensimmäisen työharjoittelun suoritin mielenkiintoisessa työpaikassa Protacon Oy:llä.',
-              'Työtehtäviin kuului mm. asiakkaille menevien koneiden kunnon tarkistusta, asiakkaiden sopimustietojen täydentämistä ja syöttämistä järjestelmään, kiintolevyjen formatointia ja Image-asennuksia.'
-            ],
-            date: 'Lokakuu 2015, 3kk',
-            readmore: false,
-            rendered: false
-          },
-          {
-            icon: 'fa fa-coffee',
-            title: 'Ideapark Karkkiparkki Oy',
-            content: [
-              'Ollessani ammattikoulussa, tein töitä koulun ohella.',
-              'Työtehtäviin kuului kioskin ylläpito ja siivoustehtävät itsenäisesti, asiakaspalvelu ja kassankäyttö sekä tuotteiden tilaaminen tarvittaessa.'
-            ],
-            date: 'Helmikuu 2016, 1 vuosi',
-            readmore: false,
-            rendered: false
-          },
-          {
-            icon: 'fa fa-laptop',
-            title: 'WizIT Oy',
-            content: [
-              'Ammattikoulun työharjoittelun suoritin mahtavassa porukassa, WizIT Oy:llä!',
-              'Työtehtäviin kuului koneiden ja ohjelmien asennusta, sekä kaikenlaiset IT-tuen tehtävät.'
-            ],
-            date: 'Maaliskuu 2017, 3kk',
-            readmore: false,
-            rendered: false
-          },
-          {
-            icon: 'fa fa-laptop',
-            title: 'Lantrek Ry',
-            content: [
-              'Lantrek on Tampereella vuosittain järjestettävä verkkopelitapahtuma, jonka takana häärää 100-120 ihmistä. Osa meistä on opiskelijoita, osa työskentelee tietokoneiden ja ohjelmistojen parissa ja osaa meistä yhdistää vain into organisoida ja järjestää tapahtumia.',
-              'Löysin itseni mahtavasta Lantrek-joukosta ensimmäisen kerran vuonna 2016, ja loppua ei näy. Tällähetkellä toimin Lantrekin rakennusvastaavana joka tuo mukanaan lisää vastuuta ja pidempiä päiviä Lantrekien parissa; mistä olen enemmän kuin innoissani! Lantrek toimii vapaaehtoistyövoimin, ja sen takana on mahtava joukko erilaisia mutta samanmielisiä ihmisiä.'
-            ],
-            date: 'Maaliskuu 2016 - 2018, 1vko',
-            readmore: false,
-            rendered: false
-          },
-          {
-            icon: 'fa fa-lightbulb-o',
-            title: 'Olisiko seuraava työpaikkani teillä?',
-            content: [
-              'Ota yhteyttä!'
-            ],
-            date: '',
-            readmore: false,
-            rendered: false
-          }
-        ]
-      }
+export default {
+  data () {
+    return {
+      isOpen: false
+    }
+  },
+  methods: {
+    open () {
+      this.isOpen = true
     },
-    mounted () {
-      if (process.browser) {
-        this.$nextTick(() => {
-          // Luodaan scroll event, joka tuo sisällön näkyviin
-          // window.addEventListener('scroll', _.throttle(this.handleScroll, 1000, { leading: false }))
-          window.addEventListener('scroll', this.handleScroll)
-
-          this.timelineShowReadMore = this.getScreenWidth() <= 425
-        })
-      }
-    },
-    methods: {
-      open () {
-        this.isOpen = true
-      },
-      close () {
-        this.isOpen = false
-        this.$emit('close')
-      },
-      handleScroll(event) {
-        const elements = this.$refs.timeline.children
-        Array.prototype.forEach.call(elements, (element, index) => {
-          const topOffset = element.getBoundingClientRect().top + window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-          if (!this.timelines[index].rendered && topOffset <= window.scrollY + window.innerHeight * 0.75) {
-            const blocksToShow = element.querySelectorAll('.timeline__block__image, .timeline__block__body');
-            blocksToShow.forEach((block, blockIndex) => {
-              block.classList.remove('is-notvisible')
-              if (blockIndex) {
-                if (index % 2) {
-                  block.classList.add('slideInRight-enter-active')
-                } else {
-                  block.classList.add('slideInLeft-enter-active')
-                }
-              } else {
-                block.classList.add('bounce-enter-active')
-              }
-              // Define allready shown block
-              this.timelines[index].rendered = true
-              // Remove event handler when its not needed
-              if (index === elements.length - 1) {
-                window.removeEventListener('scroll', this.handleScroll);
-              }
-            });
-          }
-        })
-      },
-      getScreenWidth() {
-        return window.innerWidth || documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth
-      }
+    close () {
+      this.isOpen = false
+      this.$emit('close')
     }
   }
+}
 </script>
 
 <style lang="scss">
@@ -246,5 +86,259 @@
       font-size: 1.2em;
     }
   }
+  .timeline {
+  position: relative;
+  width: 660px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 1em 0;
+  list-style-type: none;
+}
+
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: rgb(80,80,80);
+  background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+  background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  
+  z-index: 5;
+}
+
+.timeline li {
+  padding: 1em 0;
+}
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.direction-l {
+  position: relative;
+  width: 300px;
+  float: left;
+  text-align: right;
+}
+
+.direction-r {
+  position: relative;
+  width: 300px;
+  float: right;
+}
+
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+  
+  text-align: center;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  background: rgb(248,248,248);
+  padding: 6px 10px;
+  border-radius: 5px;
+  
+  font-weight: 600;
+  text-align: left;
+}
+
+.direction-l .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-r .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid #424242;
+  z-index: 10;
+}
+
+.direction-r .flag:before {
+  left: -40px;
+}
+
+.direction-l .flag:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-left-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-r .flag:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-right-color: rgb(248,248,248);
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.time-wrapper {
+  display: inline;
+  line-height: 1em;
+  font-size: 0.66666em;
+  color: #424242;
+  vertical-align: middle;
+}
+
+.direction-l .time-wrapper {
+  float: left;
+}
+
+.direction-r .time-wrapper {
+  float: right;
+}
+
+.time {
+  display: inline-block;
+  padding: 4px 6px;
+  background: rgb(248,248,248);
+}
+
+.desc {
+  margin: 1em 0.75em 0 0;
+  font-size: 0.77777em;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.direction-r .desc {
+  margin: 1em 0 0 0.75em;
+}
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px) {
+  .timeline {
+    width: 100%;
+    padding: 4em 0 1em 0;
+  }
+  .timeline li {
+    padding: 2em 0;
+  }
+  .direction-l,
+  .direction-r {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .flag-wrapper {
+    text-align: center;
+  }
+  .flag {
+    background: rgb(255,255,255);
+    z-index: 15;
+  }
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-left: -9px;
+    background: #fff;
+    border-radius: 10px;
+    border: 4px solid rgb(255,80,80);
+    z-index: 10;
+  }
+  .direction-l .flag:after,
+  .direction-r .flag:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -8px;
+    height: 0;
+    width: 0;
+    margin-left: -8px;
+    border: solid transparent;
+    border-bottom-color: rgb(255,255,255);
+    border-width: 8px;
+    pointer-events: none;
+  }
+  .time-wrapper {
+    display: block;
+    position: relative;
+    margin: 4px 0 0 0;
+    z-index: 14;
+  }
+  .direction-l .time-wrapper {
+    float: none;
+  }
+  .direction-r .time-wrapper {
+    float: none;
+  }
+  .desc {
+    position: relative;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    background: rgb(245,245,245);
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+    box-shadow: 0 0 1px rgba(0,0,0,0.20);
+    z-index: 15;
+  }
+  .direction-l .desc,
+  .direction-r .desc {
+    position: relative;
+    margin: 1em 1em 0 1em;
+    padding: 1em;
+    z-index: 15;
+  }
+}
+
+  // @media screen and (min-width: 400px and max-width: 660px) {
+  //   .direction-l .desc,
+  //   .direction-r .desc {
+  //     margin: 1em 4em 0 4em;
+  //   }
+  // }
 }
 </style>
