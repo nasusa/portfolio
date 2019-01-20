@@ -46,6 +46,7 @@ export default {
   right: 0;
   z-index: 1000;
   display: none;
+  overflow-y: auto;
   &.is-active {
     display: block;
   }
