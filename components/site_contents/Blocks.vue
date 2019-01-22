@@ -299,30 +299,35 @@ export default {
   transform: rotate(-34deg);
   left: -100px;
   top: 50px;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   }
   .about-block {
   -ms-transform: rotate(-34deg);
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
-  left: 469px;
-  top: -46px;
+  left: 368px;
+  top: -50px;
+  width: 350px;
+  height: 350px;
   }
   .portfolio-block {
   -ms-transform: rotate(-34deg);
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
-  left: 333px;
-  top: 516px;
+  left: 214px;
+  top: 454px;
 
   }
   .resume-block {
   -ms-transform: rotate(-34deg);
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
-  left: 749px;
-  top: 267px;
+  left: 628px;
+  top: 204px;
+  }
+  .page-opened .welcome-block {
+    left: 60px;
   }
 }
 
@@ -331,17 +336,20 @@ export default {
   -ms-transform: rotate(-34deg);
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
-  left: -181px;
-  top: 163px;
-  width: 600px;
-  height: 600px;
+  left: -45px;
+  top: 132px;
+  width: 400px;
+  height: 400px;
+    &-container {
+      padding-left: 100px;
+    }
   }
   .about-block {
   -ms-transform: rotate(-34deg);
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
-  left: 407px;
-  top: 127px;
+  left: 305px;
+  top: -31px;
   width: 350px;
   height: 350px;
   }
@@ -349,8 +357,8 @@ export default {
   -ms-transform: rotate(-34deg);
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
-  left: 575px;
-  top: 425px;
+  left: 183px;
+  top: 462px;
   width: 350px;
   height: 250px;
   }
@@ -358,10 +366,25 @@ export default {
   -ms-transform: rotate(-34deg);
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
-  left: 947px;
-  top: 204px;
+  left: 556px;
+  top: 242px;
   width: 350px;
   height: 550px;
+  }
+  .page-opened {
+    .welcome-block {
+      left: 90px;
+      top: 95px;
+      &-container {
+        padding-left: 90px;
+      }
+    }
+  }
+}
+
+@media (max-width:1000px) {
+  .block-content {
+    width: 100vw;
   }
 }
 
@@ -371,7 +394,7 @@ export default {
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
   left: -100px;
-  top: 40px;
+  top: 100px;
   width: 600px;
   height: 500px;
   }
@@ -380,25 +403,25 @@ export default {
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
   left: 442px;
-  top: -148px;
-  &-container {
-  padding: 85px 0 0 82px
-  }
+  top: -88px;
+    &-container {
+    padding: 85px 0 0 82px
+    }
   }
   .portfolio-block {
   -ms-transform: rotate(-34deg);
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
   left: 637px;
-  top: 191px;
+  top: 251px;
   }
   .resume-block {
   -ms-transform: rotate(-34deg);
   -webkit-transform: rotate(-34deg);
   transform: rotate(-34deg);
-  left: 334px;
-  top: 406px;
-  height: 400px;
+  left: 301px;
+  top: 477px;
+  height: 280px;
   }
 }
 
@@ -434,36 +457,41 @@ export default {
 }
 
 @media (max-width: 800px) {
-  .welcome-block, .about-block, .portfolio-block, .resume-block {
-    position: relative;
-    -ms-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    height: auto;
-    width: auto;
-    text-align: center;
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    display: table;
-    left: 0;
-    top: 0;
-    h1 {
-      padding-left: 0px;
+  .hero {
+    .block-content {
+      width: 100vw!important;
     }
-    .text {
-      padding-left: 0px;
-    }
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-bottom: 30px;
-    }
-    .welcome-block-container, .about-block-container, .portfolio-block-container, .resume-block-container {
+    .welcome-block, .about-block, .portfolio-block, .resume-block {
+      position: relative;
       -ms-transform: rotate(0deg);
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
-      padding: 0 0 0 0;
+      height: auto;
+      width: auto;
+      text-align: center;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      display: grid;
+      left: 0;
+      top: 0;
+      h1 {
+        padding-left: 0px;
+      }
+      .text {
+        padding-left: 0px;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+      }
+      .welcome-block-container, .about-block-container, .portfolio-block-container, .resume-block-container {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        padding: 0 0 0 0;
+      }
     }
   }
 }
