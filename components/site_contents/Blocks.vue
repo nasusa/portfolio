@@ -7,16 +7,16 @@
         <div class="text"></div>
           <nav class="level is-mobile social-icons">
           <div class="level-left">
-            <a class="level-item">
+            <a href="https://www.facebook.com/susannalepolan" target="_blank" class="level-item">
               <span class="icon is-small"><i class="fa fa-facebook"></i></span>
             </a>
-            <a class="level-item">
+            <a href="https://www.instagram.com/susannalepola/" target="_blank"  class="level-item">
               <span class="icon is-small"><i class="fa fa-instagram"></i></span>
             </a>
-            <a class="level-item">
+            <a href="https://linkedin.com/in/susannalepola/" target="_blank"  class="level-item">
               <span class="icon is-small"><i class="fa fa-linkedin"></i></span>
             </a>
-            <a class="level-item">
+            <a href="http://github.com/nasusa" target="_blank"  class="level-item">
               <span class="icon is-small"><i class="fa fa-github"></i></span>
             </a>
           </div>
@@ -25,17 +25,26 @@
     </div>
     <div class="about-block menu-block" @click="open(1)">
       <div class="about-block-container">
+        <hr class="title-hr">
         <h1 class="is-uppercase">About me</h1>
       </div>
     </div>
     <div class="portfolio-block menu-block" @click="open(2)">
       <div class="portfolio-block-container">
+        <hr class="title-hr">
         <h1 class="is-uppercase">My experience</h1>
       </div>
     </div>
     <div class="resume-block menu-block">
       <div class="resume-block-container">
+        <hr class="title-hr">
         <h1 class="is-uppercase">My portfolio</h1>
+      </div>
+    </div>
+    <div class="contact-block menu-block">
+      <div class="contact-block-container">
+        <hr class="title-hr">
+        <h1 class="is-uppercase">Contact me</h1>
       </div>
     </div>
   </div>
@@ -194,9 +203,14 @@ export default {
   }
 }
 
+.title-hr {
+  height: 2px;
+  width: 100px;
+}
+
 .about-block {
-  width: 400px;
-  height: 400px;
+  width: 430px;
+  height: 300px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   display: table;
   position: absolute;
@@ -216,8 +230,8 @@ export default {
 }
 
 .portfolio-block {
-  width: 400px;
-  height: 300px;
+  width: 430px;
+  height: 400px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   display: table;
   position: absolute;
@@ -237,8 +251,29 @@ export default {
 }
 
 .resume-block {
-  width: 400px;
-  height: 600px;
+  width: 430px;
+  height: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: table;
+  position: absolute;
+  transition: all 0.5s;
+  z-index: 1;
+  &:hover {
+    border: 15px solid rgba(255, 255, 255, 0.1);
+  }
+  &-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 0 0 55px;
+    -ms-transform: rotate(34deg);
+    -webkit-transform: rotate(34deg);
+    transform: rotate(34deg);
+  }
+}
+
+.contact-block {
+  width: 430px;
+  height: 400px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   display: table;
   position: absolute;
@@ -259,72 +294,77 @@ export default {
 
 @media (min-width: 1920px) {
   .welcome-block {
-  position: absolute;
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 122px;
-  top: 90px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 122px;
+    top: 90px;
   }
   .about-block {
-  position: absolute;
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 812px;
-  top: 57px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 702px;
+    top: -60px;
   }
   .portfolio-block {
-  position: absolute;
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 1007px;
-  top: 396px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 897px;
+    top: 179px;
   }
   .resume-block {
-  position: absolute;
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 1422px;
-  top: 148px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 1092px;
+    top: 518px;
+  }
+  .contact-block {
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 1386px;
+    top: 138px;
   }
 }
 
 @media (min-width:1280px) and (max-width:1919px) {
   .welcome-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: -100px;
-  top: 50px;
-  width: 500px;
-  height: 500px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: -190px;
+    top: 10px;
   }
   .about-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 368px;
-  top: -50px;
-  width: 350px;
-  height: 350px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 382px;
+    top: -151px;
   }
   .portfolio-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 214px;
-  top: 454px;
-
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 577px;
+    top: 89px;
   }
   .resume-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 628px;
-  top: 204px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 772px;
+    top: 428px;
+  }
+  .contact-block {
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 1067px;
+    top: 48px;
   }
   .page-opened .welcome-block {
     left: 60px;
@@ -333,43 +373,47 @@ export default {
 
 @media (min-width:1025px) and (max-width:1280px) {
   .welcome-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: -45px;
-  top: 132px;
-  width: 400px;
-  height: 400px;
-    &-container {
-      padding-left: 100px;
-    }
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: -200px;
+    top: -80px;
   }
   .about-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 305px;
-  top: -31px;
-  width: 350px;
-  height: 350px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 419px;
+    top: -160px;
+    width: 350px;
+    height: 300px;
   }
   .portfolio-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 183px;
-  top: 462px;
-  width: 350px;
-  height: 250px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 586px;
+    top: 88px;
+    width: 350px;
+    height: 300px;
   }
   .resume-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 556px;
-  top: 242px;
-  width: 350px;
-  height: 550px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 753px;
+    top: 335px;
+    width: 350px;
+    height: 300px;
+  }
+  .contact-block {
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 900px;
+    top: -70px;
+    width: 350px;
+    height: 300px;
   }
   .page-opened {
     .welcome-block {
@@ -390,69 +434,77 @@ export default {
 
 @media (min-width:981px) and (max-width:1024px) {
   .welcome-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: -100px;
-  top: 100px;
-  width: 600px;
-  height: 500px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: -190px;
+    top: 10px;
   }
   .about-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 442px;
-  top: -88px;
-    &-container {
-    padding: 85px 0 0 82px
-    }
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 382px;
+    top: -150px;
   }
   .portfolio-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 637px;
-  top: 251px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 577px;
+    top: 89px;
   }
   .resume-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 301px;
-  top: 477px;
-  height: 280px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 772px;
+    top: 428px;
+  }
+  .contact-block {
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 365px;
+    top: 538px;
   }
 }
 
 @media (min-width:768px) and (max-width:980px) {
   .welcome-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: -100px;
-  top: 10px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: -190px;
+    top: 10px;
   }
   .about-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 590px;
-  top: -23px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 382px;
+    top: -150px;
   }
   .portfolio-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 535px;
-  top: 484px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 577px;
+    top: 89px;
   }
   .resume-block {
-  -ms-transform: rotate(-34deg);
-  -webkit-transform: rotate(-34deg);
-  transform: rotate(-34deg);
-  left: 288px;
-  top: 683px;
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 336px;
+    top: 548px;
+  }
+  .contact-block {
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 9px;
+    top: 780px;
   }
 }
 
@@ -461,7 +513,7 @@ export default {
     .block-content {
       width: 100vw!important;
     }
-    .welcome-block, .about-block, .portfolio-block, .resume-block {
+    .welcome-block, .about-block, .portfolio-block, .resume-block, .contact-block {
       position: relative;
       -ms-transform: rotate(0deg);
       -webkit-transform: rotate(0deg);
@@ -486,11 +538,14 @@ export default {
         align-items: center;
         padding-bottom: 30px;
       }
-      .welcome-block-container, .about-block-container, .portfolio-block-container, .resume-block-container {
+      .welcome-block-container, .about-block-container, .portfolio-block-container, .resume-block-container, .contact-block-container {
         -ms-transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
         padding: 0 0 0 0;
+        .title-hr {
+          display:none;
+        }
       }
     }
   }
