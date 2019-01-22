@@ -1,5 +1,5 @@
 <template>
-  <div class="experience">
+  <div class="aboutMe">
     <section class="section">  
       <div class="columns">
         <div class="column aboutmeThirdSlide">
@@ -68,7 +68,7 @@
 </script>
 
 <style lang="scss">
-.experience {
+.aboutMe {
   h1 {
     font-size: 1.5em;
   }

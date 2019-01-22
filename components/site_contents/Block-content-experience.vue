@@ -4,7 +4,7 @@
     <div class="content">
       <h1 class="is-uppercase">Experience</h1>
       <hr>
-      <h1 class="is-uppercase">Work experience</h1>
+      <h2 class="is-uppercase">Work experience</h2>
       <hr>
       <ul class="timeline">
         <!-- Item 1 -->
@@ -84,7 +84,7 @@
         </li> 
       </ul>
       <section class="section">  
-        <h1 class="aboutmeTitle is-uppercase">Education</h1>
+        <h2 class="aboutmeTitle is-uppercase">Education</h2>
         <hr>
         <div class="columns">
           <div class="column is-one-third">
@@ -97,23 +97,22 @@
           </div>
           <div class="column">
             <h1 class="aboutmeSchool">Tampereen seudun ammattiopisto, TREDU</h1>
-            <h2 class="dateProgram">Tietoliikenneasentaja</h2>
             <h2 class="dateProgram">Information and Communication Technology</h2>
-            <p>I started studying in the middle of the semester, as I moved from the Restaurant and Catering degree. I found my great passion from
-               information technology side, not that it was a surprise because from child I've enjoyed working with electronics. <br>
-               You can access the Information and Communication Technology curriculum <a href="http://inter16.tampere.fi/tredu/material/koulutukset/opintosuunnitelmat/43xEhfiOl/Tieto-_ja_tietoliikennetekniikan_pt_ict-asentaja_2016.pdf" target="blank">HERE</a>.
+            <h2 class="dateProgram">2014-2017</h2>
+            <p>I started studying in the middle of the semester, as I moved from the Restaurant and Catering degree. I found my great passion from information technology side, not that it was a surprise because from child I've enjoyed working with electronics. <br><br>You can access the Information and Communication Technology curriculum <a href="http://inter16.tampere.fi/tredu/material/koulutukset/opintosuunnitelmat/43xEhfiOl/Tieto-_ja_tietoliikennetekniikan_pt_ict-asentaja_2016.pdf" target="blank">HERE</a>.
             </p>
           </div>
           <div class="column">
             <h1 class="aboutmeSchool">Tampere University of Applied Siences, TAMK</h1>
             <h2 class="dateProgram">Degree Programme in Business Information Systems</h2>
             <h2 class="dateProgram">2017-2020</h2>
-            <p>A great passion to achieve and learn new was pushing me forward even after a vocational school. After I graduated from vocational school, I
-              ended up to continue my dream in TAMK; in the middle of good networks, great teachers and a variety of opportunities.<br>
-              You can access the Business Information Systems curriculum <a href="http://opinto-opas-ops.tamk.fi/index.php/fi/167/fi/46/13TIKO/year/2013" target="blank">HERE</a>.
+            <p>A great passion to achieve and learn new was pushing me forward even after a vocational school. After I graduated from vocational school, I ended up to continue my dream in TAMK; in the middle of good networks, great teachers and a variety of opportunities.<br><br>You can access the Business Information Systems curriculum <a href="http://opinto-opas-ops.tamk.fi/index.php/fi/167/fi/46/13TIKO/year/2013" target="blank">HERE</a>.
             </p>
           </div>
         </div>
+      </section>
+      <section class="image">
+        <div><img src="~/static/graduated.jpg" alt="Italian Trulli"></div>
       </section>
     </div>
   </div>
@@ -151,6 +150,12 @@ export default {
   overflow-y: auto;
   &.is-active {
     display: block;
+  }
+  .aboutmeSchool {
+    font-size: 1.4em;
+  }
+  .dateProgram {
+    font-size: 1.2em;
   }
   button {
     margin: 20px;
@@ -410,12 +415,5 @@ export default {
     z-index: 15;
   }
 }
-
-  // @media screen and (min-width: 400px and max-width: 660px) {
-  //   .direction-l .desc,
-  //   .direction-r .desc {
-  //     margin: 1em 4em 0 4em;
-  //   }
-  // }
 }
 </style>

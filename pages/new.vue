@@ -34,10 +34,10 @@ export default {
   &:before {
   background: 
   linear-gradient(
-  rgba(0, 0, 0, 0), 
-  rgba(0, 0, 0, 0.5)
+  rgba(0, 0, 0, 0.73), 
+  rgba(0, 0, 0, 0.1)
   ),
-  url("~/static/testi.jpg");
+  url("~/static/susa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
