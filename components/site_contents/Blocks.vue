@@ -38,13 +38,13 @@
     <div class="resume-block menu-block">
       <div class="resume-block-container">
         <hr class="title-hr">
-        <h1 class="is-uppercase">My portfolio</h1>
+        <h1 class="is-uppercase">My portfolio<br><span style="font-size:0.5em;">- coming soon-</span></h1>
       </div>
     </div>
     <div class="contact-block menu-block">
       <div class="contact-block-container">
         <hr class="title-hr">
-        <h1 class="is-uppercase">Contact me</h1>
+        <h1 class="is-uppercase">Contact me<br><span style="font-size:0.5em;">- coming soon -</span></h1>
       </div>
     </div>
   </div>

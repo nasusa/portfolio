@@ -1,130 +1,54 @@
 <template>
-  <div> 
-      <!--HEADER ALKAA-->     
-      <div class="indexHeader has-text-centered">
-        <section class="section">  
-          <div class="container">
-            <ul>
-              <li><span class="headerFont">I am Susanna</span></li>
-              <li><span class="headerSloganFont"> DESIGNER <i class="fa fa-angle-double-right" aria-hidden="true"></i> ICT TECHNICIAN <i class="fa fa-angle-double-right" aria-hidden="true"></i> DREAMER </span></li>
-              <li><span class="headerFont">Welcome to my Portfolio</span></li>
-            </ul>
-          </div>
-        </section>
-      </div>
-      <!--HEADER PÄÄTTYY-->
-
-      <!--INDEX PÄÄTTYY-->
-      <section class="pageSections">
-        <about/>
-      </section>
-      <section class="pageSections">
-        <projects/>
-      </section>
-  </div>
+  <section class="hero is-fullheight is-dark">
+    <blocks ref="blocks" @openPage="$refs[`page-${$event}`].open()"/>
+    <block-content-about ref="page-1" @close="$refs.blocks.close()"/>
+    <block-content-experience ref="page-2" @close="$refs.blocks.close()"/>
+  </section>
 </template>
 
 <script>
-import About from '~/components/site_contents/About.vue'
-import Projects from '~/components/site_contents/Projects.vue'
+import Blocks from '~/components/site_contents/Blocks.vue'
+import BlockContentAbout from '~/components/site_contents/Block-content-about.vue'
+import BlockContentExperience from '~/components/site_contents/Block-content-experience.vue'
 
 export default {
   components: {
-    About,
-    Projects
-  }
+    Blocks,
+    BlockContentAbout,
+    BlockContentExperience
+  },
+  layout: 'blank'
 }
 </script>
 
 <style lang="scss">
-/*FONT CSS*/
-  .aboutmeTitle {
-      font-family: 'Abel', sans-serif;
-      font-size: 2em;
-      @include desktop {
-      font-size: 2em;
-    }
+@import url('https://fonts.googleapis.com/css?family=Poppins:500|Roboto+Mono');
+
+.hero {
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &:before {
+  background: 
+  linear-gradient(
+  rgba(0, 0, 0, 0.73), 
+  rgba(0, 0, 0, 0.1)
+  ),
+  url("~/static/susa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  filter: blur(3px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
   }
-  .socialHeading {
-    font-family: 'Abel', sans-serif;
-    padding-top: 10px;
+  h1 {
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
   }
-  .skillsHeading {
-    font-family: 'Abel', sans-serif;
-  }
-  .headerFont {
-    font-size: 1em;
-    color: white;
-    text-shadow: 1px 1px black;
-    opacity: 0.6;
-    font-family: 'Sacramento', cursive;
-    @include desktop {
-      font-size: 1.5em;
-    }
-  }
-  .headerAbel {
-    color: black;
-    font-family: 'Abel', sans-serif;
-    padding-top: 20px;
-    @include desktop {
-      font-size: 1.5em;
-    }
-  }
-  .headerSacramento {
-    font-size: 2em;
-    color: #282828;
-    font-family: 'Sacramento', cursive;
-    padding-top: 20px;
-  }
-  .headerSloganFont {
-    font-size: 0.4em;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    opacity: 0.8;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-    font-family: 'Abel', sans-serif;
-    @include desktop {
-      font-size: 0.8em;
-      letter-spacing: 3px;
-    }
-  }
-  /*MUU*/
-  .indexHeader {
-    height: 550px;
-    font-size: 3em;
-    display: -webkit-flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 30%;
-      @include desktop {
-       background-position: center 70%; 
-       height: 600px;
-      }
-    &:before {
-      background-image: url("~/static/banneri.jpg");
-      background-position: center 30%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      content: "";
-      filter: blur(2px);
-      height: 100%;
-      position: absolute;
-      width: 100%;
-      @include desktop {
-       background-position: center 70%; 
-      }
-    }
-  }
-  .indexHeader::before {
-    color: black;
-  }
-  .titleHr {
-    width: 200px;
-    height: 2px;
-    margin: auto;
-  }
+}
 </style>
