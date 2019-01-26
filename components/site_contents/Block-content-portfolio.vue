@@ -4,26 +4,26 @@
       <div class="portfolio-columns">
         <div class="columns">
           <div class="column is-half">
-            <img src="~/static/proakatemiasynttarit.jpg" alt="Italian Trulli">
+            <img src="~/static/siemenpuu.jpg" alt="Siemenpuu projekti">
           </div>
           <div class="column">
-            <img src="~/static/hoitoladreamskin.jpg" alt="Italian Trulli">
+            <img src="~/static/proakatemiasynttarit.jpg" alt="Proakatemian 20-v syntymäpäivien nettisivut">
           </div>
         </div>
         <div class="columns">
           <div class="column is-half">
-            <img src="~/static/komon.jpg" alt="Italian Trulli">
+            <img src="~/static/komon.jpg" alt="Komon Oy logo">
           </div>
           <div class="column">
-            <img src="~/static/siemenpuu.jpg" alt="Italian Trulli">
+            <img src="~/static/hoitoladreamskin.jpg" alt="Kauneushoitola Dreamskinin nettisivut">
           </div>
         </div>
         <div class="columns">
           <div class="column is-half">
-            <img src="~/static/tredulan.jpg" alt="Italian Trulli">
+            <img src="~/static/tredulan.jpg" alt="Tredulanien nettisivut">
           </div>
           <div class="column">
-            <img src="~/static/arduinoicon.jpg" alt="Italian Trulli">
+            <img src="~/static/arduinoicon.jpg" alt="Arduino projekti">
           </div>
         </div>
       </div>

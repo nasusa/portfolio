@@ -118,7 +118,7 @@
         </div>
       </section>
       <section class="image">
-        <div><img src="~/static/graduated.jpg" alt="Italian Trulli"></div>
+        <div><img src="~/static/graduated.jpg" alt="Susannan kuva"></div>
       </section>
     </div>
   </div>
