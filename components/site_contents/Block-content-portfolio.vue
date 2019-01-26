@@ -2,6 +2,8 @@
   <div class="block-content" :class="{'is-active': isOpen}">
       <button class="delete is-pulled-right" aria-label="close" @click="close"></button>
       <div class="portfolio-columns">
+        <h1 class="is-uppercase">Portfolio</h1>
+        <hr>
         <div class="columns">
           <div class="column is-half">
             <img src="~/static/siemenpuu.jpg" alt="Siemenpuu projekti">
@@ -68,6 +70,10 @@ export default {
     img {
       border-radius: 15px;
     }
+  }
+  h1 {
+    color: #363636;
+    font-weight: 400;
   }
 }
 </style>
