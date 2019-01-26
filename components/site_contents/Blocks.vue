@@ -25,26 +25,22 @@
     </div>
     <div class="about-block menu-block" @click="open(1)">
       <div class="about-block-container">
-        <hr class="title-hr">
-        <h1 class="is-uppercase">About me</h1>
+        <h1 class="menu-title is-uppercase">About me</h1>
       </div>
     </div>
     <div class="portfolio-block menu-block" @click="open(2)">
       <div class="portfolio-block-container">
-        <hr class="title-hr">
-        <h1 class="is-uppercase">My experience</h1>
+        <h1 class="menu-title is-uppercase">My experience</h1>
       </div>
     </div>
     <div class="resume-block menu-block">
       <div class="resume-block-container">
-        <hr class="title-hr">
-        <h1 class="is-uppercase">My portfolio<br><span style="font-size:0.5em;">- coming soon-</span></h1>
+        <h1 class="menu-title is-uppercase">My portfolio<br><span style="font-size:0.5em;">- coming soon-</span></h1>
       </div>
     </div>
     <div class="contact-block menu-block">
       <div class="contact-block-container">
-        <hr class="title-hr">
-        <h1 class="is-uppercase">Contact me<br><span style="font-size:0.5em;">- coming soon -</span></h1>
+        <h1 class="menu-title is-uppercase">Contact me<br><span style="font-size:0.5em;">- coming soon -</span></h1>
       </div>
     </div>
   </div>
@@ -147,6 +143,7 @@ export default {
 <style lang="scss">
 .page-opened {
   .welcome-block {
+    border: 0px;
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -154,15 +151,36 @@ export default {
       -ms-transform: rotate(0deg);
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
+      padding-left: 100px;
     }
   }
   .menu-block {
     display: none;
   }
 }
+
+h1.menu-title {
+  position: relative;
+  color: #FFF;
+  margin: 50px;
+  font-size: 28px;
+  transition: all 1s ease-out;
+  &:after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: -20px;
+    width: 70px;
+    height: 1px;
+    background: #FFF;
+    transition: all 0.5s ease;
+  }
+}
+
 .menu-block {
   cursor: pointer;
 }
+
 .welcome-block {
   width: 700px;
   height: 700px;
@@ -174,7 +192,7 @@ export default {
   &-container {
     display: table-cell;
     vertical-align: middle;
-    padding-left: 190px;
+    padding-left: 240px;
     -ms-transform: rotate(34deg);
     -webkit-transform: rotate(34deg);
     transform: rotate(34deg)
@@ -203,11 +221,6 @@ export default {
   }
 }
 
-.title-hr {
-  height: 2px;
-  width: 100px;
-}
-
 .about-block {
   width: 430px;
   height: 300px;
@@ -222,10 +235,10 @@ export default {
   &-container {
     display: table-cell;
     vertical-align: middle;
-    padding: 0 0 0 50px;
+    padding: 150px 0 0 70px;
     -ms-transform: rotate(34deg);
     -webkit-transform: rotate(34deg);
-    transform: rotate(34deg);
+    transform: rotate(34deg)
   }
 }
 
@@ -417,10 +430,9 @@ export default {
   }
   .page-opened {
     .welcome-block {
-      left: 90px;
       top: 95px;
       &-container {
-        padding-left: 90px;
+        padding-left: 25px;
       }
     }
   }
@@ -543,9 +555,6 @@ export default {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
         padding: 0 0 0 0;
-        .title-hr {
-          display:none;
-        }
       }
     }
   }

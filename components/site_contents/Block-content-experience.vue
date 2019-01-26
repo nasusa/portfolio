@@ -47,7 +47,7 @@
               <span class="flag">WizIT Oy</span>
               <span class="time-wrapper"><span class="time">2017 - 3 months</span></span>
             </div>
-            <div class="desc">I was in an internship at WizIT Oy.</div>
+            <div class="desc">I was in an internship at WizIT Oy. I was working as IT-support.</div>
           </div>
         </li>
 
@@ -68,7 +68,7 @@
               <span class="flag">Protacon Oy</span>
               <span class="time-wrapper"><span class="time">2015 - 3 months</span></span>
             </div>
-            <div class="desc">I was in an internship at Protacon Oy.</div>
+            <div class="desc">I was in an internship at Protacon Oy. </div>
           </div>
         </li>
 
@@ -88,24 +88,30 @@
         <hr>
         <div class="columns">
           <div class="column is-one-third">
-            <h1 class="aboutmeSchool">Tampere Vocational College, TREDU</h1>
-            <h2 class="dateProgram">Restaurant and Catering</h2>
-            <h2 class="dateProgram">2013-2014</h2>
+            <div class="description-content">
+              <h1 class="aboutmeSchool">Tampere Vocational College,<br>TREDU</h1>
+              <h2 class="program">Restaurant and Catering</h2>
+              <h2 class="date">2013-2014</h2>
+            </div>
             <p>After elementary school, I decided to go to study Vocational Qualification in the Restaurant and Catering. I've been working in multiple cafes and restaurants,
               also I had 3 months internship. However, after wanting new challenges I decided to make a sfull turn and focus on information technology.
             </p>
           </div>
           <div class="column">
-            <h1 class="aboutmeSchool">Tampereen seudun ammattiopisto, TREDU</h1>
-            <h2 class="dateProgram">Information and Communication Technology</h2>
-            <h2 class="dateProgram">2014-2017</h2>
+            <div class="description-content">
+              <h1 class="aboutmeSchool">Tampereen seudun ammattiopisto,<br>TREDU</h1>
+              <h2 class="program">Information and Communication Technology</h2>
+              <h2 class="date">2014-2017</h2>
+            </div>
             <p>I started studying in the middle of the semester, as I moved from the Restaurant and Catering degree. I found my great passion from information technology side, not that it was a surprise because from child I've enjoyed working with electronics. <br><br>You can access the Information and Communication Technology curriculum <a href="http://inter16.tampere.fi/tredu/material/koulutukset/opintosuunnitelmat/43xEhfiOl/Tieto-_ja_tietoliikennetekniikan_pt_ict-asentaja_2016.pdf" target="blank">HERE</a>.
             </p>
           </div>
           <div class="column">
-            <h1 class="aboutmeSchool">Tampere University of Applied Siences, TAMK</h1>
-            <h2 class="dateProgram">Degree Programme in Business Information Systems</h2>
-            <h2 class="dateProgram">2017-2020</h2>
+            <div class="description-content">
+              <h1 class="aboutmeSchool">Tampere University of Applied Siences,<br>TAMK</h1>
+              <h2 class="program">Degree Programme in Business Information Systems</h2>
+              <h2 class="date">2017-2020</h2>
+            </div>
             <p>A great passion to achieve and learn new was pushing me forward even after a vocational school. After I graduated from vocational school, I ended up to continue my dream in TAMK; in the middle of good networks, great teachers and a variety of opportunities.<br><br>You can access the Business Information Systems curriculum <a href="http://opinto-opas-ops.tamk.fi/index.php/fi/167/fi/46/13TIKO/year/2013" target="blank">HERE</a>.
             </p>
           </div>
@@ -151,12 +157,8 @@ export default {
   &.is-active {
     display: block;
   }
-  .aboutmeSchool {
-    font-size: 1.4em;
-  }
-  .dateProgram {
-    font-size: 1.2em;
-  }
+  
+  
   button {
     margin: 20px;
   }
@@ -166,6 +168,19 @@ export default {
       color: #9f9f9f;
       padding-top: 1em;
       font-size: 1.2em;
+    }
+  }
+  .description-content {
+    min-height: 230px;
+    .program, .date {
+      font-size: 1.2em;
+      bottom: 0px;
+    }
+    .program {
+      min-height: 80px;
+    }
+    .aboutmeSchool {
+      font-size: 1.4em;
     }
   }
   .timeline {
@@ -186,14 +201,7 @@ export default {
   width: 6px;
   height: 100%;
   margin-left: -3px;
-  background: rgb(80,80,80);
-  background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
-  background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-  background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-  background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-  
+  background: #EFEFED;
   z-index: 5;
 }
 
@@ -263,7 +271,7 @@ export default {
   margin-top: -10px;
   background: #fff;
   border-radius: 10px;
-  border: 4px solid #424242;
+  border: 4px solid #989898;
   z-index: 10;
 }
 
@@ -318,13 +326,11 @@ export default {
 .time {
   display: inline-block;
   padding: 4px 6px;
-  background: rgb(248,248,248);
 }
 
 .desc {
   margin: 1em 0.75em 0 0;
   font-size: 0.77777em;
-  font-style: italic;
   line-height: 1.5em;
   color: #424242;
 }
@@ -353,7 +359,7 @@ export default {
     text-align: center;
   }
   .flag {
-    background: rgb(255,255,255);
+    background: #EFEFED;
     z-index: 15;
   }
   .direction-l .flag:before,

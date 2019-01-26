@@ -78,6 +78,9 @@
   p {
     font-size: 1em!important;
   }
+  .fa {
+    color: #4a4a4a;
+  }
   .aboutmeInfo {
     padding-top: 0;
     .aboutmeIcons {
