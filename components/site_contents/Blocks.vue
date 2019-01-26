@@ -33,7 +33,7 @@
         <h1 class="menu-title is-uppercase">My experience</h1>
       </div>
     </div>
-    <div class="resume-block menu-block">
+    <div class="resume-block menu-block" @click="open(3)">
       <div class="resume-block-container">
         <h1 class="menu-title is-uppercase">My portfolio<br><span style="font-size:0.5em;">- coming soon-</span></h1>
       </div>

@@ -3,6 +3,7 @@
     <blocks ref="blocks" @openPage="$refs[`page-${$event}`].open()"/>
     <block-content-about ref="page-1" @close="$refs.blocks.close()"/>
     <block-content-experience ref="page-2" @close="$refs.blocks.close()"/>
+    <block-content-portfolio ref="page-3" @close="$refs.blocks.close()"/>
   </section>
 </template>
 
@@ -10,12 +11,15 @@
 import Blocks from '~/components/site_contents/Blocks.vue'
 import BlockContentAbout from '~/components/site_contents/Block-content-about.vue'
 import BlockContentExperience from '~/components/site_contents/Block-content-experience.vue'
+import BlockContentPortfolio from '~/components/site_contents/Block-content-portfolio.vue'
+
 
 export default {
   components: {
     Blocks,
     BlockContentAbout,
-    BlockContentExperience
+    BlockContentExperience,
+    BlockContentPortfolio
   },
   layout: 'blank'
 }
