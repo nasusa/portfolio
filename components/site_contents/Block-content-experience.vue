@@ -94,7 +94,7 @@
               <h2 class="date">2013-2014</h2>
             </div>
             <p>After elementary school, I decided to go to study Vocational Qualification in the Restaurant and Catering. I've been working in multiple cafes and restaurants,
-              also I had 3 months internship. However, after wanting new challenges I decided to make a sfull turn and focus on information technology.
+              also I had 3 months internship. However, after wanting new challenges I decided to make a full turn and focus on information technology.
             </p>
           </div>
           <div class="column">
