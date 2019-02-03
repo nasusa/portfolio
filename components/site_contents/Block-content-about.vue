@@ -4,8 +4,15 @@
     <div class="content">
       <h1 class="is-uppercase">About me</h1>
       <hr>
-      <h2 class="aboutmeText">I’m a coffee addicted pixel and code pusher from Finland. Beside my passion for computers and coding, I’m also a big music freak and a real foodie who loves all of the good things in life.</h2>
-      <p>I love learning new things, I love projects. My passion is inventing new; whatever the project has been, I embrace it. Target to a fluent, smooth, initiative and innovative direction. Head full of ideas, they may be small or large.</p>
+      <div class="columns">
+        <div class="column is-half">
+          <h2 class="aboutmeText">I’m a coffee addicted pixel and code pusher from Finland. Beside my passion for computers and coding, I’m also a big music freak and a real foodie who loves all of the good things in life.</h2>
+          <p>I love learning new things, I love projects. My passion is inventing new; whatever the project has been, I embrace it. Target to a fluent, smooth, initiative and innovative direction. Head full of ideas, they may be small or large.</p>
+        </div>
+        <div class="column">
+          <img src="~/static/susanna.jpg" style="max-height: 350px;" alt="Susannan kuva">
+        </div>
+      </div>
       <About-me/>
     </div>
   </div>

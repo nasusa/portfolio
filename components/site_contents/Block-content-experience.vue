@@ -103,7 +103,7 @@
               <h2 class="program">Information and Communication Technology</h2>
               <h2 class="date">2014-2017</h2>
             </div>
-            <p>I started studying in the middle of the semester, as I moved from the Restaurant and Catering degree. I found my great passion from information technology side, not that it was a surprise because from child I've enjoyed working with electronics. <br><br>You can access the Information and Communication Technology curriculum <a href="http://inter16.tampere.fi/tredu/material/koulutukset/opintosuunnitelmat/43xEhfiOl/Tieto-_ja_tietoliikennetekniikan_pt_ict-asentaja_2016.pdf" target="blank">HERE</a>.
+            <p>I started studying in the middle of the semester, as I moved from the Restaurant and Catering degree. I found my great passion from information technology side, not that it was a surprise because from child I've enjoyed working with electronics. <br><br>You can access the Information and Communication Technology curriculum <a href="http://inter16.tampere.fi/tredu/material/koulutukset/opintosuunnitelmat/43xEhfiOl/Tieto-_ja_tietoliikennetekniikan_pt_ict-asentaja_2016.pdf" target="blank" style="text-decoration: underline;">HERE</a>.
             </p>
           </div>
           <div class="column">
@@ -112,7 +112,7 @@
               <h2 class="program">Degree Programme in Business Information Systems</h2>
               <h2 class="date">2017-2020</h2>
             </div>
-            <p>A great passion to achieve and learn new was pushing me forward even after a vocational school. After I graduated from vocational school, I ended up to continue my dream in TAMK; in the middle of good networks, great teachers and a variety of opportunities.<br><br>You can access the Business Information Systems curriculum <a href="http://opinto-opas-ops.tamk.fi/index.php/fi/167/fi/46/13TIKO/year/2013" target="blank">HERE</a>.
+            <p>A great passion to achieve and learn new was pushing me forward even after a vocational school. After I graduated from vocational school, I ended up to continue my dream in TAMK; in the middle of good networks, great teachers and a variety of opportunities.<br><br>You can access the Business Information Systems curriculum <a href="http://opinto-opas-ops.tamk.fi/index.php/fi/167/fi/46/13TIKO/year/2013" target="blank" style="text-decoration: underline;">HERE</a>.
             </p>
           </div>
         </div>
@@ -240,43 +240,30 @@ export default {
 .flag {
   position: relative;
   display: inline;
-  background: rgb(248,248,248);
   padding: 6px 10px;
   border-radius: 5px;
   color: #424242;
   text-align: left;
 }
 
-.direction-l .flag {
-  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-  -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-}
-
-.direction-r .flag {
-  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-}
-
 .direction-l .flag:before,
 .direction-r .flag:before {
   position: absolute;
   top: 50%;
-  right: -40px;
+  right: -36px;
   content: ' ';
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   margin-top: -10px;
-  background: #fff;
+  background: #63594A;
   border-radius: 10px;
-  border: 4px solid #989898;
+  border: 4px solid white;
   z-index: 10;
 }
 
 .direction-r .flag:before {
-  left: -40px;
+  left: -41px;
 }
 
 .direction-l .flag:after {
@@ -284,12 +271,8 @@ export default {
   position: absolute;
   left: 100%;
   top: 50%;
-  height: 0;
-  width: 0;
-  margin-top: -8px;
-  border: solid transparent;
-  border-left-color: rgb(248,248,248);
-  border-width: 8px;
+  width: 20px;
+  border-top: 1px solid #63594A;
   pointer-events: none;
 }
 
@@ -298,12 +281,8 @@ export default {
   position: absolute;
   right: 100%;
   top: 50%;
-  height: 0;
-  width: 0;
-  margin-top: -8px;
-  border: solid transparent;
-  border-right-color: rgb(248,248,248);
-  border-width: 8px;
+  width: 20px;
+  border-top: 1px solid #63594A;
   pointer-events: none;
 }
 
