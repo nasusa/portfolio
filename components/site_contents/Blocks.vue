@@ -38,9 +38,9 @@
         <h1 class="menu-title is-uppercase">My portfolio</h1>
       </div>
     </div>
-    <div class="contact-block menu-block">
+    <div class="contact-block menu-block" @click="open(4)">
       <div class="contact-block-container">
-        <h1 class="menu-title is-uppercase">Contact me<br><span style="font-size:0.5em;">- coming soon -</span></h1>
+        <h1 class="menu-title is-uppercase">Contact me</h1>
       </div>
     </div>
   </div>

@@ -4,6 +4,7 @@
     <block-content-about ref="page-1" @close="$refs.blocks.close()"/>
     <block-content-experience ref="page-2" @close="$refs.blocks.close()"/>
     <block-content-portfolio ref="page-3" @close="$refs.blocks.close()"/>
+    <block-content-contact ref="page-4" @close="$refs.blocks.close()"/>
   </section>
 </template>
 
@@ -12,6 +13,7 @@ import Blocks from '~/components/site_contents/Blocks.vue'
 import BlockContentAbout from '~/components/site_contents/Block-content-about.vue'
 import BlockContentExperience from '~/components/site_contents/Block-content-experience.vue'
 import BlockContentPortfolio from '~/components/site_contents/Block-content-portfolio.vue'
+import BlockContentContact from '~/components/site_contents/Block-content-contact.vue'
 
 
 export default {
@@ -19,7 +21,8 @@ export default {
     Blocks,
     BlockContentAbout,
     BlockContentExperience,
-    BlockContentPortfolio
+    BlockContentPortfolio,
+    BlockContentContact
   },
   layout: 'blank'
 }
