@@ -522,6 +522,7 @@ h1.menu-title {
 
 @media (max-width: 800px) {
   .hero {
+    padding: 2em 0em 4em 0em;
     .block-content {
       width: 100vw!important;
     }
@@ -540,6 +541,12 @@ h1.menu-title {
       top: 0;
       h1 {
         padding-left: 0px;
+        &.menu-title {
+          margin: 3px;
+          &:after{
+            display:none;
+          }
+        }
       }
       .text {
         padding-left: 0px;

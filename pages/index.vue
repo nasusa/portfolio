@@ -5,6 +5,7 @@
     <block-content-experience ref="page-2" @close="$refs.blocks.close()"/>
     <block-content-portfolio ref="page-3" @close="$refs.blocks.close()"/>
     <block-content-contact ref="page-4" @close="$refs.blocks.close()"/>
+      <p class="copyright">Copyright ©2019 Susanna Lepola.<br> All Rights Reserved.</p>
   </section>
 </template>
 
@@ -56,6 +57,25 @@ export default {
   h1 {
   font-size: 2em;
   font-family: 'Poppins', sans-serif;
+  }
+  .copyright {
+    position: absolute;
+    color: #9e9e9e;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 800px) {
+  .hero {
+    .copyright {
+      position: absolute;
+      color: #9e9e9e;
+      bottom: 1rem;
+      right: unset;
+      text-align: center;
+      font-size: 0.8em;
+    }
   }
 }
 </style>
