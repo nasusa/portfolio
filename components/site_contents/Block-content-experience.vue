@@ -99,7 +99,7 @@
           </div>
           <div class="column">
             <div class="description-content">
-              <h1 class="aboutmeSchool">Tampereen seudun ammattiopisto,<br>TREDU</h1>
+              <h1 class="aboutmeSchool">Tampere Vocational College,<br>TREDU</h1>
               <h2 class="program">Information and Communication Technology</h2>
               <h2 class="date">2014-2017</h2>
             </div>

@@ -35,7 +35,7 @@
 
         <div class="field submit-button is-centered">
           <div class="control">
-            <button class="button is-dark is-uppercase">Lähetä</button>
+            <button class="button is-dark is-uppercase">Send</button>
           </div>
         </div>
       </form>
