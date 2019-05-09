@@ -12,9 +12,9 @@
             </div>
           </div>
           <div class="column image-container">
-            <img src="~/static/siemenpuu.jpg" alt="Siemenpuu projekti">
+            <img src="~/static/muutosvaihtoehdot.jpg" alt="Muutosvaihtoehdot, Siemenpuun projekti">
             <div class="overlay">
-              <div class="text">Website project with WordPress</div>
+              <div class="text">Website project with WordPress for Siemenpuu Foundation.<br><a href="https://muutosvaihtoehdot.fi/">https://muutosvaihtoehdot.fi/</a></div>
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@
           <div class="column image-container">
             <img src="~/static/proakatemiasynttarit.jpg" alt="Proakatemian 20-v syntymäpäivien nettisivut">
               <div class="overlay">
-                <div class="text">Website project with Vue.js<br><a>www.proakatemia20v.fi</a></div>
+                <div class="text">Website project with Vue.js<br><a href="www.proakatemia20v.fi">www.proakatemia20v.fi</a></div>
             </div>
           </div>
         </div>
@@ -104,7 +104,6 @@ export default {
     }
     .image-container {
       position: relative;
-      width: 50%;
     }
 
     .image {
@@ -133,7 +132,7 @@ export default {
 
     .text {
       color: white;
-      font-size: 20px;
+      font-size: 15px;
       position: absolute;
       top: 50%;
       left: 50%;
