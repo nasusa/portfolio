@@ -39,6 +39,7 @@ export default {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
   &:before {
   background: 
   linear-gradient(

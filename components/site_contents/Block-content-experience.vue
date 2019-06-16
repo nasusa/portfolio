@@ -7,6 +7,16 @@
       <h2 class="is-uppercase">Work experience</h2>
       <hr>
       <ul class="timeline">
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="flag">Elisa Viihde Sport</span>
+              <span class="time-wrapper"><span class="time">2019 - present</span></span>
+            </div>
+            <div class="desc">This summer I am going to work in awesome team of other entrepreneurs, together we are producing Esports to Elisa Viihde Sport.</div>
+          </div>
+        </li>
+
         <!-- Item 1 -->
         <li>
           <div class="direction-r">
@@ -23,7 +33,7 @@
           <div class="direction-l">
             <div class="flag-wrapper">
               <span class="flag">Seravo Oy</span>
-              <span class="time-wrapper"><span class="time">2018 - present</span></span>
+              <span class="time-wrapper"><span class="time">2018 - 2019</span></span>
             </div>
             <div class="desc">Network Services Specialist at Seravo Oy. I started as summer employee.</div>
           </div>
@@ -167,7 +177,7 @@ export default {
     p {
       color: #9f9f9f;
       padding-top: 1em;
-      font-size: 1.2em;
+      font-size: 1em;
     }
   }
   .description-content {
