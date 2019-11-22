@@ -13,7 +13,7 @@
               <span class="flag">Elisa Viihde Sport</span>
               <span class="time-wrapper"><span class="time">2019 - present</span></span>
             </div>
-            <div class="desc">This summer I am going to work in awesome team of other entrepreneurs, together we are producing Esports to Elisa Viihde Sport.</div>
+            <div class="desc">I am working in awesome team of other entrepreneurs, together we are producing Esports to Elisa Viihde Sport.</div>
           </div>
         </li>
 

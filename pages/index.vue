@@ -46,9 +46,10 @@ export default {
   rgba(0, 0, 0, 0.73), 
   rgba(0, 0, 0, 0.1)
   ),
-  url("~/static/susa.jpg");
+  url("~/static/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   content: "";
   filter: blur(3px);
   height: 100%;

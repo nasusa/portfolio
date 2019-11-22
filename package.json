@@ -16,10 +16,10 @@
   },
   "dependencies": {
     "bulma": "^0.6.2",
-    "lodash": "^4.17.11",
-    "lory.js": "^2.5.2",
+    "lodash": "^4.17.15",
+    "lory.js": "^2.5.3",
     "nuxt": "^1.4.5",
-    "raven-js": "^3.27.0",
+    "raven-js": "^3.27.2",
     "remove": "^0.1.5"
   },
   "devDependencies": {
@@ -30,7 +30,7 @@
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.7.1",
     "lodash-webpack-plugin": "^0.11.5",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.0",
     "push-dir": "^0.4.1",
     "sass-loader": "^6.0.7"
   }
