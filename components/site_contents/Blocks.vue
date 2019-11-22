@@ -7,8 +7,8 @@
         <div class="text"></div>
           <nav class="level is-mobile social-icons">
           <div class="level-left">
-            <a href="https://www.facebook.com/susannalepolan" target="_blank" class="level-item">
-              <span class="icon is-small"><i class="fa fa-facebook"></i></span>
+            <a href="https://twitter.com/susannalepola" target="_blank" class="level-item">
+              <span class="icon is-small"><i class="fa fa-twitter"></i></span>
             </a>
             <a href="https://www.instagram.com/susannalepola/" target="_blank"  class="level-item">
               <span class="icon is-small"><i class="fa fa-instagram"></i></span>
