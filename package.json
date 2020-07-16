@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "bulma": "^0.6.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "lory.js": "^2.5.3",
     "nuxt": "^1.4.5",
     "raven-js": "^3.27.2",
